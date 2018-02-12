@@ -15,10 +15,10 @@
 		DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E6720313534007AEBB4 /* LaunchScreen.storyboard */; };
 		DD9D1E7420313534007AEBB4 /* cimonv2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E7320313534007AEBB4 /* cimonv2Tests.swift */; };
 		DD9D1E7F20313534007AEBB4 /* cimonv2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E7E20313534007AEBB4 /* cimonv2UITests.swift */; };
-		DD9D1E9B2031FB83007AEBB4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E9A2031FB83007AEBB4 /* Home.storyboard */; };
-		DD9D1E9E2031FBBF007AEBB4 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E9C2031FBBF007AEBB4 /* Task.storyboard */; };
-		DD9D1EA02031FBD3007AEBB4 /* Label.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E9F2031FBD3007AEBB4 /* Label.storyboard */; };
-		DD9D1EA32031FBE9007AEBB4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EA12031FBE9007AEBB4 /* Settings.storyboard */; };
+		DD9D1EA72032205B007AEBB4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EA62032205B007AEBB4 /* Home.storyboard */; };
+		DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EA82032207D007AEBB4 /* Task.storyboard */; };
+		DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EAA20322154007AEBB4 /* Label.storyboard */; };
+		DD9D1EAD203221AE007AEBB4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		DD9D1E7A20313534007AEBB4 /* cimonv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cimonv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9D1E7E20313534007AEBB4 /* cimonv2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cimonv2UITests.swift; sourceTree = "<group>"; };
 		DD9D1E8020313534007AEBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD9D1E9A2031FB83007AEBB4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		DD9D1E9D2031FBBF007AEBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = cimonv2/Base.lproj/Task.storyboard; sourceTree = "<group>"; };
-		DD9D1E9F2031FBD3007AEBB4 /* Label.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Label.storyboard; sourceTree = "<group>"; };
-		DD9D1EA22031FBE9007AEBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = cimonv2/Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		DD9D1EA62032205B007AEBB4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DD9D1EA82032207D007AEBB4 /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
+		DD9D1EAA20322154007AEBB4 /* Label.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Label.storyboard; sourceTree = "<group>"; };
+		DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +87,6 @@
 		DD9D1E4F20313534007AEBB4 = {
 			isa = PBXGroup;
 			children = (
-				DD9D1EA12031FBE9007AEBB4 /* Settings.storyboard */,
-				DD9D1E9F2031FBD3007AEBB4 /* Label.storyboard */,
-				DD9D1E9C2031FBBF007AEBB4 /* Task.storyboard */,
-				DD9D1E9A2031FB83007AEBB4 /* Home.storyboard */,
 				DD9D1E5A20313534007AEBB4 /* cimonv2 */,
 				DD9D1E7220313534007AEBB4 /* cimonv2Tests */,
 				DD9D1E7D20313534007AEBB4 /* cimonv2UITests */,
@@ -151,6 +147,7 @@
 		DD9D1E8F20314093007AEBB4 /* HomeManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DD9D1EA62032205B007AEBB4 /* Home.storyboard */,
 			);
 			path = HomeManagement;
 			sourceTree = "<group>";
@@ -158,6 +155,7 @@
 		DD9D1E91203140B6007AEBB4 /* LabelManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DD9D1EAA20322154007AEBB4 /* Label.storyboard */,
 			);
 			path = LabelManagement;
 			sourceTree = "<group>";
@@ -165,6 +163,7 @@
 		DD9D1E92203140D2007AEBB4 /* TaskManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DD9D1EA82032207D007AEBB4 /* Task.storyboard */,
 			);
 			path = TaskManagement;
 			sourceTree = "<group>";
@@ -172,6 +171,7 @@
 		DD9D1E9420314125007AEBB4 /* SettingsManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */,
 			);
 			path = SettingsManagement;
 			sourceTree = "<group>";
@@ -311,13 +311,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9D1E9E2031FBBF007AEBB4 /* Task.storyboard in Resources */,
+				DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */,
 				DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */,
 				DD9D1E6620313534007AEBB4 /* Assets.xcassets in Resources */,
-				DD9D1EA02031FBD3007AEBB4 /* Label.storyboard in Resources */,
+				DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */,
 				DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */,
-				DD9D1E9B2031FB83007AEBB4 /* Home.storyboard in Resources */,
-				DD9D1EA32031FBE9007AEBB4 /* Settings.storyboard in Resources */,
+				DD9D1EA72032205B007AEBB4 /* Home.storyboard in Resources */,
+				DD9D1EAD203221AE007AEBB4 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,22 +394,6 @@
 				DD9D1E6820313534007AEBB4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		DD9D1E9C2031FBBF007AEBB4 /* Task.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD9D1E9D2031FBBF007AEBB4 /* Base */,
-			);
-			name = Task.storyboard;
-			sourceTree = "<group>";
-		};
-		DD9D1EA12031FBE9007AEBB4 /* Settings.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD9D1EA22031FBE9007AEBB4 /* Base */,
-			);
-			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

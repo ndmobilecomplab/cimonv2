@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uZU-3o-fxf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dja-yP-wq1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -7,20 +7,20 @@
     </dependencies>
     <scenes>
         <!--Label-->
-        <scene sceneID="cXC-t9-qKT">
+        <scene sceneID="6wv-cn-0rN">
             <objects>
-                <viewController id="uZU-3o-fxf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XPC-4x-oSl">
+                <viewController id="dja-yP-wq1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfC-IM-Mnf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="08Y-U6-obd"/>
+                        <viewLayoutGuide key="safeArea" id="VxU-f1-Ph9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Label" id="lNi-Kf-Lnh"/>
+                    <tabBarItem key="tabBarItem" title="Label" id="gf8-7M-dnG"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uVO-UV-4O1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTU-BS-7d5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="126"/>
+            <point key="canvasLocation" x="-393" y="-45"/>
         </scene>
     </scenes>
 </document>
