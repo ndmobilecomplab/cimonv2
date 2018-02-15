@@ -1,0 +1,55 @@
+//
+//  Utils.swift
+//  cimonv2
+//
+//  Created by Afzal Hossain on 2/13/18.
+//  Copyright © 2018 Afzal Hossain. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class Utils: NSObject {
+    
+    // Mark: Dictionary functions
+    
+    /**
+     A static function to save data to user default dictionary. This dictionary should be used in limited manner. Values that are related to user.
+     
+     Parameters: data (any type), string key
+     */
+    static func saveDataToUserDefaults(data:Any, key:String){
+        UserDefaults.standard.set(data, forKey: key)
+    }
+    
+    /**
+     A static method to retrieve data from user defaults dictionary. Data was saved in Any type, so it is caller's responsibility to cast properly.
+     Parameters: string key
+     */
+    static func getDataFromUserDefaults(key:String)->Any?{
+        return UserDefaults.standard.object(forKey: key)
+    }
+
+    /**
+     */
+    static func removeDataFromUserDefault(key:String){
+        UserDefaults.standard.removeObject(forKey:key)
+    }
+    
+    // Mark: Web services
+    /**
+    */
+    static func getBaseUrl()->String{
+        return "http://129.74.247.110/cimoninterface/"
+    }
+    
+    // Mark: device
+    static func getDeviceIdentifier()->String{
+        let uuid:String = (UIDevice.current.identifierForVendor?.uuidString)!
+        return uuid
+    }
+    
+}
+
+
+

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        Utils.saveDataToUserDefaults(data: false, key: "signedup")
+
+        //Initialize window
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        var initialViewController:UIViewController? = nil
+        if let signedup = Utils.getDataFromUserDefaults(key: "signedup") as! Bool?{
+            print("signed up value: \(signedup)")
+            if let email:String = Utils.getDataFromUserDefaults(key: "email") as! String?{
+                if signedup{
+                    initialViewController = storyBoard.instantiateViewController(withIdentifier: "ApplicationStory")
+                } else{
+                    //signedup nil: signup, signedup false: verfication, signed up: app home
+                    initialViewController = storyBoard.instantiateViewController(withIdentifier: "VerifyTokenStory")
+                }
+            } else{
+                initialViewController = storyBoard.instantiateViewController(withIdentifier: "SignupStory")
+            }
+        } else{
+            print("in else block \(Utils.getDataFromUserDefaults(key: "signedup") as! Bool)")
+
+            initialViewController = storyBoard.instantiateViewController(withIdentifier: "SignupStory")
+        }
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
+    
         return true
     }
 

@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06602033E3360097C49B /* CommonStruct.swift */; };
+		DD7C06632033E59D0097C49B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C06622033E59C0097C49B /* SwiftyJSON.framework */; };
+		DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06642034118E0097C49B /* VerifyTokenViewController.swift */; };
+		DD855BD8203237EB00C8DCD7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD855BD7203237EB00C8DCD7 /* Alamofire.framework */; };
+		DD855BDB2033724F00C8DCD7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD855BDA2033724F00C8DCD7 /* Utils.swift */; };
+		DD855BDD2033C4E300C8DCD7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD855BDC2033C4E300C8DCD7 /* Extension.swift */; };
 		DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E5B20313534007AEBB4 /* AppDelegate.swift */; };
-		DD9D1E5E20313534007AEBB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E5D20313534007AEBB4 /* ViewController.swift */; };
+		DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */; };
 		DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E5F20313534007AEBB4 /* Main.storyboard */; };
 		DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E6220313534007AEBB4 /* cimonv2.xcdatamodeld */; };
 		DD9D1E6620313534007AEBB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E6520313534007AEBB4 /* Assets.xcassets */; };
@@ -39,9 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD7C06602033E3360097C49B /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
+		DD7C06622033E59C0097C49B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		DD7C06642034118E0097C49B /* VerifyTokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyTokenViewController.swift; sourceTree = "<group>"; };
+		DD855BD7203237EB00C8DCD7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DD855BDA2033724F00C8DCD7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DD855BDC2033C4E300C8DCD7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DD9D1E5820313534007AEBB4 /* cimonv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cimonv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9D1E5B20313534007AEBB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD9D1E5D20313534007AEBB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DD9D1E6020313534007AEBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD9D1E6320313534007AEBB4 /* cimonv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cimonv2.xcdatamodel; sourceTree = "<group>"; };
 		DD9D1E6520313534007AEBB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7C06632033E59D0097C49B /* SwiftyJSON.framework in Frameworks */,
+				DD855BD8203237EB00C8DCD7 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD855BD6203237EB00C8DCD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD7C06622033E59C0097C49B /* SwiftyJSON.framework */,
+				DD855BD7203237EB00C8DCD7 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD9D1E4F20313534007AEBB4 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +114,7 @@
 				DD9D1E7220313534007AEBB4 /* cimonv2Tests */,
 				DD9D1E7D20313534007AEBB4 /* cimonv2UITests */,
 				DD9D1E5920313534007AEBB4 /* Products */,
+				DD855BD6203237EB00C8DCD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,8 +140,9 @@
 				DD9D1E91203140B6007AEBB4 /* LabelManagement */,
 				DD9D1E8F20314093007AEBB4 /* HomeManagement */,
 				DD9D1E5B20313534007AEBB4 /* AppDelegate.swift */,
-				DD9D1E5D20313534007AEBB4 /* ViewController.swift */,
+				DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */,
 				DD9D1E5F20313534007AEBB4 /* Main.storyboard */,
+				DD7C06642034118E0097C49B /* VerifyTokenViewController.swift */,
 				DD9D1E6520313534007AEBB4 /* Assets.xcassets */,
 				DD9D1E6720313534007AEBB4 /* LaunchScreen.storyboard */,
 				DD9D1E6A20313534007AEBB4 /* Info.plist */,
@@ -200,6 +225,9 @@
 		DD9D1E99203141AA007AEBB4 /* CommonUtils */ = {
 			isa = PBXGroup;
 			children = (
+				DD855BDA2033724F00C8DCD7 /* Utils.swift */,
+				DD855BDC2033C4E300C8DCD7 /* Extension.swift */,
+				DD7C06602033E3360097C49B /* CommonStruct.swift */,
 			);
 			path = CommonUtils;
 			sourceTree = "<group>";
@@ -214,6 +242,7 @@
 				DD9D1E5420313534007AEBB4 /* Sources */,
 				DD9D1E5520313534007AEBB4 /* Frameworks */,
 				DD9D1E5620313534007AEBB4 /* Resources */,
+				DD855BD92032383800C8DCD7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -337,14 +366,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DD855BD92032383800C8DCD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD9D1E5420313534007AEBB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
-				DD9D1E5E20313534007AEBB4 /* ViewController.swift in Sources */,
+				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
+				DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */,
+				DD855BDD2033C4E300C8DCD7 /* Extension.swift in Sources */,
+				DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */,
 				DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */,
+				DD855BDB2033724F00C8DCD7 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +563,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2HQGZVUG4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = cimonv2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,6 +583,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2HQGZVUG4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = cimonv2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
