@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708D51203AA0EC00C8DBFD /* DummyData.swift */; };
 		DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06602033E3360097C49B /* CommonStruct.swift */; };
 		DD7C06632033E59D0097C49B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C06622033E59C0097C49B /* SwiftyJSON.framework */; };
 		DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06642034118E0097C49B /* VerifyTokenViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD708D51203AA0EC00C8DBFD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		DD7C06602033E3360097C49B /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
 		DD7C06622033E59C0097C49B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		DD7C06642034118E0097C49B /* VerifyTokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyTokenViewController.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				DD855BDA2033724F00C8DCD7 /* Utils.swift */,
 				DD855BDC2033C4E300C8DCD7 /* Extension.swift */,
 				DD7C06602033E3360097C49B /* CommonStruct.swift */,
+				DD708D51203AA0EC00C8DBFD /* DummyData.swift */,
 			);
 			path = CommonUtils;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
 				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
 				DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */,
+				DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */,
 				DD855BDD2033C4E300C8DCD7 /* Extension.swift in Sources */,
 				DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */,
 				DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */,

@@ -9,6 +9,7 @@
 import Foundation
 import SwiftyJSON
 
+// MARK: service structs
 struct Response {
     var code:Int
     var message:String
@@ -19,4 +20,30 @@ struct Response {
         
         return Response(code: code, message: message)
     }
+    
+}
+
+
+
+// MARK: Task structs
+
+struct Task{
+    var id:Int
+    var text:String
+    var type:String
+    var possibleInput:String
+    var orderId:Int
+    var isActive:Int
+    var isRequired:Int
+    var parentTaskId:Int
+    var hasChild:Int
+    var inputToTriggerChild:String
+    var defaultInput:String
+}
+
+struct Survey {
+    var studyId:String
+    var surveyId:String
+    var versionId:Int
+    var taskList:[Task]
 }
