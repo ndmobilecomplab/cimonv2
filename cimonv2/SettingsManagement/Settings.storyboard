@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="anv-lS-SC5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,7 +13,7 @@
             <objects>
                 <tableViewController id="PGr-ro-f4X" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nNe-Dd-Gro">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -38,7 +41,7 @@
         <scene sceneID="LE2-zc-bB7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="anv-lS-SC5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="HRR-gS-V89"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="setting" id="HRR-gS-V89"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0pk-Zc-rfi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -54,4 +57,7 @@
             <point key="canvasLocation" x="-615" y="54"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="setting" width="36" height="36"/>
+    </resources>
 </document>

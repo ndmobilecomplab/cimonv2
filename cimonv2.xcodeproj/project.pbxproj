@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */; };
 		DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708D51203AA0EC00C8DBFD /* DummyData.swift */; };
 		DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06602033E3360097C49B /* CommonStruct.swift */; };
 		DD7C06632033E59D0097C49B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C06622033E59C0097C49B /* SwiftyJSON.framework */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetGameViewController.swift; sourceTree = "<group>"; };
 		DD708D51203AA0EC00C8DBFD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		DD7C06602033E3360097C49B /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
 		DD7C06622033E59C0097C49B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023BDBFF2044B0A600B1DD53 /* TargetTask */ = {
+			isa = PBXGroup;
+			children = (
+				023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */,
+			);
+			path = TargetTask;
+			sourceTree = "<group>";
+		};
 		DD855BD6203237EB00C8DCD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 		DD9D1E92203140D2007AEBB4 /* TaskManagement */ = {
 			isa = PBXGroup;
 			children = (
+				023BDBFF2044B0A600B1DD53 /* TargetTask */,
 				DD9D1EA82032207D007AEBB4 /* Task.storyboard */,
 			);
 			path = TaskManagement;
@@ -393,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
+				023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */,
 				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
 				DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */,
 				DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */,
