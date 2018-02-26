@@ -176,7 +176,7 @@
         <scene sceneID="tBL-U8-JwX">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="Ft5-8a-PP9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Qv2-I5-7cP"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="Qv2-I5-7cP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdS-UC-ntW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,7 +186,7 @@
         <scene sceneID="Muu-9O-M7m">
             <objects>
                 <viewControllerPlaceholder storyboardName="Task" id="5Ca-l3-RPr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oRo-7i-IjU"/>
+                    <tabBarItem key="tabBarItem" title="Activities" image="activity" id="oRo-7i-IjU"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1iR-hx-7tp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,7 +196,7 @@
         <scene sceneID="On2-hu-hDp">
             <objects>
                 <viewControllerPlaceholder storyboardName="Label" id="QjF-xX-brK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6yB-xw-MzR"/>
+                    <tabBarItem key="tabBarItem" title="Labelling" image="survey" id="6yB-xw-MzR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lC-oz-cdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,11 +206,17 @@
         <scene sceneID="WaW-Ml-uQ2">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" id="mZo-9R-DRY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cbU-ub-9MK"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="setting" id="cbU-ub-9MK"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enM-f3-aOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-628" y="-136"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="activity" width="36" height="36"/>
+        <image name="profile" width="36" height="36"/>
+        <image name="setting" width="36" height="36"/>
+        <image name="survey" width="36" height="36"/>
+    </resources>
 </document>
