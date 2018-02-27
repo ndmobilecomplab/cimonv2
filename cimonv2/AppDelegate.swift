@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        Utils.saveDataToUserDefaults(data: false, key: "signedup")
+        //Utils.saveDataToUserDefaults(data: false, key: "signedup")
 
         //Initialize window
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -38,8 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 initialViewController = storyBoard.instantiateViewController(withIdentifier: "SignupStory")
             }
         } else{
-            print("in else block \(Utils.getDataFromUserDefaults(key: "signedup") as! Bool)")
-
             initialViewController = storyBoard.instantiateViewController(withIdentifier: "SignupStory")
         }
         self.window?.rootViewController = initialViewController
