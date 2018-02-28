@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */; };
+		023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BDC1720463F5F00B1DD53 /* ViewController.swift */; };
+		023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1920463F8600B1DD53 /* chime.mp3 */; };
+		023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1A20463F8700B1DD53 /* instruction_track.m4a */; };
+		023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1B20463F8700B1DD53 /* tone.mp3 */; };
 		DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708D51203AA0EC00C8DBFD /* DummyData.swift */; };
 		DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06602033E3360097C49B /* CommonStruct.swift */; };
 		DD7C06632033E59D0097C49B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C06622033E59C0097C49B /* SwiftyJSON.framework */; };
@@ -48,6 +52,10 @@
 
 /* Begin PBXFileReference section */
 		023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetGameViewController.swift; sourceTree = "<group>"; };
+		023BDC1720463F5F00B1DD53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		023BDC1920463F8600B1DD53 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
+		023BDC1A20463F8700B1DD53 /* instruction_track.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = instruction_track.m4a; sourceTree = "<group>"; };
+		023BDC1B20463F8700B1DD53 /* tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tone.mp3; sourceTree = "<group>"; };
 		DD708D51203AA0EC00C8DBFD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		DD7C06602033E3360097C49B /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
 		DD7C06622033E59C0097C49B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -108,6 +116,17 @@
 				023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */,
 			);
 			path = TargetTask;
+			sourceTree = "<group>";
+		};
+		023BDC1620463F4400B1DD53 /* BalanceTask */ = {
+			isa = PBXGroup;
+			children = (
+				023BDC1720463F5F00B1DD53 /* ViewController.swift */,
+				023BDC1920463F8600B1DD53 /* chime.mp3 */,
+				023BDC1A20463F8700B1DD53 /* instruction_track.m4a */,
+				023BDC1B20463F8700B1DD53 /* tone.mp3 */,
+			);
+			path = BalanceTask;
 			sourceTree = "<group>";
 		};
 		DD855BD6203237EB00C8DCD7 /* Frameworks */ = {
@@ -200,6 +219,7 @@
 		DD9D1E92203140D2007AEBB4 /* TaskManagement */ = {
 			isa = PBXGroup;
 			children = (
+				023BDC1620463F4400B1DD53 /* BalanceTask */,
 				023BDBFF2044B0A600B1DD53 /* TargetTask */,
 				DD9D1EA82032207D007AEBB4 /* Task.storyboard */,
 			);
@@ -355,10 +375,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */,
+				023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */,
 				DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */,
 				DD9D1E6620313534007AEBB4 /* Assets.xcassets in Resources */,
 				DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */,
 				DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */,
+				023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */,
+				023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */,
 				DD9D1EA72032205B007AEBB4 /* Home.storyboard in Resources */,
 				DD9D1EAD203221AE007AEBB4 /* Settings.storyboard in Resources */,
 			);
@@ -403,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */,
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
 				023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */,
 				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
