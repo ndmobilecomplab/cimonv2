@@ -72,6 +72,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: - Core Data stack
+    
+    lazy var managedObjectContext: NSManagedObjectContext = {
+        let container = self.persistentContainer
+        return container.viewContext
+    }()
 
     lazy var persistentContainer: NSPersistentContainer = {
         /*
