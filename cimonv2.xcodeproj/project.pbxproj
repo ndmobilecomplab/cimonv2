@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */; };
-<<<<<<< HEAD
 		DD50733A2045A9EA001865A3 /* ActiveSurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073392045A9EA001865A3 /* ActiveSurveyTableViewCell.swift */; };
 		DD50733C2045BEC4001865A3 /* ActiveSurveyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */; };
 		DD507392204725A0001865A3 /* SignatureInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50738F2047259F001865A3 /* SignatureInfoViewController.swift */; };
@@ -45,12 +44,10 @@
 		DD5073D620472EDA001865A3 /* Point+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073C620472EDA001865A3 /* Point+CoreDataProperties.swift */; };
 		DD5073D720472EDA001865A3 /* PictureResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073C720472EDA001865A3 /* PictureResult+CoreDataClass.swift */; };
 		DD5073D820472EDA001865A3 /* MotorResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073C820472EDA001865A3 /* MotorResult+CoreDataProperties.swift */; };
-=======
 		023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BDC1720463F5F00B1DD53 /* ViewController.swift */; };
 		023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1920463F8600B1DD53 /* chime.mp3 */; };
 		023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1A20463F8700B1DD53 /* instruction_track.m4a */; };
 		023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1B20463F8700B1DD53 /* tone.mp3 */; };
->>>>>>> ca77d7fb90f7acb84ad794d55a047d137215244a
 		DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708D51203AA0EC00C8DBFD /* DummyData.swift */; };
 		DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06602033E3360097C49B /* CommonStruct.swift */; };
 		DD7C06632033E59D0097C49B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C06622033E59C0097C49B /* SwiftyJSON.framework */; };
@@ -91,7 +88,6 @@
 
 /* Begin PBXFileReference section */
 		023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetGameViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		DD5073392045A9EA001865A3 /* ActiveSurveyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSurveyTableViewCell.swift; sourceTree = "<group>"; };
 		DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSurveyListViewController.swift; sourceTree = "<group>"; };
 		DD50738F2047259F001865A3 /* SignatureInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureInfoViewController.swift; sourceTree = "<group>"; };
@@ -129,12 +125,10 @@
 		DD5073C620472EDA001865A3 /* Point+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DD5073C720472EDA001865A3 /* PictureResult+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PictureResult+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DD5073C820472EDA001865A3 /* MotorResult+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MotorResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
-=======
 		023BDC1720463F5F00B1DD53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		023BDC1920463F8600B1DD53 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
 		023BDC1A20463F8700B1DD53 /* instruction_track.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = instruction_track.m4a; sourceTree = "<group>"; };
 		023BDC1B20463F8700B1DD53 /* tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tone.mp3; sourceTree = "<group>"; };
->>>>>>> ca77d7fb90f7acb84ad794d55a047d137215244a
 		DD708D51203AA0EC00C8DBFD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		DD7C06602033E3360097C49B /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
 		DD7C06622033E59C0097C49B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -201,7 +195,6 @@
 			path = TargetTask;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		DD50738E2047256D001865A3 /* SignatureTask */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,19 +236,19 @@
 				DD5073A720472D73001865A3 /* StylusAcceleration+CoreDataProperties.swift */,
 			);
 			path = TaskUtils;
-=======
-		023BDC1620463F4400B1DD53 /* BalanceTask */ = {
-			isa = PBXGroup;
-			children = (
-				023BDC1720463F5F00B1DD53 /* ViewController.swift */,
-				023BDC1920463F8600B1DD53 /* chime.mp3 */,
-				023BDC1A20463F8700B1DD53 /* instruction_track.m4a */,
-				023BDC1B20463F8700B1DD53 /* tone.mp3 */,
-			);
-			path = BalanceTask;
->>>>>>> ca77d7fb90f7acb84ad794d55a047d137215244a
 			sourceTree = "<group>";
 		};
+        023BDC1620463F4400B1DD53 /* BalanceTask */ = {
+            isa = PBXGroup;
+            children = (
+                023BDC1720463F5F00B1DD53 /* ViewController.swift */,
+                023BDC1920463F8600B1DD53 /* chime.mp3 */,
+                023BDC1A20463F8700B1DD53 /* instruction_track.m4a */,
+                023BDC1B20463F8700B1DD53 /* tone.mp3 */,
+            );
+            path = BalanceTask;
+            sourceTree = "<group>";
+        };
 		DD855BD6203237EB00C8DCD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,12 +345,9 @@
 		DD9D1E92203140D2007AEBB4 /* TaskManagement */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				DD5073A420472D55001865A3 /* TaskUtils */,
 				DD50738E2047256D001865A3 /* SignatureTask */,
-=======
 				023BDC1620463F4400B1DD53 /* BalanceTask */,
->>>>>>> ca77d7fb90f7acb84ad794d55a047d137215244a
 				023BDBFF2044B0A600B1DD53 /* TargetTask */,
 				DD9D1EA82032207D007AEBB4 /* Task.storyboard */,
 				DD5073392045A9EA001865A3 /* ActiveSurveyTableViewCell.swift */,
@@ -516,11 +506,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */,
-<<<<<<< HEAD
 				DD50739E204728C5001865A3 /* AdonitSDK.bundle in Resources */,
-=======
 				023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */,
->>>>>>> ca77d7fb90f7acb84ad794d55a047d137215244a
 				DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */,
 				DD9D1E6620313534007AEBB4 /* Assets.xcassets in Resources */,
 				DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */,
@@ -571,7 +558,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				DD507394204725A0001865A3 /* SigningView.swift in Sources */,
 				DD5073AB20472D73001865A3 /* StylusAcceleration+CoreDataProperties.swift in Sources */,
 				DD5073D220472EDA001865A3 /* ClosestPoint+CoreDataClass.swift in Sources */,
@@ -579,9 +565,7 @@
 				DD50733C2045BEC4001865A3 /* ActiveSurveyListViewController.swift in Sources */,
 				DD5073B720472E49001865A3 /* ConnectResult+CoreDataProperties.swift in Sources */,
 				DD5073D420472EDA001865A3 /* ClosestPoint+CoreDataProperties.swift in Sources */,
-=======
 				023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */,
->>>>>>> ca77d7fb90f7acb84ad794d55a047d137215244a
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
 				DD5073D120472EDA001865A3 /* MemoryResult+CoreDataClass.swift in Sources */,
 				023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */,
