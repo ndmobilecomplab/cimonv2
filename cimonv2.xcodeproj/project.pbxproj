@@ -11,6 +11,7 @@
 		020256A520485C1700B1CD8A /* CardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020256A220485C1600B1CD8A /* CardCVC.swift */; };
 		020256A620485C1700B1CD8A /* MemoryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020256A320485C1700B1CD8A /* MemoryInfoViewController.swift */; };
 		020256A820485C3800B1CD8A /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020256A720485C3800B1CD8A /* MemoryGame.swift */; };
+		020256AB2048A0A400B1CD8A /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 020256AA2048A01000B1CD8A /* Raleway.ttf */; };
 		023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */; };
 		023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BDC1720463F5F00B1DD53 /* ViewController.swift */; };
 		023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1920463F8600B1DD53 /* chime.mp3 */; };
@@ -95,6 +96,7 @@
 		020256A220485C1600B1CD8A /* CardCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCVC.swift; sourceTree = "<group>"; };
 		020256A320485C1700B1CD8A /* MemoryInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryInfoViewController.swift; sourceTree = "<group>"; };
 		020256A720485C3800B1CD8A /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		020256AA2048A01000B1CD8A /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raleway.ttf; sourceTree = "<group>"; };
 		023BDC002044B0D600B1DD53 /* TargetGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetGameViewController.swift; sourceTree = "<group>"; };
 		023BDC1720463F5F00B1DD53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		023BDC1920463F8600B1DD53 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
@@ -206,6 +208,14 @@
 			path = MemoryTask;
 			sourceTree = "<group>";
 		};
+		020256A920489FE800B1CD8A /* OtherResources */ = {
+			isa = PBXGroup;
+			children = (
+				020256AA2048A01000B1CD8A /* Raleway.ttf */,
+			);
+			path = OtherResources;
+			sourceTree = "<group>";
+		};
 		023BDBFF2044B0A600B1DD53 /* TargetTask */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +281,7 @@
 		DD855BD6203237EB00C8DCD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				020256A920489FE800B1CD8A /* OtherResources */,
 				DD50739D204728C4001865A3 /* AdonitSDK.bundle */,
 				DD50739B204728B4001865A3 /* AdonitSDK.framework */,
 				DD507399204725CA001865A3 /* SystemConfiguration.framework */,
@@ -525,6 +536,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020256AB2048A0A400B1CD8A /* Raleway.ttf in Resources */,
 				DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */,
 				DD50739E204728C5001865A3 /* AdonitSDK.bundle in Resources */,
 				023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */,
