@@ -23,6 +23,26 @@ class SignupViewController: UIViewController {
         emailTextField.text = ""
         emailErrorLabel.text = ""
     }
+    
+    override func viewDidLayoutSubviews() {
+        
+        let border = CALayer()
+        
+        let width = CGFloat(2.0)
+        
+        border.borderColor = UIColor.lightGray.cgColor
+        
+        border.frame = CGRect(x: 0, y: emailTextField.frame.size.height - width, width:  emailTextField.frame.size.width, height: emailTextField.frame.size.height)
+        
+        
+        
+        border.borderWidth = width
+        
+        emailTextField.layer.addSublayer(border)
+        
+        emailTextField.layer.masksToBounds = true
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

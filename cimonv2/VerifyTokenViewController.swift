@@ -22,6 +22,26 @@ class VerifyTokenViewController: UIViewController {
         // Do any additional setup after loading the view.
         errorLabel.text = ""
     }
+    
+    override func viewDidLayoutSubviews() {
+        
+        let border = CALayer()
+        
+        let width = CGFloat(2.0)
+        
+        border.borderColor = UIColor.lightGray.cgColor
+        
+        border.frame = CGRect(x: 0, y: tokenTextField.frame.size.height - width, width:  tokenTextField.frame.size.width, height: tokenTextField.frame.size.height)
+        
+        
+        
+        border.borderWidth = width
+        
+        tokenTextField.layer.addSublayer(border)
+        
+        tokenTextField.layer.masksToBounds = true
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
