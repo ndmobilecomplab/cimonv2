@@ -364,10 +364,10 @@
 		DD9D1E92203140D2007AEBB4 /* TaskManagement */ = {
 			isa = PBXGroup;
 			children = (
-				020256A020485BA800B1CD8A /* MemoryTask */,
 				DD5073A420472D55001865A3 /* TaskUtils */,
 				DD50738E2047256D001865A3 /* SignatureTask */,
 				023BDC1620463F4400B1DD53 /* BalanceTask */,
+				020256A020485BA800B1CD8A /* MemoryTask */,
 				023BDBFF2044B0A600B1DD53 /* TargetTask */,
 				DD9D1EA82032207D007AEBB4 /* Task.storyboard */,
 				DD5073392045A9EA001865A3 /* ActiveSurveyTableViewCell.swift */,
