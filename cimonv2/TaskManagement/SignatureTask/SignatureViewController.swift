@@ -14,7 +14,7 @@ import CoreMotion
 
 
 
-class SignatureViewController: UIViewController, JotStrokeDelegate, UIGestureRecognizerDelegate {
+class SignatureViewController: MotorTaskViewController, JotStrokeDelegate, UIGestureRecognizerDelegate {
 
     // persistence
     let defaults = UserDefaults.standard

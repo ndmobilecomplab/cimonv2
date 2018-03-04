@@ -1,2 +1,4 @@
 github "Alamofire/Alamofire" ~> 4.5
 github "SwiftyJSON/SwiftyJSON"
+github "xmartlabs/Eureka" ~> 4.0
+

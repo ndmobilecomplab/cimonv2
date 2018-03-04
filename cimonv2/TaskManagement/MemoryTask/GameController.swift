@@ -13,7 +13,7 @@ import UIKit.UICollectionViewCell
 import CoreData
 
 //Calls function from the MemoryGame class. 
-class GameController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, MemoryGameDelegate {
+class GameController: MotorTaskViewController,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, MemoryGameDelegate {
 
     //Controlls the 
     @IBOutlet weak var timerLabel: UILabel!

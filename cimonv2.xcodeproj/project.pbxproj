@@ -17,7 +17,6 @@
 		023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1920463F8600B1DD53 /* chime.mp3 */; };
 		023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1A20463F8700B1DD53 /* instruction_track.m4a */; };
 		023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1B20463F8700B1DD53 /* tone.mp3 */; };
-		DD50733A2045A9EA001865A3 /* ActiveSurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073392045A9EA001865A3 /* ActiveSurveyTableViewCell.swift */; };
 		DD50733C2045BEC4001865A3 /* ActiveSurveyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */; };
 		DD507392204725A0001865A3 /* SignatureInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50738F2047259F001865A3 /* SignatureInfoViewController.swift */; };
 		DD507393204725A0001865A3 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073902047259F001865A3 /* SignatureViewController.swift */; };
@@ -53,6 +52,15 @@
 		DD5073D620472EDA001865A3 /* Point+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073C620472EDA001865A3 /* Point+CoreDataProperties.swift */; };
 		DD5073D720472EDA001865A3 /* PictureResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073C720472EDA001865A3 /* PictureResult+CoreDataClass.swift */; };
 		DD5073D820472EDA001865A3 /* MotorResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073C820472EDA001865A3 /* MotorResult+CoreDataProperties.swift */; };
+		DD5F3B3B204B03E40069741D /* ActiveSurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B3A204B03E40069741D /* ActiveSurveyTableViewCell.swift */; };
+		DD5F3B3D204B10ED0069741D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B3C204B10ED0069741D /* TaskListViewController.swift */; };
+		DD5F3B3F204B13DC0069741D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5F3B3E204B13DC0069741D /* Eureka.framework */; };
+		DD5F3B4A204B265E0069741D /* MotorTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B48204B265E0069741D /* MotorTaskCell.swift */; };
+		DD5F3B4B204B265E0069741D /* MotorTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5F3B49204B265E0069741D /* MotorTaskCell.xib */; };
+		DD5F3B4D204B27560069741D /* CustomPresenterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B4C204B27560069741D /* CustomPresenterRow.swift */; };
+		DD5F3B51204B2A920069741D /* MotorTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B50204B2A920069741D /* MotorTaskViewController.swift */; };
+		DD5F3B55204C610D0069741D /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B54204C610D0069741D /* CustomCells.swift */; };
+		DD5F3B57204C69B50069741D /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B56204C69B50069741D /* FloatLabelTextField.swift */; };
 		DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708D51203AA0EC00C8DBFD /* DummyData.swift */; };
 		DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06602033E3360097C49B /* CommonStruct.swift */; };
 		DD7C06632033E59D0097C49B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C06622033E59C0097C49B /* SwiftyJSON.framework */; };
@@ -102,7 +110,6 @@
 		023BDC1920463F8600B1DD53 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
 		023BDC1A20463F8700B1DD53 /* instruction_track.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = instruction_track.m4a; sourceTree = "<group>"; };
 		023BDC1B20463F8700B1DD53 /* tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tone.mp3; sourceTree = "<group>"; };
-		DD5073392045A9EA001865A3 /* ActiveSurveyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSurveyTableViewCell.swift; sourceTree = "<group>"; };
 		DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSurveyListViewController.swift; sourceTree = "<group>"; };
 		DD50738F2047259F001865A3 /* SignatureInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureInfoViewController.swift; sourceTree = "<group>"; };
 		DD5073902047259F001865A3 /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +146,15 @@
 		DD5073C620472EDA001865A3 /* Point+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DD5073C720472EDA001865A3 /* PictureResult+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PictureResult+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DD5073C820472EDA001865A3 /* MotorResult+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MotorResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD5F3B3A204B03E40069741D /* ActiveSurveyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveSurveyTableViewCell.swift; sourceTree = "<group>"; };
+		DD5F3B3C204B10ED0069741D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		DD5F3B3E204B13DC0069741D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		DD5F3B48204B265E0069741D /* MotorTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorTaskCell.swift; sourceTree = "<group>"; };
+		DD5F3B49204B265E0069741D /* MotorTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MotorTaskCell.xib; sourceTree = "<group>"; };
+		DD5F3B4C204B27560069741D /* CustomPresenterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresenterRow.swift; sourceTree = "<group>"; };
+		DD5F3B50204B2A920069741D /* MotorTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorTaskViewController.swift; sourceTree = "<group>"; };
+		DD5F3B54204C610D0069741D /* CustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
+		DD5F3B56204C69B50069741D /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		DD708D51203AA0EC00C8DBFD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		DD7C06602033E3360097C49B /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
 		DD7C06622033E59C0097C49B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -171,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5F3B3F204B13DC0069741D /* Eureka.framework in Frameworks */,
 				DD50739A204725CA001865A3 /* SystemConfiguration.framework in Frameworks */,
 				DD507398204725BB001865A3 /* CoreMotion.framework in Frameworks */,
 				DD50739C204728B5001865A3 /* AdonitSDK.framework in Frameworks */,
@@ -281,6 +298,7 @@
 		DD855BD6203237EB00C8DCD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD5F3B3E204B13DC0069741D /* Eureka.framework */,
 				020256A920489FE800B1CD8A /* OtherResources */,
 				DD50739D204728C4001865A3 /* AdonitSDK.bundle */,
 				DD50739B204728B4001865A3 /* AdonitSDK.framework */,
@@ -381,8 +399,15 @@
 				020256A020485BA800B1CD8A /* MemoryTask */,
 				023BDBFF2044B0A600B1DD53 /* TargetTask */,
 				DD9D1EA82032207D007AEBB4 /* Task.storyboard */,
-				DD5073392045A9EA001865A3 /* ActiveSurveyTableViewCell.swift */,
 				DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */,
+				DD5F3B3A204B03E40069741D /* ActiveSurveyTableViewCell.swift */,
+				DD5F3B3C204B10ED0069741D /* TaskListViewController.swift */,
+				DD5F3B48204B265E0069741D /* MotorTaskCell.swift */,
+				DD5F3B49204B265E0069741D /* MotorTaskCell.xib */,
+				DD5F3B4C204B27560069741D /* CustomPresenterRow.swift */,
+				DD5F3B50204B2A920069741D /* MotorTaskViewController.swift */,
+				DD5F3B54204C610D0069741D /* CustomCells.swift */,
+				DD5F3B56204C69B50069741D /* FloatLabelTextField.swift */,
 			);
 			path = TaskManagement;
 			sourceTree = "<group>";
@@ -542,6 +567,7 @@
 				023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */,
 				DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */,
 				DD9D1E6620313534007AEBB4 /* Assets.xcassets in Resources */,
+				DD5F3B4B204B265E0069741D /* MotorTaskCell.xib in Resources */,
 				DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */,
 				DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */,
 				023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */,
@@ -576,6 +602,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 			);
 			outputPaths = (
 			);
@@ -608,33 +635,39 @@
 				DD5073B520472E49001865A3 /* TraceResult+CoreDataProperties.swift in Sources */,
 				DD5073D620472EDA001865A3 /* Point+CoreDataProperties.swift in Sources */,
 				DD5073CD20472EDA001865A3 /* DeviceAcceleration+CoreDataProperties.swift in Sources */,
+				DD5F3B57204C69B50069741D /* FloatLabelTextField.swift in Sources */,
 				DD5073CE20472EDA001865A3 /* FallingBallResult+CoreDataProperties.swift in Sources */,
 				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
+				DD5F3B51204B2A920069741D /* MotorTaskViewController.swift in Sources */,
 				DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */,
 				DD507393204725A0001865A3 /* SignatureViewController.swift in Sources */,
 				DD5073CC20472EDA001865A3 /* DeviceAcceleration+CoreDataClass.swift in Sources */,
 				DD5073CF20472EDA001865A3 /* MemoryResult+CoreDataProperties.swift in Sources */,
 				DD5073B820472E49001865A3 /* ConnectResult+CoreDataClass.swift in Sources */,
+				DD5F3B3D204B10ED0069741D /* TaskListViewController.swift in Sources */,
 				DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */,
 				DD855BDD2033C4E300C8DCD7 /* Extension.swift in Sources */,
 				020256A820485C3800B1CD8A /* MemoryGame.swift in Sources */,
 				DD5073CB20472EDA001865A3 /* FallingBallResult+CoreDataClass.swift in Sources */,
+				DD5F3B4D204B27560069741D /* CustomPresenterRow.swift in Sources */,
 				DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */,
 				DD5073D320472EDA001865A3 /* ColorResult+CoreDataClass.swift in Sources */,
 				DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */,
 				DD5073D520472EDA001865A3 /* MotorResult+CoreDataClass.swift in Sources */,
+				DD5F3B55204C610D0069741D /* CustomCells.swift in Sources */,
 				020256A520485C1700B1CD8A /* CardCVC.swift in Sources */,
 				DD5073B420472E49001865A3 /* TraceResult+CoreDataClass.swift in Sources */,
 				DD5073CA20472EDA001865A3 /* PictureResult+CoreDataProperties.swift in Sources */,
 				DD5073A920472D73001865A3 /* StylusAcceleration+CoreDataClass.swift in Sources */,
 				DD855BDB2033724F00C8DCD7 /* Utils.swift in Sources */,
 				020256A620485C1700B1CD8A /* MemoryInfoViewController.swift in Sources */,
-				DD50733A2045A9EA001865A3 /* ActiveSurveyTableViewCell.swift in Sources */,
 				DD5073AC20472D73001865A3 /* SignatureResult+CoreDataClass.swift in Sources */,
 				DD5073C920472EDA001865A3 /* ColorResult+CoreDataProperties.swift in Sources */,
+				DD5F3B4A204B265E0069741D /* MotorTaskCell.swift in Sources */,
 				DD507392204725A0001865A3 /* SignatureInfoViewController.swift in Sources */,
 				DD5073B320472E49001865A3 /* VisResult+CoreDataClass.swift in Sources */,
 				DD5073AA20472D73001865A3 /* SignatureResult+CoreDataProperties.swift in Sources */,
+				DD5F3B3B204B03E40069741D /* ActiveSurveyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
