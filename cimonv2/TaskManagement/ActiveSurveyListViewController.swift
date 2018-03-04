@@ -15,12 +15,8 @@ class ActiveSurveyListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("view loaded.....")
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,24 +28,42 @@ class ActiveSurveyListViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return DummyData.getDummySurveys().count
+    }
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 25
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 25
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        //return 0
-        return DummyData.getDummySurveys().count
+        return 1
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "activesurveycell", for: indexPath) as! ActiveSurveyTableViewCell
+        
+        cell.nameLabel.text = DummyData.getDummySurveys()[indexPath.section].name
+        cell.descLabel.text = DummyData.getDummySurveys()[indexPath.section].description
+        
         return cell
     }
-    */
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let viewController = UIStoryboard(name: "Task", bundle: nil).instantiateViewController(withIdentifier: "tasklistvc") as? TaskListViewController {
+            viewController.studyId = DummyData.getDummySurveys()[indexPath.section].studyId
+            viewController.surveyId = DummyData.getDummySurveys()[indexPath.section].surveyId
+            print("study \(viewController.studyId), survey \(viewController.surveyId), index \(indexPath.section)")
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

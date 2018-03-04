@@ -10,7 +10,7 @@ import UIKit
 import CoreMotion
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioPlayerDelegate {
+class ViewController: MotorTaskViewController, AVAudioPlayerDelegate {
     
     //Instance Variables
     let PI = 3.14159265358979323846264
