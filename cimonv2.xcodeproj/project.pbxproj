@@ -17,6 +17,20 @@
 		023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1920463F8600B1DD53 /* chime.mp3 */; };
 		023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1A20463F8700B1DD53 /* instruction_track.m4a */; };
 		023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1B20463F8700B1DD53 /* tone.mp3 */; };
+		02773586204C73B600121EBE /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02773574204C73B300121EBE /* MZTimerLabel.m */; };
+		02773587204C73B600121EBE /* PagingMenuControllerCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773575204C73B300121EBE /* PagingMenuControllerCustomizable.swift */; };
+		02773588204C73B600121EBE /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773577204C73B300121EBE /* MenuItemView.swift */; };
+		0277358D204C73B600121EBE /* UIView+Shimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0277357C204C73B400121EBE /* UIView+Shimmer.m */; };
+		0277358E204C73B600121EBE /* MenuViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277357E204C73B500121EBE /* MenuViewCustomizable.swift */; };
+		0277358F204C73B600121EBE /* Pagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277357F204C73B500121EBE /* Pagable.swift */; };
+		02773591204C73B600121EBE /* PagingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773581204C73B500121EBE /* PagingMenuController.swift */; };
+		02773592204C73B600121EBE /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773582204C73B600121EBE /* PagingViewController.swift */; };
+		02773593204C73B600121EBE /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773583204C73B600121EBE /* MenuView.swift */; };
+		02773594204C73B600121EBE /* MenuItemViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773584204C73B600121EBE /* MenuItemViewCustomizable.swift */; };
+		0277359A204C7A5600121EBE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773599204C7A5600121EBE /* RootViewController.swift */; };
+		0277359C204C7A8800121EBE /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277359B204C7A8800121EBE /* MoodViewController.swift */; };
+		0277359E204C7AB700121EBE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277359D204C7AB700121EBE /* ActivityViewController.swift */; };
+		027735A0204C7ACB00121EBE /* ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277359F204C7ACB00121EBE /* ContextViewController.swift */; };
 		DD50733C2045BEC4001865A3 /* ActiveSurveyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */; };
 		DD507392204725A0001865A3 /* SignatureInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50738F2047259F001865A3 /* SignatureInfoViewController.swift */; };
 		DD507393204725A0001865A3 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073902047259F001865A3 /* SignatureViewController.swift */; };
@@ -110,6 +124,22 @@
 		023BDC1920463F8600B1DD53 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
 		023BDC1A20463F8700B1DD53 /* instruction_track.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = instruction_track.m4a; sourceTree = "<group>"; };
 		023BDC1B20463F8700B1DD53 /* tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tone.mp3; sourceTree = "<group>"; };
+		02773573204C73B200121EBE /* UIView+Shimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Shimmer.h"; path = "../../../labelling/LabelingApp/UIView+Shimmer.h"; sourceTree = "<group>"; };
+		02773574204C73B300121EBE /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = ../../../labelling/LabelingApp/MZTimerLabel.m; sourceTree = "<group>"; };
+		02773575204C73B300121EBE /* PagingMenuControllerCustomizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagingMenuControllerCustomizable.swift; path = ../../../labelling/LabelingApp/PagingMenuControllerCustomizable.swift; sourceTree = "<group>"; };
+		02773576204C73B300121EBE /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = ../../../labelling/LabelingApp/MZTimerLabel.h; sourceTree = "<group>"; };
+		02773577204C73B300121EBE /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = ../../../labelling/LabelingApp/MenuItemView.swift; sourceTree = "<group>"; };
+		0277357C204C73B400121EBE /* UIView+Shimmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Shimmer.m"; path = "../../../labelling/LabelingApp/UIView+Shimmer.m"; sourceTree = "<group>"; };
+		0277357E204C73B500121EBE /* MenuViewCustomizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewCustomizable.swift; path = ../../../labelling/LabelingApp/MenuViewCustomizable.swift; sourceTree = "<group>"; };
+		0277357F204C73B500121EBE /* Pagable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pagable.swift; path = ../../../labelling/LabelingApp/Pagable.swift; sourceTree = "<group>"; };
+		02773581204C73B500121EBE /* PagingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagingMenuController.swift; path = ../../../labelling/LabelingApp/PagingMenuController.swift; sourceTree = "<group>"; };
+		02773582204C73B600121EBE /* PagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagingViewController.swift; path = ../../../labelling/LabelingApp/PagingViewController.swift; sourceTree = "<group>"; };
+		02773583204C73B600121EBE /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../../../labelling/LabelingApp/MenuView.swift; sourceTree = "<group>"; };
+		02773584204C73B600121EBE /* MenuItemViewCustomizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemViewCustomizable.swift; path = ../../../labelling/LabelingApp/MenuItemViewCustomizable.swift; sourceTree = "<group>"; };
+		02773599204C7A5600121EBE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		0277359B204C7A8800121EBE /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
+		0277359D204C7AB700121EBE /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		0277359F204C7ACB00121EBE /* ContextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextViewController.swift; sourceTree = "<group>"; };
 		DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSurveyListViewController.swift; sourceTree = "<group>"; };
 		DD50738F2047259F001865A3 /* SignatureInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureInfoViewController.swift; sourceTree = "<group>"; };
 		DD5073902047259F001865A3 /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
@@ -385,6 +415,22 @@
 		DD9D1E91203140B6007AEBB4 /* LabelManagement */ = {
 			isa = PBXGroup;
 			children = (
+				02773577204C73B300121EBE /* MenuItemView.swift */,
+				02773584204C73B600121EBE /* MenuItemViewCustomizable.swift */,
+				02773583204C73B600121EBE /* MenuView.swift */,
+				0277357E204C73B500121EBE /* MenuViewCustomizable.swift */,
+				02773576204C73B300121EBE /* MZTimerLabel.h */,
+				02773574204C73B300121EBE /* MZTimerLabel.m */,
+				0277357F204C73B500121EBE /* Pagable.swift */,
+				02773581204C73B500121EBE /* PagingMenuController.swift */,
+				02773575204C73B300121EBE /* PagingMenuControllerCustomizable.swift */,
+				02773582204C73B600121EBE /* PagingViewController.swift */,
+				02773599204C7A5600121EBE /* RootViewController.swift */,
+				02773573204C73B200121EBE /* UIView+Shimmer.h */,
+				0277357C204C73B400121EBE /* UIView+Shimmer.m */,
+				0277359B204C7A8800121EBE /* MoodViewController.swift */,
+				0277359D204C7AB700121EBE /* ActivityViewController.swift */,
+				0277359F204C7ACB00121EBE /* ContextViewController.swift */,
 				DD9D1EAA20322154007AEBB4 /* Label.storyboard */,
 			);
 			path = LabelManagement;
@@ -619,6 +665,7 @@
 			files = (
 				DD507394204725A0001865A3 /* SigningView.swift in Sources */,
 				DD5073AB20472D73001865A3 /* StylusAcceleration+CoreDataProperties.swift in Sources */,
+				027735A0204C7ACB00121EBE /* ContextViewController.swift in Sources */,
 				DD5073D220472EDA001865A3 /* ClosestPoint+CoreDataClass.swift in Sources */,
 				DD5073D020472EDA001865A3 /* Point+CoreDataClass.swift in Sources */,
 				DD50733C2045BEC4001865A3 /* ActiveSurveyListViewController.swift in Sources */,
@@ -628,19 +675,23 @@
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
 				DD5073D120472EDA001865A3 /* MemoryResult+CoreDataClass.swift in Sources */,
 				023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */,
+				0277359C204C7A8800121EBE /* MoodViewController.swift in Sources */,
 				DD5073D820472EDA001865A3 /* MotorResult+CoreDataProperties.swift in Sources */,
 				DD5073B620472E49001865A3 /* VisResult+CoreDataProperties.swift in Sources */,
 				020256A420485C1700B1CD8A /* GameController.swift in Sources */,
+				0277359A204C7A5600121EBE /* RootViewController.swift in Sources */,
 				DD5073D720472EDA001865A3 /* PictureResult+CoreDataClass.swift in Sources */,
 				DD5073B520472E49001865A3 /* TraceResult+CoreDataProperties.swift in Sources */,
 				DD5073D620472EDA001865A3 /* Point+CoreDataProperties.swift in Sources */,
 				DD5073CD20472EDA001865A3 /* DeviceAcceleration+CoreDataProperties.swift in Sources */,
+				02773594204C73B600121EBE /* MenuItemViewCustomizable.swift in Sources */,
 				DD5F3B57204C69B50069741D /* FloatLabelTextField.swift in Sources */,
 				DD5073CE20472EDA001865A3 /* FallingBallResult+CoreDataProperties.swift in Sources */,
 				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
 				DD5F3B51204B2A920069741D /* MotorTaskViewController.swift in Sources */,
 				DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */,
 				DD507393204725A0001865A3 /* SignatureViewController.swift in Sources */,
+				02773593204C73B600121EBE /* MenuView.swift in Sources */,
 				DD5073CC20472EDA001865A3 /* DeviceAcceleration+CoreDataClass.swift in Sources */,
 				DD5073CF20472EDA001865A3 /* MemoryResult+CoreDataProperties.swift in Sources */,
 				DD5073B820472E49001865A3 /* ConnectResult+CoreDataClass.swift in Sources */,
@@ -648,9 +699,15 @@
 				DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */,
 				DD855BDD2033C4E300C8DCD7 /* Extension.swift in Sources */,
 				020256A820485C3800B1CD8A /* MemoryGame.swift in Sources */,
+				02773592204C73B600121EBE /* PagingViewController.swift in Sources */,
 				DD5073CB20472EDA001865A3 /* FallingBallResult+CoreDataClass.swift in Sources */,
 				DD5F3B4D204B27560069741D /* CustomPresenterRow.swift in Sources */,
+				02773586204C73B600121EBE /* MZTimerLabel.m in Sources */,
+				02773588204C73B600121EBE /* MenuItemView.swift in Sources */,
 				DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */,
+				0277359E204C7AB700121EBE /* ActivityViewController.swift in Sources */,
+				0277358E204C73B600121EBE /* MenuViewCustomizable.swift in Sources */,
+				0277358F204C73B600121EBE /* Pagable.swift in Sources */,
 				DD5073D320472EDA001865A3 /* ColorResult+CoreDataClass.swift in Sources */,
 				DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */,
 				DD5073D520472EDA001865A3 /* MotorResult+CoreDataClass.swift in Sources */,
@@ -663,8 +720,11 @@
 				020256A620485C1700B1CD8A /* MemoryInfoViewController.swift in Sources */,
 				DD5073AC20472D73001865A3 /* SignatureResult+CoreDataClass.swift in Sources */,
 				DD5073C920472EDA001865A3 /* ColorResult+CoreDataProperties.swift in Sources */,
+				02773587204C73B600121EBE /* PagingMenuControllerCustomizable.swift in Sources */,
+				0277358D204C73B600121EBE /* UIView+Shimmer.m in Sources */,
 				DD5F3B4A204B265E0069741D /* MotorTaskCell.swift in Sources */,
 				DD507392204725A0001865A3 /* SignatureInfoViewController.swift in Sources */,
+				02773591204C73B600121EBE /* PagingMenuController.swift in Sources */,
 				DD5073B320472E49001865A3 /* VisResult+CoreDataClass.swift in Sources */,
 				DD5073AA20472D73001865A3 /* SignatureResult+CoreDataProperties.swift in Sources */,
 				DD5F3B3B204B03E40069741D /* ActiveSurveyTableViewCell.swift in Sources */,
