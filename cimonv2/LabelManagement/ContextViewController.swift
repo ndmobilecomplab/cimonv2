@@ -49,13 +49,31 @@ class ContextViewController: UIViewController {
         stopButton.isHidden = true
     }
     
-    @IBAction func angryPressed(_ sender: Any) {
-        startTimer(label: "Angry")
+    @IBAction func homePressed(_ sender: Any) {
+        startTimer(label: "Home")
     }
     
-    @IBAction func sadPressed(_ sender: Any) {
-        startTimer(label: "Sad")
+    @IBAction func workPressed(_ sender: Any) {
+        startTimer(label: "Work")
     }
+    
+    @IBAction func schoolPresses(_ sender: Any) {
+        startTimer(label: "School")
+    }
+    
+    @IBAction func storePresses(_ sender: Any) {
+        startTimer(label: "Store")
+    }
+    
+    @IBAction func TransportationPresses(_ sender: Any) {
+        startTimer(label: "Transportation")
+    }
+    
+    @IBAction func otherPresses(_ sender: Any) {
+        startTimer(label: "Other")
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

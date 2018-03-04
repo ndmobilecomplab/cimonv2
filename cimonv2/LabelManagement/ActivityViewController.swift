@@ -49,13 +49,30 @@ class ActivityViewController: UIViewController {
         stopButton.isHidden = true
     }
     
-    @IBAction func angryPressed(_ sender: Any) {
-        startTimer(label: "Angry")
+    @IBAction func sittingPressed(_ sender: Any) {
+        startTimer(label: "Sitting")
     }
     
-    @IBAction func sadPressed(_ sender: Any) {
-        startTimer(label: "Sad")
+    @IBAction func standingPressed(_ sender: Any) {
+        startTimer(label: "Standing")
     }
+    
+    @IBAction func walkingPresses(_ sender: Any) {
+        startTimer(label: "Walking")
+    }
+    
+    @IBAction func runningPresses(_ sender: Any) {
+        startTimer(label: "Running")
+    }
+    
+    @IBAction func layingdownPresses(_ sender: Any) {
+        startTimer(label: "Lying Down")
+    }
+    
+    @IBAction func otherPresses(_ sender: Any) {
+        startTimer(label: "Other")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

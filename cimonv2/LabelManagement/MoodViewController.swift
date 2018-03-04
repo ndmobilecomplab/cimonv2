@@ -57,6 +57,23 @@ class MoodViewController: UIViewController {
     @IBAction func sadPressed(_ sender: Any) {
         startTimer(label: "Sad")
     }
+    
+    @IBAction func happyPresses(_ sender: Any) {
+        startTimer(label: "Happy")
+    }
+    
+    @IBAction func excitedPresses(_ sender: Any) {
+        startTimer(label: "Excited")
+    }
+    
+    @IBAction func annoyedPresses(_ sender: Any) {
+        startTimer(label: "Annoyed")
+    }
+    
+    @IBAction func anxiousPresses(_ sender: Any) {
+        startTimer(label: "Anxious")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
