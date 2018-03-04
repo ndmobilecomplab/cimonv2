@@ -227,6 +227,8 @@ class SignatureViewController: MotorTaskViewController, JotStrokeDelegate, UIGes
         beganDrawing = false
         
         self.nextGameButton.isHidden = false
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     func findAcceleration(){

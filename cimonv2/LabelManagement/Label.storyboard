@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dja-yP-wq1">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="dja-yP-wq1" customClass="RootViewControoler" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cfC-IM-Mnf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VxU-f1-Ph9"/>
@@ -30,11 +30,11 @@
             <objects>
                 <viewController storyboardIdentifier="moodvc" id="GSx-h6-DS1" customClass="MoodViewController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IGq-8d-hfu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TN-HE-mGL">
-                                <rect key="frame" x="52" y="108" width="270" height="68"/>
+                                <rect key="frame" x="52" y="108" width="216" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="SXE-uI-p3u"/>
                                 </constraints>
@@ -129,11 +129,11 @@
             <objects>
                 <viewController storyboardIdentifier="activityvc" id="zqX-QH-y9D" customClass="ActivityViewController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jRx-KS-vWV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoj-7m-94j">
-                                <rect key="frame" x="52" y="108" width="270" height="68"/>
+                                <rect key="frame" x="52" y="108" width="216" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="Dp0-Jd-jpa"/>
                                 </constraints>
@@ -228,11 +228,11 @@
             <objects>
                 <viewController storyboardIdentifier="contextvc" id="fON-oX-okn" customClass="ContextViewController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HtF-7C-PjN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEZ-Vr-GIC">
-                                <rect key="frame" x="52" y="108" width="270" height="68"/>
+                                <rect key="frame" x="52" y="108" width="216" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="7UV-Ob-YH3"/>
                                 </constraints>

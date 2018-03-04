@@ -75,6 +75,7 @@
 		DD5F3B51204B2A920069741D /* MotorTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B50204B2A920069741D /* MotorTaskViewController.swift */; };
 		DD5F3B55204C610D0069741D /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B54204C610D0069741D /* CustomCells.swift */; };
 		DD5F3B57204C69B50069741D /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B56204C69B50069741D /* FloatLabelTextField.swift */; };
+		DD5F3B7E204C8B210069741D /* MultiTestsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD5F3B7C204C8B210069741D /* MultiTestsApp.xcdatamodeld */; };
 		DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708D51203AA0EC00C8DBFD /* DummyData.swift */; };
 		DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C06602033E3360097C49B /* CommonStruct.swift */; };
 		DD7C06632033E59D0097C49B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7C06622033E59C0097C49B /* SwiftyJSON.framework */; };
@@ -185,6 +186,7 @@
 		DD5F3B50204B2A920069741D /* MotorTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorTaskViewController.swift; sourceTree = "<group>"; };
 		DD5F3B54204C610D0069741D /* CustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
 		DD5F3B56204C69B50069741D /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		DD5F3B7D204C8B210069741D /* MultiTestsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultiTestsApp.xcdatamodel; sourceTree = "<group>"; };
 		DD708D51203AA0EC00C8DBFD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		DD7C06602033E3360097C49B /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
 		DD7C06622033E59C0097C49B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		DD5073A420472D55001865A3 /* TaskUtils */ = {
 			isa = PBXGroup;
 			children = (
+				DD5F3B7C204C8B210069741D /* MultiTestsApp.xcdatamodeld */,
 				DD5073C220472ED9001865A3 /* ClosestPoint+CoreDataClass.swift */,
 				DD5073C420472ED9001865A3 /* ClosestPoint+CoreDataProperties.swift */,
 				DD5073C320472ED9001865A3 /* ColorResult+CoreDataClass.swift */,
@@ -698,6 +701,7 @@
 				DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */,
 				DD507393204725A0001865A3 /* SignatureViewController.swift in Sources */,
 				DD5073CC20472EDA001865A3 /* DeviceAcceleration+CoreDataClass.swift in Sources */,
+				DD5F3B7E204C8B210069741D /* MultiTestsApp.xcdatamodeld in Sources */,
 				DD5073CF20472EDA001865A3 /* MemoryResult+CoreDataProperties.swift in Sources */,
 				DD5073B820472E49001865A3 /* ConnectResult+CoreDataClass.swift in Sources */,
 				DD5F3B3D204B10ED0069741D /* TaskListViewController.swift in Sources */,
@@ -1052,6 +1056,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		DD5F3B7C204C8B210069741D /* MultiTestsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD5F3B7D204C8B210069741D /* MultiTestsApp.xcdatamodel */,
+			);
+			currentVersion = DD5F3B7D204C8B210069741D /* MultiTestsApp.xcdatamodel */;
+			path = MultiTestsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		DD9D1E6220313534007AEBB4 /* cimonv2.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

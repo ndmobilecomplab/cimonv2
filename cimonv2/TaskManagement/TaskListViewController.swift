@@ -102,7 +102,7 @@ class TaskListViewController: FormViewController {
                         row.value = MotorTask(type: "", imagePath: "memory")
                         row.presentationMode = .show(controllerProvider: ControllerProvider.callback {
                             let storyBoard = UIStoryboard(name: "Task", bundle: nil)
-                            let controller = storyBoard.instantiateViewController(withIdentifier: "signaturetaskvc") as! MotorTaskViewController
+                            let controller = storyBoard.instantiateViewController(withIdentifier: "memorytaskvc") as! MotorTaskViewController
                             //controller.delegate = row
                             return controller
                             }, onDismiss: { vc in
@@ -117,7 +117,7 @@ class TaskListViewController: FormViewController {
                         row.value = MotorTask(type: "", imagePath: "balance")
                         row.presentationMode = .show(controllerProvider: ControllerProvider.callback {
                             let storyBoard = UIStoryboard(name: "Task", bundle: nil)
-                            let controller = storyBoard.instantiateViewController(withIdentifier: "signaturetaskvc") as! MotorTaskViewController
+                            let controller = storyBoard.instantiateViewController(withIdentifier: "balancetaskvc") as! MotorTaskViewController
                             //controller.delegate = row
                             return controller
                             }, onDismiss: { vc in
