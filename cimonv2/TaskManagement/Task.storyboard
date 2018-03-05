@@ -42,7 +42,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UjZ-rv-tBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.80000000000001" y="-88.605697151424295"/>
+            <point key="canvasLocation" x="304.34782608695656" y="-88.858695652173921"/>
         </scene>
         <!--Task List View Controller-->
         <scene sceneID="1Th-hZ-Y6N">
@@ -96,7 +96,7 @@
         <!--Signature View Controller-->
         <scene sceneID="A4I-OY-0eT">
             <objects>
-                <viewController storyboardIdentifier="signaturetaskvc" id="aNf-Ju-uGo" customClass="SignatureViewController" customModule="MultiTestsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signaturetaskvc" id="aNf-Ju-uGo" customClass="SignatureViewController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lXb-hQ-wVP"/>
                         <viewControllerLayoutGuide type="bottom" id="Cvl-FT-BRG"/>
@@ -105,7 +105,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9j-5u-8Ka" customClass="SigningView" customModule="MultiTestsApp" customModuleProvider="target">
+                            <view opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9j-5u-8Ka" customClass="SigningView" customModule="cimonv2" customModuleProvider="target">
                                 <rect key="frame" x="20" y="170" width="374" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="QtD-Ga-P2k"/>
@@ -210,7 +210,7 @@
         <!--Memory Game-->
         <scene sceneID="cWj-wf-n1i">
             <objects>
-                <viewController storyboardIdentifier="memorytaskvc" id="5Qq-Sn-KmC" customClass="GameController" customModule="MultiTestsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="memorytaskvc" id="5Qq-Sn-KmC" customClass="GameController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7w1-OC-rKi"/>
                         <viewControllerLayoutGuide type="bottom" id="GG0-t9-9Ro"/>
@@ -239,7 +239,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCell" id="KbS-OV-0T2" customClass="CardCVC" customModule="MultiTestsApp" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCell" id="KbS-OV-0T2" customClass="CardCVC" customModule="cimonv2" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="82" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -331,7 +331,7 @@
         <!--View Controller-->
         <scene sceneID="XYh-kU-7t8">
             <objects>
-                <viewController storyboardIdentifier="balancetaskvc" id="4hW-GD-KVi" customClass="ViewController" customModule="MultiTestsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="balancetaskvc" id="4hW-GD-KVi" customClass="ViewController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p4j-wM-RwU"/>
                         <viewControllerLayoutGuide type="bottom" id="Tgy-6F-cA8"/>
