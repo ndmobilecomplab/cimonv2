@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="-3155.625" y="-357.04225352112678"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--App Tab Controller-->
         <scene sceneID="NyX-VK-4r7">
             <objects>
-                <tabBarController storyboardIdentifier="ApplicationStory" id="Jq6-Nx-xgJ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ApplicationStory" id="Jq6-Nx-xgJ" customClass="AppTabController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z9a-Av-TJk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

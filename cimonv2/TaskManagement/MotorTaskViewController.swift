@@ -11,7 +11,8 @@ import Eureka
 
 class MotorTaskViewController: UIViewController, TypedRowControllerType {
     
-    
+    var delegate: ChildTaskViewControllerDelegate?
+    var indexInParent:Int = -1
     /// The row that pushed or presented this controller
     //public var row: RowOf<UIImageView>!
     public var row: RowOf<MotorTask>!

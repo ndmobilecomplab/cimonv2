@@ -36,6 +36,16 @@ class Utils: NSObject {
         UserDefaults.standard.removeObject(forKey:key)
     }
     
+    //Mark: Date, Time
+    static func stringFromDate(date:Date!)->String{
+        if let inputDate = date{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            return dateFormatter.string(from: inputDate)
+        }
+        return ""
+    }
+    
     // Mark: Web services
     /**
     */

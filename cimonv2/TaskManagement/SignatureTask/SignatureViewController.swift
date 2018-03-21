@@ -228,6 +228,7 @@ class SignatureViewController: MotorTaskViewController, JotStrokeDelegate, UIGes
         
         self.nextGameButton.isHidden = false
         
+        self.delegate?.childViewControllerResponse(refernceAnswer: "signed...\(self.indexInParent)")
         self.navigationController?.popViewController(animated: true)
     }
     

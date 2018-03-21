@@ -95,6 +95,9 @@
 		DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EA82032207D007AEBB4 /* Task.storyboard */; };
 		DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EAA20322154007AEBB4 /* Label.storyboard */; };
 		DD9D1EAD203221AE007AEBB4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */; };
+		DDC6ED8D2059CAB700B5B0D4 /* Syncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */; };
+		DDC6EDA7205F178B00B5B0D4 /* ViewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */; };
+		DDC6EDA92060226800B5B0D4 /* AppTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6EDA82060226800B5B0D4 /* AppTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +215,9 @@
 		DD9D1EA82032207D007AEBB4 /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
 		DD9D1EAA20322154007AEBB4 /* Label.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Label.storyboard; sourceTree = "<group>"; };
 		DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syncer.swift; sourceTree = "<group>"; };
+		DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDataManager.swift; sourceTree = "<group>"; };
+		DDC6EDA82060226800B5B0D4 /* AppTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +391,7 @@
 				DD9D1E6720313534007AEBB4 /* LaunchScreen.storyboard */,
 				DD9D1E6A20313534007AEBB4 /* Info.plist */,
 				DD9D1E6220313534007AEBB4 /* cimonv2.xcdatamodeld */,
+				DDC6EDA82060226800B5B0D4 /* AppTabController.swift */,
 			);
 			path = cimonv2;
 			sourceTree = "<group>";
@@ -486,6 +493,8 @@
 		DD9D1E982031419D007AEBB4 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */,
+				DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -572,6 +581,11 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					DD9D1E6E20313534007AEBB4 = {
 						CreatedOnToolsVersion = 9.2;
@@ -675,6 +689,7 @@
 				DD5073B720472E49001865A3 /* ConnectResult+CoreDataProperties.swift in Sources */,
 				DD5073D420472EDA001865A3 /* ClosestPoint+CoreDataProperties.swift in Sources */,
 				023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */,
+				DDC6EDA7205F178B00B5B0D4 /* ViewDataManager.swift in Sources */,
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
 				DD5073D120472EDA001865A3 /* MemoryResult+CoreDataClass.swift in Sources */,
 				023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */,
@@ -692,6 +707,7 @@
 				0213CE30204C8A8B00567EA6 /* Pagable.swift in Sources */,
 				DD5073CD20472EDA001865A3 /* DeviceAcceleration+CoreDataProperties.swift in Sources */,
 				DD5F3B57204C69B50069741D /* FloatLabelTextField.swift in Sources */,
+				DDC6ED8D2059CAB700B5B0D4 /* Syncer.swift in Sources */,
 				0213CE37204C8A8B00567EA6 /* MenuItemView.swift in Sources */,
 				0213CE31204C8A8B00567EA6 /* UIView+Shimmer.m in Sources */,
 				DD5073CE20472EDA001865A3 /* FallingBallResult+CoreDataProperties.swift in Sources */,
@@ -703,6 +719,7 @@
 				DD5073CC20472EDA001865A3 /* DeviceAcceleration+CoreDataClass.swift in Sources */,
 				DD5F3B7E204C8B210069741D /* MultiTestsApp.xcdatamodeld in Sources */,
 				DD5073CF20472EDA001865A3 /* MemoryResult+CoreDataProperties.swift in Sources */,
+				DDC6EDA92060226800B5B0D4 /* AppTabController.swift in Sources */,
 				DD5073B820472E49001865A3 /* ConnectResult+CoreDataClass.swift in Sources */,
 				DD5F3B3D204B10ED0069741D /* TaskListViewController.swift in Sources */,
 				DD708D52203AA0EC00C8DBFD /* DummyData.swift in Sources */,

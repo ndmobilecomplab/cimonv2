@@ -30,6 +30,20 @@ extension String
         return trimmed
     }
     
-    
+}
+
+extension SurveyResponse{
+    func toJSON() -> Dictionary<String, AnyObject> {
+        return [
+            "studyId": self.studyId as AnyObject,
+            "surveyId": self.surveyId as AnyObject,
+            "taskId": self.taskId as AnyObject,
+            "version": self.version as AnyObject,
+            "submissionTime": self.submissionTime as AnyObject,
+            "submissionTimeZone": self.submissionTimeZone as AnyObject,
+            "answer": self.answer as AnyObject,
+            "answerType": self.answerType as AnyObject
+        ]
+    }
     
 }

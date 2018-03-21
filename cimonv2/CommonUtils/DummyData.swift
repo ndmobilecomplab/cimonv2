@@ -12,6 +12,8 @@ import Foundation
 class DummyData: NSObject {
     
     static func getDummyTask(studyId:Int, surveyId:Int)->[Task]{
+        
+        /*
         let task1 = Task(studyId: 1, surveyId: 1, taskId: 1, text: "Your name", type: "text", possibleInput: "", orderId: 1, isActive: 1, isRequired: 0, parentTaskId: 0, hasChild: 0, childTriggeringInput: "", defaultInput: "")
         
         let task2 = Task(studyId: 1, surveyId: 1, taskId: 2, text: "Your birthday", type: "date", possibleInput: "", orderId: 2, isActive: 1, isRequired: 0, parentTaskId: 0, hasChild: 0, childTriggeringInput: "", defaultInput: "")
@@ -51,7 +53,7 @@ class DummyData: NSObject {
             return [task11, task12, task13, task14, task15, task16]
         } else if(studyId==1 && surveyId==3){
             return [task21, task22, task23]
-        }
+        }*/
         return []
     }
     
@@ -102,6 +104,7 @@ class DummyData: NSObject {
          
          */
         
+        /*
         //survey 1
         let survey1 = Survey(surveyId: 1, studyId: 1, name: "Introduce Yourself", description: "Graduate School Survey", startTime: "", startTimeZone: "", endTime: "", endTimeZone: "", scheduleCode: "")
         
@@ -112,12 +115,15 @@ class DummyData: NSObject {
 
         //case 1: one survey, show survey 1
         return [survey1, survey2, survey3]
+        */
         
         //case 2: one survey, show survey 2
         //return [survey2]
         
         //case 3: two surveys, show both
         //return [survey1, survey2]
+        
+        return []
     }
     
 }
