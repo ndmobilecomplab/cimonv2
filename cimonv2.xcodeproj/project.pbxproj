@@ -87,7 +87,6 @@
 		DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */; };
 		DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E5F20313534007AEBB4 /* Main.storyboard */; };
 		DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E6220313534007AEBB4 /* cimonv2.xcdatamodeld */; };
-		DD9D1E6620313534007AEBB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E6520313534007AEBB4 /* Assets.xcassets */; };
 		DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E6720313534007AEBB4 /* LaunchScreen.storyboard */; };
 		DD9D1E7420313534007AEBB4 /* cimonv2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E7320313534007AEBB4 /* cimonv2Tests.swift */; };
 		DD9D1E7F20313534007AEBB4 /* cimonv2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E7E20313534007AEBB4 /* cimonv2UITests.swift */; };
@@ -98,6 +97,10 @@
 		DDC6ED8D2059CAB700B5B0D4 /* Syncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */; };
 		DDC6EDA7205F178B00B5B0D4 /* ViewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */; };
 		DDC6EDA92060226800B5B0D4 /* AppTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6EDA82060226800B5B0D4 /* AppTabController.swift */; };
+		DDE93DEC2062CEE100D34393 /* VisuospatialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DEB2062CEE100D34393 /* VisuospatialViewController.swift */; };
+		DDE93DEE2062D19F00D34393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE93DED2062D19F00D34393 /* Assets.xcassets */; };
+		DDE93DF12062D52000D34393 /* ColorGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DF02062D51F00D34393 /* ColorGameViewController.swift */; };
+		DDE93DF42062D90D00D34393 /* MotorGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DF32062D90C00D34393 /* MotorGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,7 +205,6 @@
 		DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DD9D1E6020313534007AEBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD9D1E6320313534007AEBB4 /* cimonv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cimonv2.xcdatamodel; sourceTree = "<group>"; };
-		DD9D1E6520313534007AEBB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD9D1E6820313534007AEBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD9D1E6A20313534007AEBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD9D1E6F20313534007AEBB4 /* cimonv2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cimonv2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +220,10 @@
 		DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syncer.swift; sourceTree = "<group>"; };
 		DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDataManager.swift; sourceTree = "<group>"; };
 		DDC6EDA82060226800B5B0D4 /* AppTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabController.swift; sourceTree = "<group>"; };
+		DDE93DEB2062CEE100D34393 /* VisuospatialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisuospatialViewController.swift; sourceTree = "<group>"; };
+		DDE93DED2062D19F00D34393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDE93DF02062D51F00D34393 /* ColorGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGameViewController.swift; sourceTree = "<group>"; };
+		DDE93DF32062D90C00D34393 /* MotorGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,9 +393,9 @@
 				DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */,
 				DD9D1E5F20313534007AEBB4 /* Main.storyboard */,
 				DD7C06642034118E0097C49B /* VerifyTokenViewController.swift */,
-				DD9D1E6520313534007AEBB4 /* Assets.xcassets */,
 				DD9D1E6720313534007AEBB4 /* LaunchScreen.storyboard */,
 				DD9D1E6A20313534007AEBB4 /* Info.plist */,
+				DDE93DED2062D19F00D34393 /* Assets.xcassets */,
 				DD9D1E6220313534007AEBB4 /* cimonv2.xcdatamodeld */,
 				DDC6EDA82060226800B5B0D4 /* AppTabController.swift */,
 			);
@@ -449,6 +455,9 @@
 		DD9D1E92203140D2007AEBB4 /* TaskManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DDE93DF22062D8CB00D34393 /* GrossMotorTask */,
+				DDE93DEF2062D50200D34393 /* ColorGame */,
+				DDE93DEA2062CEA400D34393 /* VisuospatialActivity */,
 				DD5073A420472D55001865A3 /* TaskUtils */,
 				DD50738E2047256D001865A3 /* SignatureTask */,
 				023BDC1620463F4400B1DD53 /* BalanceTask */,
@@ -508,6 +517,30 @@
 				DD708D51203AA0EC00C8DBFD /* DummyData.swift */,
 			);
 			path = CommonUtils;
+			sourceTree = "<group>";
+		};
+		DDE93DEA2062CEA400D34393 /* VisuospatialActivity */ = {
+			isa = PBXGroup;
+			children = (
+				DDE93DEB2062CEE100D34393 /* VisuospatialViewController.swift */,
+			);
+			path = VisuospatialActivity;
+			sourceTree = "<group>";
+		};
+		DDE93DEF2062D50200D34393 /* ColorGame */ = {
+			isa = PBXGroup;
+			children = (
+				DDE93DF02062D51F00D34393 /* ColorGameViewController.swift */,
+			);
+			path = ColorGame;
+			sourceTree = "<group>";
+		};
+		DDE93DF22062D8CB00D34393 /* GrossMotorTask */ = {
+			isa = PBXGroup;
+			children = (
+				DDE93DF32062D90C00D34393 /* MotorGameViewController.swift */,
+			);
+			path = GrossMotorTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,8 +662,8 @@
 				DD50739E204728C5001865A3 /* AdonitSDK.bundle in Resources */,
 				023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */,
 				DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */,
-				DD9D1E6620313534007AEBB4 /* Assets.xcassets in Resources */,
 				DD5F3B4B204B265E0069741D /* MotorTaskCell.xib in Resources */,
+				DDE93DEE2062D19F00D34393 /* Assets.xcassets in Resources */,
 				DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */,
 				DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */,
 				023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */,
@@ -689,6 +722,7 @@
 				DD5073B720472E49001865A3 /* ConnectResult+CoreDataProperties.swift in Sources */,
 				DD5073D420472EDA001865A3 /* ClosestPoint+CoreDataProperties.swift in Sources */,
 				023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */,
+				DDE93DF12062D52000D34393 /* ColorGameViewController.swift in Sources */,
 				DDC6EDA7205F178B00B5B0D4 /* ViewDataManager.swift in Sources */,
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
 				DD5073D120472EDA001865A3 /* MemoryResult+CoreDataClass.swift in Sources */,
@@ -729,9 +763,11 @@
 				DD5F3B4D204B27560069741D /* CustomPresenterRow.swift in Sources */,
 				0213CE38204C8A8B00567EA6 /* MenuItemViewCustomizable.swift in Sources */,
 				DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */,
+				DDE93DF42062D90D00D34393 /* MotorGameViewController.swift in Sources */,
 				0213CE36204C8A8B00567EA6 /* PagingViewController.swift in Sources */,
 				0277359E204C7AB700121EBE /* ActivityViewController.swift in Sources */,
 				DD5073D320472EDA001865A3 /* ColorResult+CoreDataClass.swift in Sources */,
+				DDE93DEC2062CEE100D34393 /* VisuospatialViewController.swift in Sources */,
 				DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */,
 				DD5073D520472EDA001865A3 /* MotorResult+CoreDataClass.swift in Sources */,
 				DD5F3B55204C610D0069741D /* CustomCells.swift in Sources */,

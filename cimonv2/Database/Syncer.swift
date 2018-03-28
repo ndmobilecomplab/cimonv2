@@ -309,7 +309,23 @@ class Syncer:NSObject{
             //let request = NSBatchDeleteRequest(fetchRequest: fetchRequest)
             do {
                 let responses:[SurveyResponse] = try self.context.fetch(fetchRequest) as! [SurveyResponse]
-                print("\(responses[0].toJSON())")
+                let jsonEncoder = JSONEncoder()
+                let jsonData = try jsonEncoder.encode(responses)
+                //let jsonString = String(data: jsonData, encoding: .utf8)
+                let serviceUrl = Utils.getBaseUrl() + "study/survey/response"
+                var request = URLRequest(url: URL(string: serviceUrl)!)
+                request.httpMethod = HTTPMethod.post.rawValue
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.httpBody = jsonData
+                Alamofire.request(request).validate().responseJSON{response in
+                    switch response.result{
+                        case .success:
+                            print("call success...\(response)")
+                        case .failure(let error):
+                            print(error)
+                            // TODO: show error label - service not available
+                        }
+                    }
             } catch {
                 print("error while deleting...")
             }

@@ -184,7 +184,100 @@ class TaskListViewController: FormViewController, ChildTaskViewControllerDelegat
                         })
                 }
                 
+            } else if type.contains(s: "MT005"){
+                print("task type: \(taskList[i].type)")
+                var instString = "Tap to Start"
+                if(task.isRequired>0){
+                    instString = "*".appending(instString)
+                }
+                form +++ Section(instString){section in
+                    section.tag = "\(i)_motortask"
+                    }
+                    <<< MotorTaskPresenterRow() { row in
+                        row.value = MotorTask(type: "", imagePath: "grossmotor")
+                        row.presentationMode = .show(controllerProvider: ControllerProvider.callback {
+                            let storyBoard = UIStoryboard(name: "Task", bundle: nil)
+                            let controller = storyBoard.instantiateViewController(withIdentifier: "grossmotortaskvc") as! MotorTaskViewController
+                            controller.indexInParent = i
+                            controller.delegate = self
+                            //controller.delegate = row
+                            return controller
+                            }, onDismiss: { vc in
+                                _ = vc.navigationController?.popViewController(animated: true)
+                        })
+                }
+                
+            } else if type.contains(s: "MT010"){
+                print("task type: \(taskList[i].type)")
+                var instString = "Tap to Start"
+                if(task.isRequired>0){
+                    instString = "*".appending(instString)
+                }
+                form +++ Section(instString){section in
+                    section.tag = "\(i)_motortask"
+                    }
+                    <<< MotorTaskPresenterRow() { row in
+                        row.value = MotorTask(type: "", imagePath: "visuospatial")
+                        row.presentationMode = .show(controllerProvider: ControllerProvider.callback {
+                            let storyBoard = UIStoryboard(name: "Task", bundle: nil)
+                            let controller = storyBoard.instantiateViewController(withIdentifier: "visuospatialvc") as! MotorTaskViewController
+                            controller.indexInParent = i
+                            controller.delegate = self
+                            //controller.delegate = row
+                            return controller
+                            }, onDismiss: { vc in
+                                _ = vc.navigationController?.popViewController(animated: true)
+                        })
+                }
+                
+            }else if type.contains(s: "MT011"){
+                print("task type: \(taskList[i].type)")
+                var instString = "Tap to Start"
+                if(task.isRequired>0){
+                    instString = "*".appending(instString)
+                }
+                form +++ Section(instString){section in
+                    section.tag = "\(i)_motortask"
+                    }
+                    <<< MotorTaskPresenterRow() { row in
+                        row.value = MotorTask(type: "", imagePath: "color")
+                        row.presentationMode = .show(controllerProvider: ControllerProvider.callback {
+                            let storyBoard = UIStoryboard(name: "Task", bundle: nil)
+                            let controller = storyBoard.instantiateViewController(withIdentifier: "colorgamevc") as! MotorTaskViewController
+                            controller.indexInParent = i
+                            controller.delegate = self
+                            //controller.delegate = row
+                            return controller
+                            }, onDismiss: { vc in
+                                _ = vc.navigationController?.popViewController(animated: true)
+                        })
+                }
+                
+            }else if type.contains(s: "MT014"){
+                print("task type: \(taskList[i].type)")
+                var instString = "Tap to Start"
+                if(task.isRequired>0){
+                    instString = "*".appending(instString)
+                }
+                form +++ Section(instString){section in
+                    section.tag = "\(i)_motortask"
+                    }
+                    <<< MotorTaskPresenterRow() { row in
+                        row.value = MotorTask(type: "", imagePath: "target")
+                        row.presentationMode = .show(controllerProvider: ControllerProvider.callback {
+                            let storyBoard = UIStoryboard(name: "Task", bundle: nil)
+                            let controller = storyBoard.instantiateViewController(withIdentifier: "targettaskvc") as! MotorTaskViewController
+                            controller.indexInParent = i
+                            controller.delegate = self
+                            //controller.delegate = row
+                            return controller
+                            }, onDismiss: { vc in
+                                _ = vc.navigationController?.popViewController(animated: true)
+                        })
+                }
+                
             }
+
         }
     }
     
@@ -287,8 +380,8 @@ class TaskListViewController: FormViewController, ChildTaskViewControllerDelegat
                 print("error while saving context")
             }
         }
-        printAllResponses(responses: getAllResponses())
-        print("total rows: \(getAllResponses().count)")
+        //printAllResponses(responses: getAllResponses())
+        //print("total rows: \(getAllResponses().count)")
         Syncer.sharedInstance.uploadSurveyResponses()
         self.navigationController?.popViewController(animated: true)
 

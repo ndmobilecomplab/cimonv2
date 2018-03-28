@@ -32,18 +32,27 @@ extension String
     
 }
 
-extension SurveyResponse{
-    func toJSON() -> Dictionary<String, AnyObject> {
-        return [
-            "studyId": self.studyId as AnyObject,
-            "surveyId": self.surveyId as AnyObject,
-            "taskId": self.taskId as AnyObject,
-            "version": self.version as AnyObject,
-            "submissionTime": self.submissionTime as AnyObject,
-            "submissionTimeZone": self.submissionTimeZone as AnyObject,
-            "answer": self.answer as AnyObject,
-            "answerType": self.answerType as AnyObject
-        ]
+extension SurveyResponse:Encodable{
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(studyId, forKey: .studyId)
+        try container.encode(surveyId, forKey: .surveyId)
+        try container.encode(taskId, forKey: .taskId)
+        try container.encode(version, forKey: .version)
+        try container.encode(submissionTime, forKey: .submissionTime)
+        try container.encode(submissionTimeZone, forKey: .submissionTimeZone)
+        try container.encode(answer, forKey: .answer)
+        try container.encode(answerType, forKey: .answerType)
     }
     
+    enum CodingKeys: String, CodingKey {
+        case studyId
+        case surveyId
+        case taskId
+        case version
+        case submissionTime
+        case submissionTimeZone
+        case answer
+        case answerType
+    }
 }

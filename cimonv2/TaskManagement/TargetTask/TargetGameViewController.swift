@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TargetGameViewController: UIViewController {
+class TargetGameViewController: MotorTaskViewController {
     
     @IBOutlet weak var countDownLabel: UILabel!
     
