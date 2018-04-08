@@ -31,6 +31,10 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
         tableView.tableFooterView = UIView()
 
         DispatchQueue.global(qos: .background).async {
+            //for i in 0..<5{
+                //Utils.generateSystemNotification(message: "This is generated from system \(i)")
+            //}
+            
             //Syncer.sharedInstance.insertDummyNotifications()
             //Syncer.sharedInstance.printAppNotifications(notificationList: Syncer.sharedInstance.getDummyNotifications())
         }
@@ -38,6 +42,11 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
         initializeFetchedResultsController()
 
         
+        let screenSize: CGRect = UIScreen.main.bounds
+        
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        print("..................\(screenWidth)...........\(screenHeight)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,7 +76,10 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
     }
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.beginUpdates()
+        DispatchQueue.main.async {
+            self.tableView.beginUpdates()
+        }
+        
     }
     
     
@@ -100,17 +112,17 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
             switch type {
             case .insert:
                 print("new row inserted...")
-                tableView.insertRows(at: [newIndexPath!], with: .fade)
+                tableView.insertRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
             case .delete:
                 print("row deleted...")
                 //tableView.deleteRows(at: [indexPath!], with: .fade)
                 tableView.deleteRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
             case .update:
                 print("row updated...")
-                tableView.reloadRows(at: [indexPath!], with: .fade)
+                tableView.reloadRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
             case NSFetchedResultsChangeType(rawValue: 3)!:
                 print("update row by raw value")
-                tableView.reloadRows(at: [indexPath!], with: .fade)
+                tableView.reloadRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
             case .move:
                 print("row moved...")
                 tableView.moveRow(at: indexPath!, to: newIndexPath!)
@@ -120,10 +132,13 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        print("will end update and reload")
-        self.tableView.endUpdates()
-        self.tableView.reloadData()
-        print("ended and reloaded...")
+        DispatchQueue.main.async {
+            print("will end update and reload")
+            self.tableView.endUpdates()
+            self.tableView.reloadData()
+            print("ended and reloaded...")
+
+        }
     }
 
 
@@ -160,6 +175,9 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
             guard let fetchedObjects = fetchedResultsController?.fetchedObjects else{
                 return "Notifications"
             }
+            if fetchedObjects.count == 0{
+                return ""
+            }
             return "Notifications(\(fetchedObjects.count))"
         } else{
             return ""
@@ -167,12 +185,31 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let height = UIScreen.main.bounds.height
         if indexPath.section == 0 {
-            return 200
+            if height < 600{
+                return 200
+            } else if height < 700{
+                return 225
+            } else{
+                return 250
+            }
         } else if indexPath.section == 2{
-            return 300
+            if height < 600{
+                return 175
+            } else if height < 700{
+                return 200
+            } else{
+                return 210
+            }
         } else{
-            return 90
+            if height < 600{
+                return 80
+            } else if height < 700{
+                return 90
+            } else{
+                return 100
+            }
         }
     }
     
@@ -208,15 +245,17 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
             //self.fetchedResultsController.object(at: IndexPath(row: indexPath.row, section: 0))
             
             
-            guard let object = self.fetchedResultsController?.object(at: IndexPath(row: indexPath.row, section: 0)) else {
+            guard let object = self.fetchedResultsController?.object(at: IndexPath(row: indexPath.row, section: 0))   else {
                 fatalError("Attempt to configure cell without a managed object")
             }
 
             cell.titleLabel.text = (object as! AppNotification).title
-            //let message = "\(DummyData.getNotifications()[indexPath.row]), \(DummyData.getNotifications()[indexPath.row])"
             cell.messageLabel.text = (object as! AppNotification).message
-            //cell.titleLabel.text = "Notification title"
-            //cell.messageLabel.text = "Notification Message"
+            if (object as! AppNotification).viewCount > 0{
+                cell.titleLabel.font = UIFont.systemFont(ofSize: cell.titleLabel.font.pointSize, weight: .regular)
+                cell.messageLabel.font = UIFont.systemFont(ofSize: cell.messageLabel.font.pointSize, weight: .light)
+
+            }
             return cell
             
         }

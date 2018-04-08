@@ -59,6 +59,20 @@ class Utils: NSObject {
         return uuid
     }
     
+    static func getAppDisplayName()->String{
+        
+        if let displayName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String{
+            return displayName
+        }
+        return "System"
+    }
+    
+    static func generateSystemNotification(message:String){
+        let time = Date().timeIntervalSince1970
+        let notifStruct:AppNotificationStruct = AppNotificationStruct(notificationId: Int64(time), originatedSource: getAppDisplayName(), originatedTime: String(time), title: getAppDisplayName(), message: message, loadingTime: String(time), loadingTimeZone: String(time), deleteOnView: 1, expiry: 12 * 60 * 60, viewCount: 0)
+        Syncer.sharedInstance.insertNotification(notifStruct: notifStruct)
+    }
+    
 }
 
 

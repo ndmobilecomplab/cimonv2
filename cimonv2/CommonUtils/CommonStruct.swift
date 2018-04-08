@@ -38,6 +38,20 @@ struct SurveyResponseStruct{
     var answer:String
 }
 
+
+struct AppNotificationStruct{
+    var notificationId:Int64
+    var originatedSource:String
+    var originatedTime: String
+    var title:String
+    var message:String
+    var loadingTime:String
+    var loadingTimeZone:String
+    var deleteOnView:Int16
+    var expiry:Int32
+    var viewCount:Int32
+}
+
 /*
 struct TaskStruct{
     var studyId:Int

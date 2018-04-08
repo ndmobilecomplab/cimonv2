@@ -16,6 +16,12 @@ class NotificationDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if selectedNotification.deleteOnView == 1{
+            Syncer.sharedInstance.deleteNotification(appNotification: self.selectedNotification)
+        }else{
+            Syncer.sharedInstance.updateViewCount(appNotification: selectedNotification)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +33,6 @@ class NotificationDetailsViewController: UIViewController {
         print("delete button clicked....")
         Syncer.sharedInstance.deleteNotification(appNotification: self.selectedNotification)
         self.navigationController?.popViewController(animated: true)
-        
     }
     
     /*

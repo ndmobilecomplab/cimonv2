@@ -28,8 +28,10 @@ class ActiveSurveyListViewController: UITableViewController, NSFetchedResultsCon
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.tabBar.isHidden = false
+        self.extendedLayoutIncludesOpaqueBars = false
     }
-    
+
     
     func initializeFetchedResultsController() {
         

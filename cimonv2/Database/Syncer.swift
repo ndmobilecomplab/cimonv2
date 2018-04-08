@@ -332,6 +332,77 @@ class Syncer:NSObject{
 
         }
         
+    }
+    
+    
+    //MARK: Notification
+    
+    
+    func insertDummyNotifications(){
+        for i in 0..<8{
+            print("I am going to insert \(i)")
+            let notification:AppNotification = NSEntityDescription.insertNewObject(forEntityName: "AppNotification", into: self.context) as! AppNotification
+            
+            notification.notificationId = Int64(i)
+            notification.originatedTime = "\(i)123"
+            notification.originatedSource = "test"
+            notification.title = "Test Titlte"
+            notification.message = "Test Message"
+            notification.loadingTime = "78898"
+            notification.loadingTimeZone = "78"
+            notification.deleteOnView = 0
+            notification.expiry = 100
+            notification.viewCount = 0
+            
+            self.saveContext()
+        }
+    }
+    
+    func insertNotification(notifStruct:AppNotificationStruct){
+        let notification:AppNotification = NSEntityDescription.insertNewObject(forEntityName: "AppNotification", into: self.context) as! AppNotification
+        
+        notification.notificationId = notifStruct.notificationId
+        notification.originatedTime = notifStruct.originatedTime
+        notification.originatedSource = notifStruct.originatedSource
+        notification.title = notifStruct.title
+        notification.message = notifStruct.message
+        notification.loadingTime = notifStruct.loadingTime
+        notification.loadingTimeZone = notifStruct.loadingTimeZone
+        notification.deleteOnView = notifStruct.deleteOnView
+        notification.expiry = notifStruct.expiry
+        notification.viewCount = 0
+        
+        self.saveContext()
 
     }
+    
+    func deleteNotification(appNotification:AppNotification!){
+        guard let _ = appNotification else{
+            return
+        }
+        self.context.delete(appNotification)
+        self.saveContext()
+    }
+    
+    func getDummyNotifications()->[AppNotification]!{
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "AppNotification")
+        do{
+            return try context.fetch(fetchRequest) as! [AppNotification]
+        } catch let error as NSError{
+            print("error:\(error)")
+            return nil
+        }
+    }
+    func printAppNotifications(notificationList:[AppNotification]){
+        for notification in notificationList{
+            print("id:\(notification.notificationId), time:\(String(describing: notification.originatedTime)), title:\(notification.title)")
+        }
+    }
+
+    func updateViewCount(appNotification:AppNotification){
+        appNotification.viewCount += 1
+        self.saveContext()
+    }
+    
+    //MARK:
 }

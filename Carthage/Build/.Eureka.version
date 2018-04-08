@@ -1,9 +1,9 @@
 {
-  "commitish" : "4.1.0",
+  "commitish" : "4.1.1",
   "iOS" : [
     {
       "name" : "Eureka",
-      "hash" : "c1c72444c097794768a32020b0194a3321f82a6cda88b476da004b068dd98bf2"
+      "hash" : "c3f470f1fbf61dc5b23e4cacd708493df72a9c32b4a6dd8f4111754f9293b022"
     }
   ]
 }

@@ -19,18 +19,18 @@ class ActiveSurveyTableViewCell: UITableViewCell {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         descLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        nameLabel.font = UIFont (name: "Baskerville-Italic", size: 30)
-        descLabel.font = UIFont(name: "HelveticaNeue-UltraLight", size:17)
+        descLabel.font = UIFont(name: "HelveticaNeue-UltraLight", size:25)
+        nameLabel.font = UIFont (name: "Baskerville-Italic", size: 25)
         
-        contentView.addSubview(nameLabel)
         contentView.addSubview(descLabel)
+        contentView.addSubview(nameLabel)
         let viewsDict = [
             "surveyname" : nameLabel,
             "surveydesc" : descLabel,
             ]
         
-        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[surveyname]-[surveydesc]-|", options: [], metrics: nil, views: viewsDict))
-        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[surveyname]-|", options: [], metrics: nil, views: viewsDict))
+        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[surveydesc]-[surveyname]-|", options: [], metrics: nil, views: viewsDict))
+        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-50-[surveyname]-|", options: [], metrics: nil, views: viewsDict))
         contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[surveydesc]-|", options: [], metrics: nil, views: viewsDict))
 
     }

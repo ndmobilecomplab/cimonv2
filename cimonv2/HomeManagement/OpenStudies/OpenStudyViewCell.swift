@@ -11,7 +11,7 @@ import UIKit
 class OpenStudyViewCell: UICollectionViewCell {
     
     var organizationLabel:OpenStudyOrganizationLabel!
-    var nameLabel:openStudyNameLabel!
+    var nameLabel:OpenStudyNameLabel!
     var staticJoinLabel:OpenStudyJoinLabel!
     
     override init(frame: CGRect) {
@@ -29,20 +29,21 @@ class OpenStudyViewCell: UICollectionViewCell {
         
         organizationLabel = OpenStudyOrganizationLabel()
         organizationLabel.font = UIFont.systemFont(ofSize: 13)
-        organizationLabel.textColor = UIColor.blue
-        organizationLabel.text = "University of Notre Dam"
+        
+        organizationLabel.textColor = UIColor(red: 0, green: 0.7804, blue: 0.902, alpha: 1.0) /* #00c7e6 */
+        organizationLabel.text = "University of Notre Dame"
         organizationLabel.textAlignment = .center
         organizationLabel.translatesAutoresizingMaskIntoConstraints = false
         organizationLabel.numberOfLines = 0
-        organizationLabel.backgroundColor = UIColor(hue: 0.1472, saturation: 0.1, brightness: 0.98, alpha: 1.0)
+        //organizationLabel.backgroundColor = UIColor(hue: 0.1472, saturation: 0.1, brightness: 0.98, alpha: 1.0)
         
-        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: 100))
-        lineView.layer.borderWidth = 5
-        lineView.layer.borderColor = UIColor.red.cgColor
+        //let lineView = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: 100))
+        //lineView.layer.borderWidth = 5
+        //lineView.layer.borderColor = UIColor.red.cgColor
         
-        nameLabel = openStudyNameLabel()
-        nameLabel.font = UIFont.systemFont(ofSize: 12)
-        nameLabel.textColor = UIColor.darkGray
+        nameLabel = OpenStudyNameLabel()
+        nameLabel.font = UIFont.systemFont(ofSize: 14)
+        nameLabel.textColor = UIColor.black
         nameLabel.text = "Test Study: parkinson damentia alzheimer"
         nameLabel.textAlignment = .center
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -50,18 +51,18 @@ class OpenStudyViewCell: UICollectionViewCell {
         
         staticJoinLabel = OpenStudyJoinLabel()
         staticJoinLabel.font = UIFont.systemFont(ofSize: 13)
-        staticJoinLabel.textColor = UIColor.blue
+        staticJoinLabel.textColor = UIColor(red: 0, green: 0.9137, blue: 0.5569, alpha: 1.0) /* #00e98e */
         staticJoinLabel.text = "Join"
         staticJoinLabel.textAlignment = .center
         staticJoinLabel.translatesAutoresizingMaskIntoConstraints = false
-        staticJoinLabel.backgroundColor = UIColor.gray
+        //staticJoinLabel.backgroundColor = UIColor.gray
         
         organizationLabel.layer.addBorder(edge: UIRectEdge.bottom, color: UIColor.red, thickness: 3)
 
         //staticJoinLabel.layer.borderColor = UIColor.gray.cgColor
         //staticJoinLabel.layer.borderWidth = 1
         
-        let verticalStackView = UIStackView(arrangedSubviews: [organizationLabel, lineView, nameLabel, staticJoinLabel])
+        let verticalStackView = UIStackView(arrangedSubviews: [organizationLabel, nameLabel, staticJoinLabel])
         verticalStackView.axis = .vertical
         verticalStackView.distribution = .fillProportionally
         verticalStackView.alignment = .fill
@@ -97,7 +98,7 @@ class OpenStudyOrganizationLabel: UILabel {
     }
 }
 
-class openStudyNameLabel: UILabel {
+class OpenStudyNameLabel: UILabel {
     var height = 50
     override var intrinsicContentSize: CGSize{
         return CGSize(width: 0, height: height)

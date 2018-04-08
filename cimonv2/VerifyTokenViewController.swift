@@ -101,6 +101,7 @@ class VerifyTokenViewController: UIViewController {
                     print("response after object : \(responseStruct.code), \(responseStruct.message)")
                     if responseStruct.code == 0{
                         Utils.saveDataToUserDefaults(data: true, key: "signedup")
+                        Utils.generateSystemNotification(message: "Welcome to Koios. Join different studies to participate.")
                         self.performSegue(withIdentifier: "AppHomeSegue", sender: nil)
                     } else{
                         // TODO: show error label- token mismatch

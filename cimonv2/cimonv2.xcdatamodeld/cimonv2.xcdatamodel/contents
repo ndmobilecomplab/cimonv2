@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppNotification" representedClassName="AppNotification" syncable="YES" codeGenerationType="class">
+        <attribute name="deleteOnView" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="expiry" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="loadingTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadingTimeZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notificationId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="originatedSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originatedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originatedTimeZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="notificationId"/>
+                <constraint value="originatedSource"/>
+                <constraint value="originatedTime"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
     <entity name="Study" representedClassName="Study" syncable="YES" codeGenerationType="class">
         <attribute name="modificationTime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -60,6 +80,7 @@
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
+        <element name="AppNotification" positionX="-36" positionY="126" width="128" height="210"/>
         <element name="Study" positionX="-63" positionY="-18" width="128" height="120"/>
         <element name="Survey" positionX="-54" positionY="27" width="128" height="283"/>
         <element name="SurveyResponse" positionX="-18" positionY="153" width="128" height="165"/>

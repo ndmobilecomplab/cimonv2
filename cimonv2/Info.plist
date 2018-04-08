@@ -2,12 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Koios want to access your microphone, please allow.</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Koios would like to access your voice recognition, please allow.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Koios</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -29,8 +27,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Koios want to access your microphone, please allow.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Please allow KOIOS to access photo Library</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Koios would like to access your voice recognition, please allow.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Raleway.ttf</string>

@@ -126,6 +126,12 @@ class DummyData: NSObject {
         return []
     }
     
+    static func getNotifications()->[String]{
+        return ["This is first message", "This is second message", "This is third message", "This is fourth message",
+                "This is 1st message", "This is 2nd message", "This is 3rd message", "This is 4th message"]
+    }
+
+    
 }
 
 

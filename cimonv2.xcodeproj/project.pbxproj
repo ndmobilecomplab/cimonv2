@@ -83,6 +83,18 @@
 		DD855BD8203237EB00C8DCD7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD855BD7203237EB00C8DCD7 /* Alamofire.framework */; };
 		DD855BDB2033724F00C8DCD7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD855BDA2033724F00C8DCD7 /* Utils.swift */; };
 		DD855BDD2033C4E300C8DCD7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD855BDC2033C4E300C8DCD7 /* Extension.swift */; };
+		DD86EEA520758E3600A7AD4C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEA420758E3500A7AD4C /* PageViewController.swift */; };
+		DD86EEA72075922900A7AD4C /* OpenStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEA62075922900A7AD4C /* OpenStudiesViewController.swift */; };
+		DD86EEA92075925200A7AD4C /* MyStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */; };
+		DD86EEAB207592D000A7AD4C /* AppCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEAA207592D000A7AD4C /* AppCenterViewController.swift */; };
+		DD86EEAD207596AB00A7AD4C /* AppCenterIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */; };
+		DD901D4E20789D20002B4F56 /* OpenStudyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D4D20789D20002B4F56 /* OpenStudyDetailsViewController.swift */; };
+		DD901D522078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D512078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift */; };
+		DD901D542078AC81002B4F56 /* OpenStudyInstructionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D532078AC81002B4F56 /* OpenStudyInstructionViewCell.swift */; };
+		DD901D562078ACA2002B4F56 /* OpenStudyReviewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D552078ACA2002B4F56 /* OpenStudyReviewViewCell.swift */; };
+		DD901D5B2079462D002B4F56 /* OpenStudyBannerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D592079462D002B4F56 /* OpenStudyBannerViewCell.swift */; };
+		DD901D5C2079462D002B4F56 /* OpenStudyBannerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD901D5A2079462D002B4F56 /* OpenStudyBannerViewCell.xib */; };
+		DD901D60207A9682002B4F56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD901D5F207A9681002B4F56 /* Assets.xcassets */; };
 		DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E5B20313534007AEBB4 /* AppDelegate.swift */; };
 		DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */; };
 		DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1E5F20313534007AEBB4 /* Main.storyboard */; };
@@ -94,11 +106,17 @@
 		DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EA82032207D007AEBB4 /* Task.storyboard */; };
 		DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EAA20322154007AEBB4 /* Label.storyboard */; };
 		DD9D1EAD203221AE007AEBB4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */; };
+		DDAD93D7207610D700C39467 /* BubblePageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD93D6207610D600C39467 /* BubblePageViewCell.swift */; };
+		DDAD93DA207611AD00C39467 /* NotificationViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAD93D8207611AC00C39467 /* NotificationViewCell.xib */; };
+		DDAD93DB207611AD00C39467 /* NotificationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD93D9207611AD00C39467 /* NotificationViewCell.swift */; };
+		DDAD93DD2076136500C39467 /* FSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAD93DC2076136400C39467 /* FSPagerView.framework */; };
+		DDAD93E02076D9DE00C39467 /* OpenStudyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD93DF2076D9DE00C39467 /* OpenStudyViewCell.swift */; };
+		DDAD93E22077015500C39467 /* StudyHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD93E12077015500C39467 /* StudyHeaderReusableView.swift */; };
+		DDAD93E42077342200C39467 /* NotificationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD93E32077342200C39467 /* NotificationDetailsViewController.swift */; };
 		DDC6ED8D2059CAB700B5B0D4 /* Syncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */; };
 		DDC6EDA7205F178B00B5B0D4 /* ViewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */; };
 		DDC6EDA92060226800B5B0D4 /* AppTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6EDA82060226800B5B0D4 /* AppTabController.swift */; };
 		DDE93DEC2062CEE100D34393 /* VisuospatialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DEB2062CEE100D34393 /* VisuospatialViewController.swift */; };
-		DDE93DEE2062D19F00D34393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE93DED2062D19F00D34393 /* Assets.xcassets */; };
 		DDE93DF12062D52000D34393 /* ColorGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DF02062D51F00D34393 /* ColorGameViewController.swift */; };
 		DDE93DF42062D90D00D34393 /* MotorGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DF32062D90C00D34393 /* MotorGameViewController.swift */; };
 /* End PBXBuildFile section */
@@ -200,6 +218,18 @@
 		DD855BD7203237EB00C8DCD7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		DD855BDA2033724F00C8DCD7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DD855BDC2033C4E300C8DCD7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DD86EEA420758E3500A7AD4C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		DD86EEA62075922900A7AD4C /* OpenStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudiesViewController.swift; sourceTree = "<group>"; };
+		DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudiesViewController.swift; sourceTree = "<group>"; };
+		DD86EEAA207592D000A7AD4C /* AppCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterViewController.swift; sourceTree = "<group>"; };
+		DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterIconCell.swift; sourceTree = "<group>"; };
+		DD901D4D20789D20002B4F56 /* OpenStudyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyDetailsViewController.swift; sourceTree = "<group>"; };
+		DD901D512078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyDescriptionViewCell.swift; sourceTree = "<group>"; };
+		DD901D532078AC81002B4F56 /* OpenStudyInstructionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyInstructionViewCell.swift; sourceTree = "<group>"; };
+		DD901D552078ACA2002B4F56 /* OpenStudyReviewViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyReviewViewCell.swift; sourceTree = "<group>"; };
+		DD901D592079462D002B4F56 /* OpenStudyBannerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyBannerViewCell.swift; sourceTree = "<group>"; };
+		DD901D5A2079462D002B4F56 /* OpenStudyBannerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenStudyBannerViewCell.xib; sourceTree = "<group>"; };
+		DD901D5F207A9681002B4F56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD9D1E5820313534007AEBB4 /* cimonv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cimonv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9D1E5B20313534007AEBB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -217,11 +247,18 @@
 		DD9D1EA82032207D007AEBB4 /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
 		DD9D1EAA20322154007AEBB4 /* Label.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Label.storyboard; sourceTree = "<group>"; };
 		DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		DDAD93D6207610D600C39467 /* BubblePageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubblePageViewCell.swift; sourceTree = "<group>"; };
+		DDAD93D8207611AC00C39467 /* NotificationViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewCell.xib; sourceTree = "<group>"; };
+		DDAD93D9207611AD00C39467 /* NotificationViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewCell.swift; sourceTree = "<group>"; };
+		DDAD93DC2076136400C39467 /* FSPagerView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSPagerView.framework; path = Carthage/Build/iOS/FSPagerView.framework; sourceTree = "<group>"; };
+		DDAD93DE2076B42B00C39467 /* cimonv2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cimonv2.entitlements; sourceTree = "<group>"; };
+		DDAD93DF2076D9DE00C39467 /* OpenStudyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyViewCell.swift; sourceTree = "<group>"; };
+		DDAD93E12077015500C39467 /* StudyHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyHeaderReusableView.swift; sourceTree = "<group>"; };
+		DDAD93E32077342200C39467 /* NotificationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailsViewController.swift; sourceTree = "<group>"; };
 		DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syncer.swift; sourceTree = "<group>"; };
 		DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDataManager.swift; sourceTree = "<group>"; };
 		DDC6EDA82060226800B5B0D4 /* AppTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabController.swift; sourceTree = "<group>"; };
 		DDE93DEB2062CEE100D34393 /* VisuospatialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisuospatialViewController.swift; sourceTree = "<group>"; };
-		DDE93DED2062D19F00D34393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDE93DF02062D51F00D34393 /* ColorGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGameViewController.swift; sourceTree = "<group>"; };
 		DDE93DF32062D90C00D34393 /* MotorGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAD93DD2076136500C39467 /* FSPagerView.framework in Frameworks */,
 				DD5F3B3F204B13DC0069741D /* Eureka.framework in Frameworks */,
 				DD50739A204725CA001865A3 /* SystemConfiguration.framework in Frameworks */,
 				DD507398204725BB001865A3 /* CoreMotion.framework in Frameworks */,
@@ -343,6 +381,7 @@
 		DD855BD6203237EB00C8DCD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDAD93DC2076136400C39467 /* FSPagerView.framework */,
 				DD5F3B3E204B13DC0069741D /* Eureka.framework */,
 				020256A920489FE800B1CD8A /* OtherResources */,
 				DD50739D204728C4001865A3 /* AdonitSDK.bundle */,
@@ -354,6 +393,35 @@
 				DD855BD7203237EB00C8DCD7 /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD901D4F2078AB5A002B4F56 /* OpenStudies */ = {
+			isa = PBXGroup;
+			children = (
+				DD86EEA62075922900A7AD4C /* OpenStudiesViewController.swift */,
+				DDAD93DF2076D9DE00C39467 /* OpenStudyViewCell.swift */,
+				DD901D4D20789D20002B4F56 /* OpenStudyDetailsViewController.swift */,
+				DDAD93E12077015500C39467 /* StudyHeaderReusableView.swift */,
+				DD901D512078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift */,
+				DD901D532078AC81002B4F56 /* OpenStudyInstructionViewCell.swift */,
+				DD901D552078ACA2002B4F56 /* OpenStudyReviewViewCell.swift */,
+				DD901D592079462D002B4F56 /* OpenStudyBannerViewCell.swift */,
+				DD901D5A2079462D002B4F56 /* OpenStudyBannerViewCell.xib */,
+			);
+			path = OpenStudies;
+			sourceTree = "<group>";
+		};
+		DD901D502078AB96002B4F56 /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				DD86EEAA207592D000A7AD4C /* AppCenterViewController.swift */,
+				DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */,
+				DDAD93E32077342200C39467 /* NotificationDetailsViewController.swift */,
+				DDAD93D9207611AD00C39467 /* NotificationViewCell.swift */,
+				DDAD93D6207610D600C39467 /* BubblePageViewCell.swift */,
+				DDAD93D8207611AC00C39467 /* NotificationViewCell.xib */,
+			);
+			path = AppCenter;
 			sourceTree = "<group>";
 		};
 		DD9D1E4F20313534007AEBB4 = {
@@ -381,6 +449,7 @@
 		DD9D1E5A20313534007AEBB4 /* cimonv2 */ = {
 			isa = PBXGroup;
 			children = (
+				DDAD93DE2076B42B00C39467 /* cimonv2.entitlements */,
 				DD9D1E99203141AA007AEBB4 /* CommonUtils */,
 				DD9D1E982031419D007AEBB4 /* Database */,
 				DD9D1E962031418A007AEBB4 /* RESTServices */,
@@ -395,7 +464,7 @@
 				DD7C06642034118E0097C49B /* VerifyTokenViewController.swift */,
 				DD9D1E6720313534007AEBB4 /* LaunchScreen.storyboard */,
 				DD9D1E6A20313534007AEBB4 /* Info.plist */,
-				DDE93DED2062D19F00D34393 /* Assets.xcassets */,
+				DD901D5F207A9681002B4F56 /* Assets.xcassets */,
 				DD9D1E6220313534007AEBB4 /* cimonv2.xcdatamodeld */,
 				DDC6EDA82060226800B5B0D4 /* AppTabController.swift */,
 			);
@@ -423,7 +492,11 @@
 		DD9D1E8F20314093007AEBB4 /* HomeManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DD901D502078AB96002B4F56 /* AppCenter */,
+				DD901D4F2078AB5A002B4F56 /* OpenStudies */,
+				DD86EEA420758E3500A7AD4C /* PageViewController.swift */,
 				DD9D1EA62032205B007AEBB4 /* Home.storyboard */,
+				DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */,
 			);
 			path = HomeManagement;
 			sourceTree = "<group>";
@@ -618,6 +691,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					DD9D1E6E20313534007AEBB4 = {
@@ -658,12 +734,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				020256AB2048A0A400B1CD8A /* Raleway.ttf in Resources */,
+				DDAD93DA207611AD00C39467 /* NotificationViewCell.xib in Resources */,
 				DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */,
+				DD901D5C2079462D002B4F56 /* OpenStudyBannerViewCell.xib in Resources */,
+				DD901D60207A9682002B4F56 /* Assets.xcassets in Resources */,
 				DD50739E204728C5001865A3 /* AdonitSDK.bundle in Resources */,
 				023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */,
 				DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */,
 				DD5F3B4B204B265E0069741D /* MotorTaskCell.xib in Resources */,
-				DDE93DEE2062D19F00D34393 /* Assets.xcassets in Resources */,
 				DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */,
 				DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */,
 				023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */,
@@ -699,6 +777,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FSPagerView.framework",
 			);
 			outputPaths = (
 			);
@@ -715,20 +794,25 @@
 			files = (
 				DD507394204725A0001865A3 /* SigningView.swift in Sources */,
 				DD5073AB20472D73001865A3 /* StylusAcceleration+CoreDataProperties.swift in Sources */,
+				DD901D4E20789D20002B4F56 /* OpenStudyDetailsViewController.swift in Sources */,
 				027735A0204C7ACB00121EBE /* ContextViewController.swift in Sources */,
+				DD901D5B2079462D002B4F56 /* OpenStudyBannerViewCell.swift in Sources */,
 				DD5073D220472EDA001865A3 /* ClosestPoint+CoreDataClass.swift in Sources */,
 				DD5073D020472EDA001865A3 /* Point+CoreDataClass.swift in Sources */,
 				DD50733C2045BEC4001865A3 /* ActiveSurveyListViewController.swift in Sources */,
+				DD86EEA72075922900A7AD4C /* OpenStudiesViewController.swift in Sources */,
 				DD5073B720472E49001865A3 /* ConnectResult+CoreDataProperties.swift in Sources */,
 				DD5073D420472EDA001865A3 /* ClosestPoint+CoreDataProperties.swift in Sources */,
 				023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */,
 				DDE93DF12062D52000D34393 /* ColorGameViewController.swift in Sources */,
 				DDC6EDA7205F178B00B5B0D4 /* ViewDataManager.swift in Sources */,
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
+				DD86EEAD207596AB00A7AD4C /* AppCenterIconCell.swift in Sources */,
 				DD5073D120472EDA001865A3 /* MemoryResult+CoreDataClass.swift in Sources */,
 				023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */,
 				0277359C204C7A8800121EBE /* MoodViewController.swift in Sources */,
 				DD5073D820472EDA001865A3 /* MotorResult+CoreDataProperties.swift in Sources */,
+				DD901D522078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift in Sources */,
 				0213CE32204C8A8B00567EA6 /* PagingMenuControllerCustomizable.swift in Sources */,
 				DD5073B620472E49001865A3 /* VisResult+CoreDataProperties.swift in Sources */,
 				020256A420485C1700B1CD8A /* GameController.swift in Sources */,
@@ -736,6 +820,10 @@
 				DD5073D720472EDA001865A3 /* PictureResult+CoreDataClass.swift in Sources */,
 				0213CE35204C8A8B00567EA6 /* MZTimerLabel.m in Sources */,
 				0213CE39204C8A8B00567EA6 /* MenuView.swift in Sources */,
+				DDAD93E22077015500C39467 /* StudyHeaderReusableView.swift in Sources */,
+				DD901D562078ACA2002B4F56 /* OpenStudyReviewViewCell.swift in Sources */,
+				DDAD93E42077342200C39467 /* NotificationDetailsViewController.swift in Sources */,
+				DD86EEA92075925200A7AD4C /* MyStudiesViewController.swift in Sources */,
 				DD5073B520472E49001865A3 /* TraceResult+CoreDataProperties.swift in Sources */,
 				DD5073D620472EDA001865A3 /* Point+CoreDataProperties.swift in Sources */,
 				0213CE30204C8A8B00567EA6 /* Pagable.swift in Sources */,
@@ -748,8 +836,11 @@
 				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
 				0213CE34204C8A8B00567EA6 /* MenuViewCustomizable.swift in Sources */,
 				DD5F3B51204B2A920069741D /* MotorTaskViewController.swift in Sources */,
+				DD86EEAB207592D000A7AD4C /* AppCenterViewController.swift in Sources */,
 				DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */,
+				DDAD93E02076D9DE00C39467 /* OpenStudyViewCell.swift in Sources */,
 				DD507393204725A0001865A3 /* SignatureViewController.swift in Sources */,
+				DDAD93D7207610D700C39467 /* BubblePageViewCell.swift in Sources */,
 				DD5073CC20472EDA001865A3 /* DeviceAcceleration+CoreDataClass.swift in Sources */,
 				DD5F3B7E204C8B210069741D /* MultiTestsApp.xcdatamodeld in Sources */,
 				DD5073CF20472EDA001865A3 /* MemoryResult+CoreDataProperties.swift in Sources */,
@@ -770,7 +861,9 @@
 				DDE93DEC2062CEE100D34393 /* VisuospatialViewController.swift in Sources */,
 				DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */,
 				DD5073D520472EDA001865A3 /* MotorResult+CoreDataClass.swift in Sources */,
+				DD901D542078AC81002B4F56 /* OpenStudyInstructionViewCell.swift in Sources */,
 				DD5F3B55204C610D0069741D /* CustomCells.swift in Sources */,
+				DD86EEA520758E3600A7AD4C /* PageViewController.swift in Sources */,
 				020256A520485C1700B1CD8A /* CardCVC.swift in Sources */,
 				DD5073B420472E49001865A3 /* TraceResult+CoreDataClass.swift in Sources */,
 				DD5073CA20472EDA001865A3 /* PictureResult+CoreDataProperties.swift in Sources */,
@@ -780,6 +873,7 @@
 				DD5073AC20472D73001865A3 /* SignatureResult+CoreDataClass.swift in Sources */,
 				DD5073C920472EDA001865A3 /* ColorResult+CoreDataProperties.swift in Sources */,
 				0213CE33204C8A8B00567EA6 /* PagingMenuController.swift in Sources */,
+				DDAD93DB207611AD00C39467 /* NotificationViewCell.swift in Sources */,
 				DD5F3B4A204B265E0069741D /* MotorTaskCell.swift in Sources */,
 				DD507392204725A0001865A3 /* SignatureInfoViewController.swift in Sources */,
 				DD5073B320472E49001865A3 /* VisResult+CoreDataClass.swift in Sources */,
@@ -951,6 +1045,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = cimonv2/cimonv2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2HQGZVUG4;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -979,6 +1074,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = cimonv2/cimonv2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2HQGZVUG4;
 				FRAMEWORK_SEARCH_PATHS = (

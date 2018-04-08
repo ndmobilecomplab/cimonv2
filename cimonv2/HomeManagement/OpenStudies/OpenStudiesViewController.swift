@@ -13,6 +13,7 @@ class OpenStudiesViewController: UICollectionViewController {
     fileprivate let reuseIdentifier = "openstudycell"
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 30.0, bottom: 50.0, right: 30.0)
     fileprivate let itemsPerRow: CGFloat = 2
+    var data = [1, 2, 3]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +25,22 @@ class OpenStudiesViewController: UICollectionViewController {
         self.collectionView!.register(OpenStudyViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(self.deleteStudyFromList(_:)), name: NSNotification.Name(rawValue: "deletestudyfromlist"), object: nil)
+
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @objc func deleteStudyFromList(_ notification: NSNotification){
+        guard let index = notification.userInfo?["index"] as? IndexPath else { return }
+        print ("index: \(index.section), \(index.row)")
+        DispatchQueue.main.async {
+            self.collectionView?.deleteItems(at: [index])
+            self.collectionView?.reloadData()
+        }
     }
     
 }
@@ -44,7 +56,7 @@ extension OpenStudiesViewController {
     //2
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return data.count
     }
     
     //3
@@ -64,17 +76,18 @@ extension OpenStudiesViewController {
         
         // add a border
         cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 1
-        cell.layer.cornerRadius = 8 // optional
+        cell.layer.borderWidth = 2
+        cell.layer.cornerRadius = 15 // optional
         
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let viewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "openstudydetailsvc") as? OpenStudyDetailsViewController {
-            
+            viewController.indexPathInList = indexPath
             //viewController.selectedNotification = object as! AppNotification
             navigationController?.pushViewController(viewController, animated: true)
+            
         }
 
     }

@@ -9,19 +9,19 @@
 import UIKit
 //import PagingMenuController
 
-struct PagingMenuOptions: PagingMenuControllerCustomizable {
+struct HomePagingMenuOptions: PagingMenuControllerCustomizable {
     
-    private let notificationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "appcentervc") as UIViewController
-    private let openVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "openstudyvc") as UIViewController
+    private let appCenterVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "appcentervc") as UIViewController
+    private let openVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "openstudyvc") as UIViewController
     //private let myVC = TestViewController()
-    private let myVC = MyStudiesViewController(collectionViewLayout: UICollectionViewFlowLayout())
+    private let myVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "mystudyvc") as UIViewController
     
     internal var componentType: ComponentType {
         return .all(menuOptions: MenuOptions(), pagingControllers: pagingControllers)
     }
     
     fileprivate var pagingControllers: [UIViewController] {
-        return [notificationVC, openVC, myVC]
+        return [appCenterVC, openVC, myVC]
     }
     
     fileprivate struct MenuOptions: MenuViewCustomizable {
@@ -53,15 +53,19 @@ struct PagingMenuOptions: PagingMenuControllerCustomizable {
 }
 
 class PageViewController: UIViewController {
+    var pagingMenuController:PagingMenuController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.white
         
-        let options = PagingMenuOptions()
-        let pagingMenuController = PagingMenuController(options: options)
-        pagingMenuController.view.frame.origin.y += 60
-        pagingMenuController.view.frame.size.height -= 64
+        let options = HomePagingMenuOptions()
+        pagingMenuController = PagingMenuController(options: options)
+        pagingMenuController.view.frame.origin.y = self.view.bounds.origin.y
+        //pagingMenuController.view.frame.size.height -= 10
+        
+        
         pagingMenuController.onMove = { state in
             switch state {
             case let .willMoveController(menuController, previousMenuController):
@@ -86,5 +90,27 @@ class PageViewController: UIViewController {
         addChildViewController(pagingMenuController)
         view.addSubview(pagingMenuController.view)
         pagingMenuController.didMove(toParentViewController: self)
+        
+
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.isTranslucent = false
+        
+        //self.edgesForExtendedLayout = []
+
+        
     }
+    
+   
+    /*
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }*/
 }

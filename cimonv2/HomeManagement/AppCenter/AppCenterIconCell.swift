@@ -18,6 +18,10 @@ class AppCenterIconCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        let screenHeight = UIScreen.main.bounds.height
+        let screenWidth = UIScreen.main.bounds.width
+
+        
         let taskImage = UIImage(named: "task") as UIImage?
         taskIconButton = AppCenterIconButton()
         taskIconButton.setBackgroundImage(taskImage, for: .normal)
@@ -25,7 +29,7 @@ class AppCenterIconCell: UITableViewCell {
         
         taskIconLabel = AppCenterIconLabel()
         taskIconLabel.text = "Pending Task (0)"
-        taskIconLabel.font = UIFont(name: "Helvetica Neue", size: 10)
+        
         taskIconLabel.textAlignment = .center
         
         let verticalStackViewFirst = UIStackView(arrangedSubviews: [taskIconButton, taskIconLabel])
@@ -41,7 +45,7 @@ class AppCenterIconCell: UITableViewCell {
         contextIconButton.addTarget(self, action: #selector(tapContextIcon), for: .touchUpInside)
         contextIconLabel = AppCenterIconLabel()
         contextIconLabel.text = "Label Your Context"
-        contextIconLabel.font = UIFont(name: "Helvetica Neue", size: 10)
+        
         contextIconLabel.textAlignment = .center
         
         var verticalStackViewSecond = UIStackView(arrangedSubviews: [contextIconButton, contextIconLabel])
@@ -51,6 +55,18 @@ class AppCenterIconCell: UITableViewCell {
         //verticalStackViewSecond.spacing = 2
         verticalStackViewSecond.translatesAutoresizingMaskIntoConstraints = false
         
+        
+        if screenHeight < 600{
+            taskIconLabel.font = UIFont(name: "Helvetica Neue", size: 10)
+            contextIconLabel.font = UIFont(name: "Helvetica Neue", size: 10)
+        } else if screenHeight < 700{
+            taskIconLabel.font = UIFont(name: "Helvetica Neue", size: 12)
+            contextIconLabel.font = UIFont(name: "Helvetica Neue", size: 12)
+        } else{
+            taskIconLabel.font = UIFont(name: "Helvetica Neue", size: 14)
+            contextIconLabel.font = UIFont(name: "Helvetica Neue", size: 14)
+        }
+
         
         var horizontalStackView = UIStackView(arrangedSubviews: [verticalStackViewFirst, verticalStackViewSecond])
         
