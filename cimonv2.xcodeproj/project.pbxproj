@@ -88,6 +88,12 @@
 		DD86EEA92075925200A7AD4C /* MyStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */; };
 		DD86EEAB207592D000A7AD4C /* AppCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEAA207592D000A7AD4C /* AppCenterViewController.swift */; };
 		DD86EEAD207596AB00A7AD4C /* AppCenterIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */; };
+		DD8BDC9A207AFDD0007EFE94 /* MyStudyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDC99207AFDD0007EFE94 /* MyStudyDetailsViewController.swift */; };
+		DD8BDC9D207B314E007EFE94 /* MyStudyListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDC9B207B314E007EFE94 /* MyStudyListViewCell.swift */; };
+		DD8BDC9E207B314E007EFE94 /* MyStudyListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8BDC9C207B314E007EFE94 /* MyStudyListViewCell.xib */; };
+		DD8BDCA0207B6123007EFE94 /* TestLabelCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDC9F207B6123007EFE94 /* TestLabelCollectionViewController.swift */; };
+		DD8BDCA2207B6EC6007EFE94 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDCA1207B6EC6007EFE94 /* TestCollectionViewCell.swift */; };
+		DD8BDCA4207B8A68007EFE94 /* LabelHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDCA3207B8A68007EFE94 /* LabelHeaderReusableView.swift */; };
 		DD901D4E20789D20002B4F56 /* OpenStudyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D4D20789D20002B4F56 /* OpenStudyDetailsViewController.swift */; };
 		DD901D522078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D512078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift */; };
 		DD901D542078AC81002B4F56 /* OpenStudyInstructionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D532078AC81002B4F56 /* OpenStudyInstructionViewCell.swift */; };
@@ -223,6 +229,12 @@
 		DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudiesViewController.swift; sourceTree = "<group>"; };
 		DD86EEAA207592D000A7AD4C /* AppCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterViewController.swift; sourceTree = "<group>"; };
 		DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterIconCell.swift; sourceTree = "<group>"; };
+		DD8BDC99207AFDD0007EFE94 /* MyStudyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudyDetailsViewController.swift; sourceTree = "<group>"; };
+		DD8BDC9B207B314E007EFE94 /* MyStudyListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudyListViewCell.swift; sourceTree = "<group>"; };
+		DD8BDC9C207B314E007EFE94 /* MyStudyListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyStudyListViewCell.xib; sourceTree = "<group>"; };
+		DD8BDC9F207B6123007EFE94 /* TestLabelCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLabelCollectionViewController.swift; sourceTree = "<group>"; };
+		DD8BDCA1207B6EC6007EFE94 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD8BDCA3207B8A68007EFE94 /* LabelHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHeaderReusableView.swift; sourceTree = "<group>"; };
 		DD901D4D20789D20002B4F56 /* OpenStudyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyDetailsViewController.swift; sourceTree = "<group>"; };
 		DD901D512078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyDescriptionViewCell.swift; sourceTree = "<group>"; };
 		DD901D532078AC81002B4F56 /* OpenStudyInstructionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyInstructionViewCell.swift; sourceTree = "<group>"; };
@@ -497,6 +509,9 @@
 				DD86EEA420758E3500A7AD4C /* PageViewController.swift */,
 				DD9D1EA62032205B007AEBB4 /* Home.storyboard */,
 				DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */,
+				DD8BDC99207AFDD0007EFE94 /* MyStudyDetailsViewController.swift */,
+				DD8BDC9B207B314E007EFE94 /* MyStudyListViewCell.swift */,
+				DD8BDC9C207B314E007EFE94 /* MyStudyListViewCell.xib */,
 			);
 			path = HomeManagement;
 			sourceTree = "<group>";
@@ -521,6 +536,9 @@
 				0277359D204C7AB700121EBE /* ActivityViewController.swift */,
 				0277359F204C7ACB00121EBE /* ContextViewController.swift */,
 				DD9D1EAA20322154007AEBB4 /* Label.storyboard */,
+				DD8BDC9F207B6123007EFE94 /* TestLabelCollectionViewController.swift */,
+				DD8BDCA1207B6EC6007EFE94 /* TestCollectionViewCell.swift */,
+				DD8BDCA3207B8A68007EFE94 /* LabelHeaderReusableView.swift */,
 			);
 			path = LabelManagement;
 			sourceTree = "<group>";
@@ -747,6 +765,7 @@
 				023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */,
 				023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */,
 				DD9D1EA72032205B007AEBB4 /* Home.storyboard in Resources */,
+				DD8BDC9E207B314E007EFE94 /* MyStudyListViewCell.xib in Resources */,
 				DD9D1EAD203221AE007AEBB4 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,6 +816,7 @@
 				DD901D4E20789D20002B4F56 /* OpenStudyDetailsViewController.swift in Sources */,
 				027735A0204C7ACB00121EBE /* ContextViewController.swift in Sources */,
 				DD901D5B2079462D002B4F56 /* OpenStudyBannerViewCell.swift in Sources */,
+				DD8BDC9A207AFDD0007EFE94 /* MyStudyDetailsViewController.swift in Sources */,
 				DD5073D220472EDA001865A3 /* ClosestPoint+CoreDataClass.swift in Sources */,
 				DD5073D020472EDA001865A3 /* Point+CoreDataClass.swift in Sources */,
 				DD50733C2045BEC4001865A3 /* ActiveSurveyListViewController.swift in Sources */,
@@ -815,6 +835,7 @@
 				DD901D522078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift in Sources */,
 				0213CE32204C8A8B00567EA6 /* PagingMenuControllerCustomizable.swift in Sources */,
 				DD5073B620472E49001865A3 /* VisResult+CoreDataProperties.swift in Sources */,
+				DD8BDCA2207B6EC6007EFE94 /* TestCollectionViewCell.swift in Sources */,
 				020256A420485C1700B1CD8A /* GameController.swift in Sources */,
 				0277359A204C7A5600121EBE /* RootViewController.swift in Sources */,
 				DD5073D720472EDA001865A3 /* PictureResult+CoreDataClass.swift in Sources */,
@@ -831,6 +852,8 @@
 				DD5F3B57204C69B50069741D /* FloatLabelTextField.swift in Sources */,
 				DDC6ED8D2059CAB700B5B0D4 /* Syncer.swift in Sources */,
 				0213CE37204C8A8B00567EA6 /* MenuItemView.swift in Sources */,
+				DD8BDC9D207B314E007EFE94 /* MyStudyListViewCell.swift in Sources */,
+				DD8BDCA0207B6123007EFE94 /* TestLabelCollectionViewController.swift in Sources */,
 				0213CE31204C8A8B00567EA6 /* UIView+Shimmer.m in Sources */,
 				DD5073CE20472EDA001865A3 /* FallingBallResult+CoreDataProperties.swift in Sources */,
 				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
@@ -863,6 +886,7 @@
 				DD5073D520472EDA001865A3 /* MotorResult+CoreDataClass.swift in Sources */,
 				DD901D542078AC81002B4F56 /* OpenStudyInstructionViewCell.swift in Sources */,
 				DD5F3B55204C610D0069741D /* CustomCells.swift in Sources */,
+				DD8BDCA4207B8A68007EFE94 /* LabelHeaderReusableView.swift in Sources */,
 				DD86EEA520758E3600A7AD4C /* PageViewController.swift in Sources */,
 				020256A520485C1700B1CD8A /* CardCVC.swift in Sources */,
 				DD5073B420472E49001865A3 /* TraceResult+CoreDataClass.swift in Sources */,

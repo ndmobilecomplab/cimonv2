@@ -34,6 +34,7 @@ struct HomePagingMenuOptions: PagingMenuControllerCustomizable {
         
     }
     var lazyLoadingPage: LazyLoadingPage = .three
+    var isScrollEnabled: Bool = false
     
     fileprivate struct MenuItem1: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
@@ -65,7 +66,6 @@ class PageViewController: UIViewController {
         pagingMenuController.view.frame.origin.y = self.view.bounds.origin.y
         //pagingMenuController.view.frame.size.height -= 10
         
-        
         pagingMenuController.onMove = { state in
             switch state {
             case let .willMoveController(menuController, previousMenuController):
@@ -87,6 +87,9 @@ class PageViewController: UIViewController {
             }
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(self.switchToAppCenter(_:)), name: NSNotification.Name(rawValue: "enrolledtostudy"), object: nil)
+
+        
         addChildViewController(pagingMenuController)
         view.addSubview(pagingMenuController.view)
         pagingMenuController.didMove(toParentViewController: self)
@@ -100,6 +103,18 @@ class PageViewController: UIViewController {
         
     }
     
+    @objc func switchToAppCenter(_ notification: NSNotification){
+        guard let index = notification.userInfo?["index"] as? IndexPath else { return }
+        guard let name = notification.userInfo?["studyName"] as? String else { return }
+        Utils.generateSystemNotification(message: "Thank you for joining to the \(name).", playSound: true)
+        print("pagin menu controller gets action")
+        DispatchQueue.main.async {
+            self.pagingMenuController.move(toPage: 0)
+
+
+        }
+        
+    }
    
     /*
     override func viewWillAppear(_ animated: Bool) {

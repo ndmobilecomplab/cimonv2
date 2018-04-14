@@ -1,0 +1,74 @@
+//
+//  LabelHeaderReusableView.swift
+//  cimonv2
+//
+//  Created by Afzal Hossain on 4/9/18.
+//  Copyright © 2018 Afzal Hossain. All rights reserved.
+//
+
+import UIKit
+
+class LabelHeaderReusableView: UICollectionReusableView, CollectionItemSelectDelegate {
+        
+    @IBOutlet weak var instructionLabel: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var stopButton: UIButton!
+    
+    var stopWatch:MZTimerLabel?
+    
+    var isRunning = false
+    var currentLabel:String = ""
+    
+
+    override func awakeFromNib() {
+        stopButton.setTitle("Stop", for: .normal)
+        stopButton.layer.borderColor = UIColor.black.cgColor
+        stopButton.layer.borderWidth = 3
+        stopButton.layer.cornerRadius = 15
+        stopButton.addTarget(self, action: #selector(stopLabel), for: .touchUpInside)
+        stopButton.isHidden = true
+        
+        
+        stopWatch = MZTimerLabel.init(label: timerLabel)
+        timerLabel.text = ""
+        timerLabel.isHidden = true
+        
+
+    }
+    
+    
+    @objc func startLabel(label:String){
+        timerLabel.isHidden = false
+        stopWatch?.isHidden = false
+        stopButton.isHidden = false
+        stopWatch?.reset()
+        stopWatch?.start()
+        isRunning = true
+        currentLabel = label
+        instructionLabel.text = label
+        
+    }
+    
+    @objc func stopLabel(){
+        stopWatch?.reset()
+        timerLabel.isHidden = true
+        stopButton.isHidden = true
+        isRunning = false
+        currentLabel = ""
+        instructionLabel.text = "Tap to START"
+    }
+    
+    func handleItemTapAction(label: String) {
+        if label.lowercased() == currentLabel.lowercased() && isRunning{
+            DispatchQueue.main.async {
+                self.stopLabel()
+            }
+        }else{
+            DispatchQueue.main.async {
+                self.startLabel(label: label)
+            }
+        }
+
+    }
+    
+}

@@ -7,13 +7,16 @@
 //
 
 import UIKit
-
+import Alamofire
+import SwiftyJSON
 
 class OpenStudiesViewController: UICollectionViewController {
     fileprivate let reuseIdentifier = "openstudycell"
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 30.0, bottom: 50.0, right: 30.0)
-    fileprivate let itemsPerRow: CGFloat = 2
-    var data = [1, 2, 3]
+    fileprivate var itemsPerRow: CGFloat = 2
+    var publicStudiesData:[StudyStruct] = []
+    // Create the Activity Indicator
+    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +24,24 @@ class OpenStudiesViewController: UICollectionViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
+        if UIScreen.main.bounds.width < 350{
+            itemsPerRow = 1
+        }else{
+            itemsPerRow = 2
+        }
+        
+        // Add it to the view where you want it to appear
+        view.addSubview(activityIndicator)
+        // Set up its size (the super view bounds usually)
+        activityIndicator.frame = view.bounds
+        
         // Register cell classes
         self.collectionView!.register(OpenStudyViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         // Do any additional setup after loading the view.
-        NotificationCenter.default.addObserver(self, selector: #selector(self.deleteStudyFromList(_:)), name: NSNotification.Name(rawValue: "deletestudyfromlist"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.enrollToStudy(_:)), name: NSNotification.Name(rawValue: "enrolledtostudy"), object: nil)
+        
+        populatePublicStudies()
 
     }
     
@@ -34,12 +50,42 @@ class OpenStudiesViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func deleteStudyFromList(_ notification: NSNotification){
+    func populatePublicStudies(){
+        // Start the loading animation
+        activityIndicator.startAnimating()
+        
+        publicStudiesData = []
+        let email:String = Utils.getDataFromUserDefaults(key: "email") as! String
+        let serviceUrl = Utils.getBaseUrl() + "study/list/open/public?email=\(email)"
+        Alamofire.request(serviceUrl).validate().responseJSON { response in
+            self.activityIndicator.stopAnimating()
+            switch response.result {
+            case .success:
+                let json = JSON(response.result.value as Any)
+                print("response after object : \(json)")
+                for item in json.arrayValue{
+                    self.publicStudiesData.append(StudyStruct.responseFromJSONData(jsonData: item))
+                }
+                DispatchQueue.main.async {
+                    self.collectionView?.reloadData()
+                }
+                
+            case .failure(let error):
+                print(error)
+                // TODO: show error label - service not available
+            }
+        }
+
+    }
+    
+    @objc func enrollToStudy(_ notification: NSNotification){
         guard let index = notification.userInfo?["index"] as? IndexPath else { return }
         print ("index: \(index.section), \(index.row)")
+        publicStudiesData.remove(at: index.row)
         DispatchQueue.main.async {
             self.collectionView?.deleteItems(at: [index])
             self.collectionView?.reloadData()
+
         }
     }
     
@@ -56,7 +102,7 @@ extension OpenStudiesViewController {
     //2
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return data.count
+        return publicStudiesData.count
     }
     
     //3
@@ -64,6 +110,7 @@ extension OpenStudiesViewController {
         //1
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                       for: indexPath) as! OpenStudyViewCell
+        print("len \(publicStudiesData.count), \(indexPath), \(publicStudiesData[0].name)")
         //2
         //let flickrPhoto = photoForIndexPath(indexPath: indexPath)
         //cell.backgroundColor = UIColor.white
@@ -73,7 +120,8 @@ extension OpenStudiesViewController {
         //cell.studyName?.text = flickrPhoto.photoID
         //print("photo id:\(flickrPhoto.photoID)")
         //cell.
-        
+        cell.nameLabel.text = publicStudiesData[indexPath.row].name
+
         // add a border
         cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.borderWidth = 2
@@ -85,6 +133,7 @@ extension OpenStudiesViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let viewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "openstudydetailsvc") as? OpenStudyDetailsViewController {
             viewController.indexPathInList = indexPath
+            viewController.studyDetails = publicStudiesData[indexPath.row]
             //viewController.selectedNotification = object as! AppNotification
             navigationController?.pushViewController(viewController, animated: true)
             
@@ -166,7 +215,7 @@ extension CALayer {
             border.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: thickness)
             break
         case UIRectEdge.bottom:
-            print("program should come here....")
+            print("program should come here....bottom")
             border.frame = CGRect(x: 0, y: self.frame.height - thickness, width: self.frame.width, height: thickness)
             break
         case UIRectEdge.left:

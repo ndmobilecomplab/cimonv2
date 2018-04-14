@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dja-yP-wq1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dja-yP-wq1">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -393,6 +394,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqu-2z-S3y" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1679.7101449275362" y="-46.467391304347828"/>
+        </scene>
+        <!--Test Label Collection View Controller-->
+        <scene sceneID="UTK-Tv-Irb">
+            <objects>
+                <collectionViewController storyboardIdentifier="testlabelcollectionvc" id="4zB-GB-C9d" customClass="TestLabelCollectionViewController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NRy-l8-E0H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v5r-65-xpX">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="50" height="200"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="I96-cH-SQc">
+                                <rect key="frame" x="0.0" y="200" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="labelheaderreuseview" id="mbB-C0-FWj" customClass="LabelHeaderReusableView" customModule="cimonv2" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-d5-XO1">
+                                    <rect key="frame" x="33" y="-3" width="346" height="58"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="58" id="Mlq-Ut-Cjd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvP-ZZ-ss2">
+                                    <rect key="frame" x="98" y="64" width="219" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-nn-iHZ">
+                                    <rect key="frame" x="77" y="136" width="260" height="48"/>
+                                    <color key="backgroundColor" red="0.8325071383" green="0.1456739591" blue="0.15809635420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <state key="normal" title="STOP This Labelling">
+                                        <color key="titleColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="6Kj-d5-XO1" firstAttribute="top" secondItem="mbB-C0-FWj" secondAttribute="topMargin" constant="-11" id="51U-xh-jfO"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="6Kj-d5-XO1" secondAttribute="trailing" constant="27" id="HeR-EK-45q"/>
+                                <constraint firstItem="AvP-ZZ-ss2" firstAttribute="centerX" secondItem="Io6-nn-iHZ" secondAttribute="centerX" id="MZh-tO-kPw"/>
+                                <constraint firstItem="6Kj-d5-XO1" firstAttribute="leading" secondItem="mbB-C0-FWj" secondAttribute="leadingMargin" constant="25" id="PFE-kM-u93"/>
+                                <constraint firstItem="AvP-ZZ-ss2" firstAttribute="top" secondItem="6Kj-d5-XO1" secondAttribute="bottom" constant="9" id="XQq-N8-aAs"/>
+                                <constraint firstItem="AvP-ZZ-ss2" firstAttribute="leading" secondItem="mbB-C0-FWj" secondAttribute="leadingMargin" constant="90" id="bfB-TU-pQI"/>
+                                <constraint firstItem="AvP-ZZ-ss2" firstAttribute="centerX" secondItem="mbB-C0-FWj" secondAttribute="centerX" id="rhx-Xc-wz5"/>
+                                <constraint firstItem="Io6-nn-iHZ" firstAttribute="top" secondItem="AvP-ZZ-ss2" secondAttribute="bottom" constant="43" id="tdg-8i-v80"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="instructionLabel" destination="6Kj-d5-XO1" id="Dnx-wi-WZM"/>
+                                <outlet property="stopButton" destination="Io6-nn-iHZ" id="2VV-xt-jTN"/>
+                                <outlet property="timerLabel" destination="AvP-ZZ-ss2" id="fz9-e2-RRU"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="4zB-GB-C9d" id="d4X-G3-qAw"/>
+                            <outlet property="delegate" destination="4zB-GB-C9d" id="u78-aj-bAE"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78k-NL-ncn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424.6376811594205" y="-48.097826086956523"/>
         </scene>
     </scenes>
     <resources>

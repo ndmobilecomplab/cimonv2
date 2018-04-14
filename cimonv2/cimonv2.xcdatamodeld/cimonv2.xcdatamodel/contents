@@ -21,11 +21,18 @@
         </uniquenessConstraints>
     </entity>
     <entity name="Study" representedClassName="Study" syncable="YES" codeGenerationType="class">
+        <attribute name="iconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instruction" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="modificationTime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="studyDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="studyId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="studyId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="Survey" representedClassName="Survey" syncable="YES" codeGenerationType="class">
         <attribute name="cycleEndTime" optional="YES" attributeType="String" syncable="YES"/>
@@ -81,9 +88,9 @@
     </entity>
     <elements>
         <element name="AppNotification" positionX="-36" positionY="126" width="128" height="210"/>
-        <element name="Study" positionX="-63" positionY="-18" width="128" height="120"/>
-        <element name="Survey" positionX="-54" positionY="27" width="128" height="283"/>
-        <element name="SurveyResponse" positionX="-18" positionY="153" width="128" height="165"/>
-        <element name="Task" positionX="-36" positionY="36" width="128" height="240"/>
+        <element name="Study" positionX="-432" positionY="-63" width="128" height="150"/>
+        <element name="Survey" positionX="-173" positionY="-90" width="128" height="283"/>
+        <element name="SurveyResponse" positionX="-11" positionY="-81" width="128" height="165"/>
+        <element name="Task" positionX="-306" positionY="147" width="128" height="240"/>
     </elements>
 </model>

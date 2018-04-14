@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class Utils: NSObject {
     
@@ -72,7 +73,19 @@ class Utils: NSObject {
         let notifStruct:AppNotificationStruct = AppNotificationStruct(notificationId: Int64(time), originatedSource: getAppDisplayName(), originatedTime: String(time), title: getAppDisplayName(), message: message, loadingTime: String(time), loadingTimeZone: String(time), deleteOnView: 1, expiry: 12 * 60 * 60, viewCount: 0)
         Syncer.sharedInstance.insertNotification(notifStruct: notifStruct)
     }
-    
+    static func generateSystemNotification(message:String, playSound:Bool){
+        let time = Date().timeIntervalSince1970
+        let notifStruct:AppNotificationStruct = AppNotificationStruct(notificationId: Int64(time), originatedSource: getAppDisplayName(), originatedTime: String(time), title: getAppDisplayName(), message: message, loadingTime: String(time), loadingTimeZone: String(time), deleteOnView: 1, expiry: 12 * 60 * 60, viewCount: 0)
+        Syncer.sharedInstance.insertNotification(notifStruct: notifStruct)
+        if playSound{
+            // create a sound ID, in this case its the tweet sound.
+            let systemSoundID: SystemSoundID = 1016
+            
+            // to play sound
+            AudioServicesPlaySystemSound (systemSoundID)
+        }
+    }
+
 }
 
 

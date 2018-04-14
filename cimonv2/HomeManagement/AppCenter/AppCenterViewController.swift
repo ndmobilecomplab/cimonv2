@@ -32,7 +32,7 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
 
         DispatchQueue.global(qos: .background).async {
             //for i in 0..<5{
-                //Utils.generateSystemNotification(message: "This is generated from system \(i)")
+                //Utils.generateSystemNotification(message: "This is generated from system")
             //}
             
             //Syncer.sharedInstance.insertDummyNotifications()
@@ -52,12 +52,18 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.tabBar.isHidden = true
         self.extendedLayoutIncludesOpaqueBars = true
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            //self.tableView.beginUpdates()
+            //self.tableView.endUpdates()
+        }
+
     }
     
     func initializeFetchedResultsController() {
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "AppNotification")
-        let latestSort = NSSortDescriptor(key: "originatedTime", ascending: true)
+        let latestSort = NSSortDescriptor(key: "originatedTime", ascending: false)
         let idSort = NSSortDescriptor(key: "notificationId", ascending: true)
         request.sortDescriptors = [latestSort, idSort]
         
@@ -75,12 +81,15 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
         
     }
     
+    /*
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         DispatchQueue.main.async {
             self.tableView.beginUpdates()
         }
         
     }
+    */
+    
     
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
@@ -106,31 +115,36 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
     
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
-        print("change in row...\(indexPath?.section), \(indexPath?.row)")
-        
-        if indexPath?.section == 0{
-            switch type {
-            case .insert:
-                print("new row inserted...")
-                tableView.insertRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
-            case .delete:
-                print("row deleted...")
-                //tableView.deleteRows(at: [indexPath!], with: .fade)
-                tableView.deleteRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
-            case .update:
-                print("row updated...")
-                tableView.reloadRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
-            case NSFetchedResultsChangeType(rawValue: 3)!:
-                print("update row by raw value")
-                tableView.reloadRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
-            case .move:
-                print("row moved...")
-                tableView.moveRow(at: indexPath!, to: newIndexPath!)
+        print("change in row.. \(indexPath).\(indexPath?.section), \(indexPath?.row)")
+        if let index=indexPath{
+            print("index path not nil")
+            if indexPath?.section == 0{
+                switch type {
+                case .insert:
+                    print("new row inserted...")
+                    tableView.insertRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
+                case .delete:
+                    print("row deleted...")
+                    //tableView.deleteRows(at: [indexPath!], with: .fade)
+                    tableView.deleteRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
+                case .update:
+                    print("row updated...")
+                    tableView.reloadRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
+                case NSFetchedResultsChangeType(rawValue: 3)!:
+                    print("update row by raw value")
+                    tableView.reloadRows(at: [IndexPath(row: (indexPath?.row)!, section: 1)], with: .fade)
+                case .move:
+                    print("row moved...")
+                    tableView.moveRow(at: indexPath!, to: newIndexPath!)
+                }
+                
             }
 
+        }else{
+            print("index path nil...\(fetchedResultsController.fetchedObjects?.count)")
         }
     }
-    
+    /*
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         DispatchQueue.main.async {
             print("will end update and reload")
@@ -140,7 +154,7 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
 
         }
     }
-
+    */
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -155,21 +169,23 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("it is error..")
+        print("section \(section)")
         // #warning Incomplete implementation, return the number of rows
         if section == 1{
             guard let fetchedObjects = fetchedResultsController?.fetchedObjects else{
                 return 0
             }
+            print("number of rows in section: \(fetchedObjects.count)")
             return fetchedObjects.count
             //return 0
 
             //return DummyData.getNotifications().count
         }else{
+            print("constant row count 1")
             return 1
         }
     }
-    
+
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 1{
             guard let fetchedObjects = fetchedResultsController?.fetchedObjects else{
@@ -299,15 +315,58 @@ class AppCenterViewController: UITableViewController, AppCenterIconCellDelegate,
     @available(iOS 11.0, *)
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?{
         
-        let deleteAction = UIContextualAction.init(style: UIContextualAction.Style.destructive, title: "Delete", handler: { (action, view, completion) in
-            //TODO: Delete
-            completion(true)
-        })
-        
-        let config = UISwipeActionsConfiguration(actions: [deleteAction])
-        
-        config.performsFirstActionWithFullSwipe = false
-        return config
+        if indexPath.section == 1 {
+            let deleteAction = UIContextualAction.init(style: UIContextualAction.Style.destructive, title: "Delete", handler: { (action, view, completion) in
+                //TODO: Delete
+                guard let object = self.fetchedResultsController?.object(at: IndexPath(row: indexPath.row, section: 0)) else {
+                    fatalError("Attempt to configure cell without a managed object")
+                }
+
+                Syncer.sharedInstance.deleteNotification(appNotification: object as! AppNotification)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                completion(true)
+            })
+            
+            let config = UISwipeActionsConfiguration(actions: [deleteAction])
+            
+            config.performsFirstActionWithFullSwipe = false
+            return config
+
+        } else{
+            return nil
+        }
+    }
+    
+    @available(iOS 11.0, *)
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        /*
+        if indexPath.section == 1{
+            let deleteAction = UIContextualAction.init(style: UIContextualAction.Style.destructive, title: "Delete", handler: { (action, view, completion) in
+                //TODO: Delete
+                guard let object = self.fetchedResultsController?.object(at: IndexPath(row: indexPath.row, section: 0)) else {
+                    fatalError("Attempt to configure cell without a managed object")
+                }
+                
+                Syncer.sharedInstance.deleteNotification(appNotification: object as! AppNotification)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                completion(true)
+            })
+            
+            let config = UISwipeActionsConfiguration(actions: [deleteAction])
+            
+            config.performsFirstActionWithFullSwipe = false
+            return config
+
+        }else{
+            return nil
+        }*/
+        let swipeAction = UISwipeActionsConfiguration(actions: [])
+        swipeAction.performsFirstActionWithFullSwipe = false // This is the line which disables full swipe
+        return swipeAction
     }
     
     /*

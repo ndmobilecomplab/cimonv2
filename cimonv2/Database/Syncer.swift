@@ -36,7 +36,7 @@ class Syncer:NSObject{
     
     func syncStudies(){
         let email:String = Utils.getDataFromUserDefaults(key: "email") as! String
-        let serviceUrl = Utils.getBaseUrl() + "study/list?email=\(email)&uuid=\(Utils.getDeviceIdentifier())"
+        let serviceUrl = Utils.getBaseUrl() + "study/list/enrolled/active?email=\(email)&uuid=\(Utils.getDeviceIdentifier())"
         Alamofire.request(serviceUrl).validate().responseJSON { response in
             switch response.result {
             case .success:
@@ -54,7 +54,6 @@ class Syncer:NSObject{
                     let studyId = Int32(item["id"].intValue)
                     let name = item["name"].stringValue
                     let modificationTime = item["modificationTime"].stringValue
-                    
                     
                     if let study = studyDict[studyId]{
                         if study.modificationTime == modificationTime{
@@ -80,6 +79,8 @@ class Syncer:NSObject{
                         newStudy.studyDescription = item["description"].stringValue
                         newStudy.modificationTime = modificationTime
                         newStudy.state = Int16(item["state"].intValue)
+                        newStudy.instruction = item["instruction"].stringValue
+                        newStudy.iconUrl = item["iconUrl"].stringValue
                         self.saveContext()
                         
                         self.syncSurveysOfStudy(studyId: studyId, studyName: name)
@@ -105,6 +106,20 @@ class Syncer:NSObject{
                 // TODO: show error label - service not available
             }
         }
+
+    }
+    
+    func insertStudy(studyStruct:StudyStruct){
+        context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        let newStudy:Study = NSEntityDescription.insertNewObject(forEntityName: "Study", into: self.context) as! Study
+        newStudy.studyId = studyStruct.studyId
+        newStudy.name = studyStruct.name
+        newStudy.studyDescription = studyStruct.studyDescription
+        newStudy.modificationTime = studyStruct.modificationTime
+        newStudy.state = studyStruct.state
+        newStudy.instruction = studyStruct.studyDescription
+        newStudy.iconUrl = studyStruct.iconUrl
+        self.saveContext()
 
     }
     
@@ -265,10 +280,24 @@ class Syncer:NSObject{
         }
     }
     
-    
+    func getAllStudyStructs()->[StudyStruct]!{
+        var studyStructs:[StudyStruct] = [StudyStruct]()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Study")
+        do{
+            let studies = try context.fetch(fetchRequest) as! [Study]
+            //printStudies(studies: studies)
+            for study in studies{
+                studyStructs.append(StudyStruct(studyId: study.studyId, name: study.name!, studyDescription: "", instruction:"", modificationTime: "", state: study.state, iconUrl: ""))
+            }
+        } catch let error as NSError{
+            print("error:\(error)")
+        }
+        return studyStructs
+    }
+
     func printStudies(studies:[Study]){
         for study in studies{
-            print("studyId:\(study.studyId), name:\(String(describing: study.name!)), description:\(String(describing: study.studyDescription!)), state:\(study.state), modification time:\(String(describing: study.modificationTime!))")
+            print("studyId:\(study.studyId), name:\(String(describing: study.name!)), description:\(String(describing: study.studyDescription!)), state:\(study.state), modification time:\(String(describing: study.modificationTime!)), instruction:\(study.instruction), iconUrl:\(study.iconUrl)")
         }
     }
 
@@ -404,5 +433,4 @@ class Syncer:NSObject{
         self.saveContext()
     }
     
-    //MARK:
 }

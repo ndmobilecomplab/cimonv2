@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile-->
+        <!--Koios-->
         <scene sceneID="rjM-CS-MVo">
             <objects>
                 <viewController storyboardIdentifier="rootpagemenuvc" id="YQL-tC-f0D" customClass="PageViewController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,9 +20,7 @@
                         <viewLayoutGuide key="safeArea" id="28j-AO-2UH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="anb-zO-act"/>
-                    <navigationItem key="navigationItem" id="xZr-Rg-nbm">
-                        <nil key="title"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Koios" id="xZr-Rg-nbm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpD-6s-lp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fdf-qj-Xw3">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fdf-qj-Xw3">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fdf-qj-Xw3" id="gb4-kn-1R6">
@@ -118,6 +116,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psG-lO-Bra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="315" y="165"/>
+        </scene>
+        <!--My Study Details View Controller-->
+        <scene sceneID="9bR-XP-Cav">
+            <objects>
+                <tableViewController storyboardIdentifier="mystudydeatilsvc" id="QfJ-eT-FdA" customClass="MyStudyDetailsViewController" customModule="cimonv2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ieD-oW-OKk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dDR-2C-AeD">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dDR-2C-AeD" id="Kw8-qU-qKh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QfJ-eT-FdA" id="9fQ-QE-IKp"/>
+                            <outlet property="delegate" destination="QfJ-eT-FdA" id="ycs-Yq-DA9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hm-WD-6cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="164"/>
         </scene>
         <!--App Center View Controller-->
         <scene sceneID="9HB-b6-cOl">

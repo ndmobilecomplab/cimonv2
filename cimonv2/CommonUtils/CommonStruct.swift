@@ -25,7 +25,30 @@ struct Response {
 
 
 
-// MARK: Task structs
+// MARK: core data structs
+
+struct StudyStruct{
+    var studyId:Int32
+    var name:String
+    var studyDescription:String?
+    var instruction:String?
+    var modificationTime:String?
+    var state:Int16
+    var iconUrl:String?
+    
+    static func responseFromJSONData(jsonData:JSON)->StudyStruct{
+        let studyId = Int32(jsonData["id"].intValue)
+        let name = jsonData["name"].stringValue
+        let studyDescription = jsonData["description"].stringValue
+        let instruction = jsonData["instruction"].stringValue
+        let modificationTime = jsonData["modificationTime"].stringValue
+        let state = Int16(jsonData["state"].intValue)
+        let iconUrl = jsonData["iconUrl"].stringValue
+
+        return StudyStruct(studyId: studyId, name: name, studyDescription: studyDescription, instruction: instruction, modificationTime: modificationTime, state: state, iconUrl: iconUrl)
+    }
+
+}
 
 struct SurveyResponseStruct{
     var studyId:Int32

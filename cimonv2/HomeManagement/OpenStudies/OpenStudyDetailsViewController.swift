@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class OpenStudyDetailsViewController: UITableViewController {
 
     var indexPathInList:IndexPath!
-    
+    var studyDetails:StudyStruct!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +24,7 @@ class OpenStudyDetailsViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.tableView.register(UINib(nibName: "OpenStudyBannerViewCell", bundle: nil), forCellReuseIdentifier: "openstudybannercell")
         self.tableView.register(OpenStudyDescriptionViewCell.self, forCellReuseIdentifier: "openstudydescriptioncell")
-
+        self.tableView.register(OpenStudyInstructionViewCell.self, forCellReuseIdentifier: "openstudyinstructionncell")
         
         self.tableView.estimatedRowHeight = 100
         tableView.tableFooterView = UIView()
@@ -37,9 +39,28 @@ class OpenStudyDetailsViewController: UITableViewController {
     }
     
     @objc func enrollToStudy(){
-        let userInfo = [ "index" : indexPathInList ]
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "deletestudyfromlist"), object: nil, userInfo: userInfo)
-        navigationController?.popViewController(animated: true)
+        let email:String = Utils.getDataFromUserDefaults(key: "email") as! String
+        let serviceUrl = Utils.getBaseUrl() + "study/enroll?email=\(email)&uuid=\(Utils.getDeviceIdentifier())&id=\(self.studyDetails.studyId)&jointime=\(Date().timeIntervalSince1970)&jointimezone=\(240)"
+        Alamofire.request(serviceUrl).validate().responseJSON { response in
+            switch response.result {
+            case .success:
+                let json = JSON(response.result.value as Any)
+                let responseStruct = Response.responseFromJSONData(jsonData: json)
+                print("response after enrollment : \(responseStruct.code), \(responseStruct.message)")
+                if responseStruct.code == 0{
+                    Syncer.sharedInstance.insertStudy(studyStruct: self.studyDetails)
+                    let userInfo = [ "index" : self.indexPathInList, "studyName" : self.studyDetails.name ] as [String : Any]
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "enrolledtostudy"), object: nil, userInfo: userInfo)
+                    self.navigationController?.popViewController(animated: true)
+                } else{
+                    // TODO: show error label- token mismatch
+                    //self.errorLabel.text = "Invalid Token"
+                }
+            case .failure(let error):
+                print(error)
+                // TODO: show error label - service not available
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -51,7 +72,12 @@ class OpenStudyDetailsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        if section == 0 || section == 1 || section == 2{
+            return 1
+        }else{
+            return 3
+        }
+
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -83,18 +109,37 @@ class OpenStudyDetailsViewController: UITableViewController {
             // Configure the cell...
             print("section \(indexPath.section), row:\(indexPath.row)")
             //cell.descriptionLabel.text = "hfjk fsdfh dsjfhsdj  jfhdj sfsf fhdjk fsdjf dsjfh . fdskf sdf /fdf hdsfd fjfsk fdjks dfjskdfjsdf f dsjjf f kjf.ahs cncjhasdhibjhfiouur9wern38f fhsiudhishk dm djduhaiuhd mn hdas djansjkdk."
-            cell.nameLabel.text = "Test study related to parkinson"
+            cell.nameLabel.text = studyDetails.name
+            
+            cell.orgLabel.textColor = UIColor(red: 0, green: 0.7804, blue: 0.902, alpha: 1.0) /* #00c7e6 */
             cell.orgLabel.text = "University of Notre Dame"
+            
             cell.studyImage.image = UIImage(named: "task")
             cell.studyImage.contentMode = .scaleAspectFit
             return cell
 
-        }else{
+        }else if indexPath.section == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "openstudydescriptioncell", for: indexPath) as! OpenStudyDescriptionViewCell
             
             // Configure the cell...
             print("section \(indexPath.section), row:\(indexPath.row)")
-            cell.descriptionLabel.text = "hfjk fsdfh dsjfhsdj  jfhdj sfsf fhdjk fsdjf dsjfh . fdskf sdf /fdf hdsfd fjfsk fdjks dfjskdfjsdf f dsjjf f kjf.ahs cncjhasdhibjhfiouur9wern38f fhsiudhishk dm djduhaiuhd mn hdas djansjkdk."
+            cell.descriptionLabel.text = studyDetails.studyDescription
+            return cell
+
+        }else if indexPath.section == 2{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "openstudyinstructionncell", for: indexPath) as! OpenStudyInstructionViewCell
+            
+            // Configure the cell...
+            print("section \(indexPath.section), row:\(indexPath.row)")
+            cell.instructionLabel.text = studyDetails.instruction
+            return cell
+            
+        } else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "openstudydescriptioncell", for: indexPath) as! OpenStudyDescriptionViewCell
+            
+            // Configure the cell...
+            print("section \(indexPath.section), row:\(indexPath.row)")
+            cell.descriptionLabel.text = "Review of participant \(indexPath.row)"
             return cell
 
         }

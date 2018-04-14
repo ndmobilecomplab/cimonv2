@@ -16,25 +16,26 @@ class OpenStudyViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        addViews()
+
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         super.layoutIfNeeded()
-        addViews()
     }
     
     func addViews(){
         
         organizationLabel = OpenStudyOrganizationLabel()
-        organizationLabel.font = UIFont.systemFont(ofSize: 13)
+        organizationLabel.font = UIFont.systemFont(ofSize: 14)
         
         organizationLabel.textColor = UIColor(red: 0, green: 0.7804, blue: 0.902, alpha: 1.0) /* #00c7e6 */
         organizationLabel.text = "University of Notre Dame"
         organizationLabel.textAlignment = .center
         organizationLabel.translatesAutoresizingMaskIntoConstraints = false
         organizationLabel.numberOfLines = 0
+        organizationLabel.layer.addBorder(edge: .bottom, color: UIColor.red, thickness: 1)
         //organizationLabel.backgroundColor = UIColor(hue: 0.1472, saturation: 0.1, brightness: 0.98, alpha: 1.0)
         
         //let lineView = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: 100))
@@ -42,15 +43,15 @@ class OpenStudyViewCell: UICollectionViewCell {
         //lineView.layer.borderColor = UIColor.red.cgColor
         
         nameLabel = OpenStudyNameLabel()
-        nameLabel.font = UIFont.systemFont(ofSize: 14)
+        nameLabel.font = UIFont.systemFont(ofSize: 15)
         nameLabel.textColor = UIColor.black
-        nameLabel.text = "Test Study: parkinson damentia alzheimer"
+        nameLabel.text = ""
         nameLabel.textAlignment = .center
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.numberOfLines = 0
         
         staticJoinLabel = OpenStudyJoinLabel()
-        staticJoinLabel.font = UIFont.systemFont(ofSize: 13)
+        staticJoinLabel.font = UIFont.systemFont(ofSize: 14)
         staticJoinLabel.textColor = UIColor(red: 0, green: 0.9137, blue: 0.5569, alpha: 1.0) /* #00e98e */
         staticJoinLabel.text = "Join"
         staticJoinLabel.textAlignment = .center
@@ -66,6 +67,7 @@ class OpenStudyViewCell: UICollectionViewCell {
         verticalStackView.axis = .vertical
         verticalStackView.distribution = .fillProportionally
         verticalStackView.alignment = .fill
+        verticalStackView.spacing = 2
         verticalStackView.translatesAutoresizingMaskIntoConstraints = false
 
         self.addSubview(verticalStackView)

@@ -30,6 +30,11 @@ class ActiveSurveyListViewController: UITableViewController, NSFetchedResultsCon
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.tabBar.isHidden = false
         self.extendedLayoutIncludesOpaqueBars = false
+        
+        Syncer.sharedInstance.syncStudies()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 
     
@@ -52,9 +57,10 @@ class ActiveSurveyListViewController: UITableViewController, NSFetchedResultsCon
         
     }
     
+    /*
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
-    }
+    }*/
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
         print("change in section...\(type.rawValue)")
@@ -96,9 +102,10 @@ class ActiveSurveyListViewController: UITableViewController, NSFetchedResultsCon
         }
     }
     
+    /*
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
-    }
+    }*/
     
 
     // MARK: - Table view data source
