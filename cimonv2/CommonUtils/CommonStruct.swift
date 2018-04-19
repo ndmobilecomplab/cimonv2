@@ -23,7 +23,11 @@ struct Response {
     
 }
 
-
+// MARK: general structs
+struct LabelStruct {
+    var imageName:String
+    var labelText:String
+}
 
 // MARK: core data structs
 

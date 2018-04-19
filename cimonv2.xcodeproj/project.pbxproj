@@ -27,10 +27,16 @@
 		023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1920463F8600B1DD53 /* chime.mp3 */; };
 		023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1A20463F8700B1DD53 /* instruction_track.m4a */; };
 		023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 023BDC1B20463F8700B1DD53 /* tone.mp3 */; };
-		0277359A204C7A5600121EBE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773599204C7A5600121EBE /* RootViewController.swift */; };
-		0277359C204C7A8800121EBE /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277359B204C7A8800121EBE /* MoodViewController.swift */; };
-		0277359E204C7AB700121EBE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277359D204C7AB700121EBE /* ActivityViewController.swift */; };
-		027735A0204C7ACB00121EBE /* ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277359F204C7ACB00121EBE /* ContextViewController.swift */; };
+		0277359A204C7A5600121EBE /* ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02773599204C7A5600121EBE /* ContextViewController.swift */; };
+		DD3995192081D831007FBE0D /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3995182081D831007FBE0D /* Notification.storyboard */; };
+		DD39951C2083D8EB007FBE0D /* Study.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD39951B2083D8EB007FBE0D /* Study.storyboard */; };
+		DD39951E2083EE9A007FBE0D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39951D2083EE9A007FBE0D /* HomeViewController.swift */; };
+		DD3995202083EF16007FBE0D /* HomeIconViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39951F2083EF16007FBE0D /* HomeIconViewCell.swift */; };
+		DD39952220857FA1007FBE0D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39952120857FA1007FBE0D /* SettingsViewController.swift */; };
+		DD399524208581FA007FBE0D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399523208581FA007FBE0D /* ProfileViewController.swift */; };
+		DD399527208585DF007FBE0D /* ProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399525208585DF007FBE0D /* ProfileViewCell.swift */; };
+		DD399528208585DF007FBE0D /* ProfileViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD399526208585DF007FBE0D /* ProfileViewCell.xib */; };
+		DD39952A2085B49A007FBE0D /* TempProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3995292085B49A007FBE0D /* TempProfileViewController.swift */; };
 		DD50733C2045BEC4001865A3 /* ActiveSurveyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */; };
 		DD507392204725A0001865A3 /* SignatureInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50738F2047259F001865A3 /* SignatureInfoViewController.swift */; };
 		DD507393204725A0001865A3 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5073902047259F001865A3 /* SignatureViewController.swift */; };
@@ -86,13 +92,13 @@
 		DD86EEA520758E3600A7AD4C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEA420758E3500A7AD4C /* PageViewController.swift */; };
 		DD86EEA72075922900A7AD4C /* OpenStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEA62075922900A7AD4C /* OpenStudiesViewController.swift */; };
 		DD86EEA92075925200A7AD4C /* MyStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */; };
-		DD86EEAB207592D000A7AD4C /* AppCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEAA207592D000A7AD4C /* AppCenterViewController.swift */; };
+		DD86EEAB207592D000A7AD4C /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEAA207592D000A7AD4C /* NotificationViewController.swift */; };
 		DD86EEAD207596AB00A7AD4C /* AppCenterIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */; };
 		DD8BDC9A207AFDD0007EFE94 /* MyStudyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDC99207AFDD0007EFE94 /* MyStudyDetailsViewController.swift */; };
 		DD8BDC9D207B314E007EFE94 /* MyStudyListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDC9B207B314E007EFE94 /* MyStudyListViewCell.swift */; };
 		DD8BDC9E207B314E007EFE94 /* MyStudyListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8BDC9C207B314E007EFE94 /* MyStudyListViewCell.xib */; };
-		DD8BDCA0207B6123007EFE94 /* TestLabelCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDC9F207B6123007EFE94 /* TestLabelCollectionViewController.swift */; };
-		DD8BDCA2207B6EC6007EFE94 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDCA1207B6EC6007EFE94 /* TestCollectionViewCell.swift */; };
+		DD8BDCA0207B6123007EFE94 /* LabelCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDC9F207B6123007EFE94 /* LabelCollectionViewController.swift */; };
+		DD8BDCA2207B6EC6007EFE94 /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDCA1207B6EC6007EFE94 /* LabelCollectionViewCell.swift */; };
 		DD8BDCA4207B8A68007EFE94 /* LabelHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BDCA3207B8A68007EFE94 /* LabelHeaderReusableView.swift */; };
 		DD901D4E20789D20002B4F56 /* OpenStudyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D4D20789D20002B4F56 /* OpenStudyDetailsViewController.swift */; };
 		DD901D522078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD901D512078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift */; };
@@ -110,7 +116,6 @@
 		DD9D1E7F20313534007AEBB4 /* cimonv2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D1E7E20313534007AEBB4 /* cimonv2UITests.swift */; };
 		DD9D1EA72032205B007AEBB4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EA62032205B007AEBB4 /* Home.storyboard */; };
 		DD9D1EA92032207D007AEBB4 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EA82032207D007AEBB4 /* Task.storyboard */; };
-		DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EAA20322154007AEBB4 /* Label.storyboard */; };
 		DD9D1EAD203221AE007AEBB4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */; };
 		DDAD93D7207610D700C39467 /* BubblePageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD93D6207610D600C39467 /* BubblePageViewCell.swift */; };
 		DDAD93DA207611AD00C39467 /* NotificationViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAD93D8207611AC00C39467 /* NotificationViewCell.xib */; };
@@ -122,6 +127,7 @@
 		DDC6ED8D2059CAB700B5B0D4 /* Syncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */; };
 		DDC6EDA7205F178B00B5B0D4 /* ViewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */; };
 		DDC6EDA92060226800B5B0D4 /* AppTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6EDA82060226800B5B0D4 /* AppTabController.swift */; };
+		DDE5DCEC20887419002B8DD7 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE5DCEB20887419002B8DD7 /* HockeySDK.framework */; };
 		DDE93DEC2062CEE100D34393 /* VisuospatialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DEB2062CEE100D34393 /* VisuospatialViewController.swift */; };
 		DDE93DF12062D52000D34393 /* ColorGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DF02062D51F00D34393 /* ColorGameViewController.swift */; };
 		DDE93DF42062D90D00D34393 /* MotorGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE93DF32062D90C00D34393 /* MotorGameViewController.swift */; };
@@ -167,10 +173,16 @@
 		023BDC1920463F8600B1DD53 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
 		023BDC1A20463F8700B1DD53 /* instruction_track.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = instruction_track.m4a; sourceTree = "<group>"; };
 		023BDC1B20463F8700B1DD53 /* tone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tone.mp3; sourceTree = "<group>"; };
-		02773599204C7A5600121EBE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		0277359B204C7A8800121EBE /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
-		0277359D204C7AB700121EBE /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
-		0277359F204C7ACB00121EBE /* ContextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextViewController.swift; sourceTree = "<group>"; };
+		02773599204C7A5600121EBE /* ContextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextViewController.swift; sourceTree = "<group>"; };
+		DD3995182081D831007FBE0D /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		DD39951B2083D8EB007FBE0D /* Study.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Study.storyboard; sourceTree = "<group>"; };
+		DD39951D2083EE9A007FBE0D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD39951F2083EF16007FBE0D /* HomeIconViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIconViewCell.swift; sourceTree = "<group>"; };
+		DD39952120857FA1007FBE0D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DD399523208581FA007FBE0D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DD399525208585DF007FBE0D /* ProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCell.swift; sourceTree = "<group>"; };
+		DD399526208585DF007FBE0D /* ProfileViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewCell.xib; sourceTree = "<group>"; };
+		DD3995292085B49A007FBE0D /* TempProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempProfileViewController.swift; sourceTree = "<group>"; };
 		DD50733B2045BEC4001865A3 /* ActiveSurveyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSurveyListViewController.swift; sourceTree = "<group>"; };
 		DD50738F2047259F001865A3 /* SignatureInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureInfoViewController.swift; sourceTree = "<group>"; };
 		DD5073902047259F001865A3 /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
@@ -227,13 +239,13 @@
 		DD86EEA420758E3500A7AD4C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		DD86EEA62075922900A7AD4C /* OpenStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudiesViewController.swift; sourceTree = "<group>"; };
 		DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudiesViewController.swift; sourceTree = "<group>"; };
-		DD86EEAA207592D000A7AD4C /* AppCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterViewController.swift; sourceTree = "<group>"; };
+		DD86EEAA207592D000A7AD4C /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterIconCell.swift; sourceTree = "<group>"; };
 		DD8BDC99207AFDD0007EFE94 /* MyStudyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudyDetailsViewController.swift; sourceTree = "<group>"; };
 		DD8BDC9B207B314E007EFE94 /* MyStudyListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudyListViewCell.swift; sourceTree = "<group>"; };
 		DD8BDC9C207B314E007EFE94 /* MyStudyListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyStudyListViewCell.xib; sourceTree = "<group>"; };
-		DD8BDC9F207B6123007EFE94 /* TestLabelCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLabelCollectionViewController.swift; sourceTree = "<group>"; };
-		DD8BDCA1207B6EC6007EFE94 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD8BDC9F207B6123007EFE94 /* LabelCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewController.swift; sourceTree = "<group>"; };
+		DD8BDCA1207B6EC6007EFE94 /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD8BDCA3207B8A68007EFE94 /* LabelHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHeaderReusableView.swift; sourceTree = "<group>"; };
 		DD901D4D20789D20002B4F56 /* OpenStudyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyDetailsViewController.swift; sourceTree = "<group>"; };
 		DD901D512078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStudyDescriptionViewCell.swift; sourceTree = "<group>"; };
@@ -257,7 +269,6 @@
 		DD9D1E8020313534007AEBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD9D1EA62032205B007AEBB4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DD9D1EA82032207D007AEBB4 /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
-		DD9D1EAA20322154007AEBB4 /* Label.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Label.storyboard; sourceTree = "<group>"; };
 		DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		DDAD93D6207610D600C39467 /* BubblePageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubblePageViewCell.swift; sourceTree = "<group>"; };
 		DDAD93D8207611AC00C39467 /* NotificationViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewCell.xib; sourceTree = "<group>"; };
@@ -270,6 +281,7 @@
 		DDC6ED8C2059CAB700B5B0D4 /* Syncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syncer.swift; sourceTree = "<group>"; };
 		DDC6EDA6205F178B00B5B0D4 /* ViewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDataManager.swift; sourceTree = "<group>"; };
 		DDC6EDA82060226800B5B0D4 /* AppTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabController.swift; sourceTree = "<group>"; };
+		DDE5DCEB20887419002B8DD7 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = Carthage/Build/iOS/HockeySDK.framework; sourceTree = "<group>"; };
 		DDE93DEB2062CEE100D34393 /* VisuospatialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisuospatialViewController.swift; sourceTree = "<group>"; };
 		DDE93DF02062D51F00D34393 /* ColorGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGameViewController.swift; sourceTree = "<group>"; };
 		DDE93DF32062D90C00D34393 /* MotorGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorGameViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE5DCEC20887419002B8DD7 /* HockeySDK.framework in Frameworks */,
 				DDAD93DD2076136500C39467 /* FSPagerView.framework in Frameworks */,
 				DD5F3B3F204B13DC0069741D /* Eureka.framework in Frameworks */,
 				DD50739A204725CA001865A3 /* SystemConfiguration.framework in Frameworks */,
@@ -346,6 +359,33 @@
 			path = BalanceTask;
 			sourceTree = "<group>";
 		};
+		DD3995172081D658007FBE0D /* NotificationManagement */ = {
+			isa = PBXGroup;
+			children = (
+				DD86EEAA207592D000A7AD4C /* NotificationViewController.swift */,
+				DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */,
+				DDAD93E32077342200C39467 /* NotificationDetailsViewController.swift */,
+				DDAD93D9207611AD00C39467 /* NotificationViewCell.swift */,
+				DDAD93D8207611AC00C39467 /* NotificationViewCell.xib */,
+				DD3995182081D831007FBE0D /* Notification.storyboard */,
+			);
+			path = NotificationManagement;
+			sourceTree = "<group>";
+		};
+		DD39951A20820523007FBE0D /* StudyManagement */ = {
+			isa = PBXGroup;
+			children = (
+				DD901D4F2078AB5A002B4F56 /* OpenStudies */,
+				DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */,
+				DD8BDC99207AFDD0007EFE94 /* MyStudyDetailsViewController.swift */,
+				DD8BDC9B207B314E007EFE94 /* MyStudyListViewCell.swift */,
+				DD8BDC9C207B314E007EFE94 /* MyStudyListViewCell.xib */,
+				DD86EEA420758E3500A7AD4C /* PageViewController.swift */,
+				DD39951B2083D8EB007FBE0D /* Study.storyboard */,
+			);
+			path = StudyManagement;
+			sourceTree = "<group>";
+		};
 		DD50738E2047256D001865A3 /* SignatureTask */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +433,7 @@
 		DD855BD6203237EB00C8DCD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDE5DCEB20887419002B8DD7 /* HockeySDK.framework */,
 				DDAD93DC2076136400C39467 /* FSPagerView.framework */,
 				DD5F3B3E204B13DC0069741D /* Eureka.framework */,
 				020256A920489FE800B1CD8A /* OtherResources */,
@@ -423,19 +464,6 @@
 			path = OpenStudies;
 			sourceTree = "<group>";
 		};
-		DD901D502078AB96002B4F56 /* AppCenter */ = {
-			isa = PBXGroup;
-			children = (
-				DD86EEAA207592D000A7AD4C /* AppCenterViewController.swift */,
-				DD86EEAC207596AB00A7AD4C /* AppCenterIconCell.swift */,
-				DDAD93E32077342200C39467 /* NotificationDetailsViewController.swift */,
-				DDAD93D9207611AD00C39467 /* NotificationViewCell.swift */,
-				DDAD93D6207610D600C39467 /* BubblePageViewCell.swift */,
-				DDAD93D8207611AC00C39467 /* NotificationViewCell.xib */,
-			);
-			path = AppCenter;
-			sourceTree = "<group>";
-		};
 		DD9D1E4F20313534007AEBB4 = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +490,8 @@
 			isa = PBXGroup;
 			children = (
 				DDAD93DE2076B42B00C39467 /* cimonv2.entitlements */,
+				DD39951A20820523007FBE0D /* StudyManagement */,
+				DD3995172081D658007FBE0D /* NotificationManagement */,
 				DD9D1E99203141AA007AEBB4 /* CommonUtils */,
 				DD9D1E982031419D007AEBB4 /* Database */,
 				DD9D1E962031418A007AEBB4 /* RESTServices */,
@@ -474,11 +504,13 @@
 				DD9D1E5D20313534007AEBB4 /* SignupViewController.swift */,
 				DD9D1E5F20313534007AEBB4 /* Main.storyboard */,
 				DD7C06642034118E0097C49B /* VerifyTokenViewController.swift */,
+				DDAD93D6207610D600C39467 /* BubblePageViewCell.swift */,
 				DD9D1E6720313534007AEBB4 /* LaunchScreen.storyboard */,
 				DD9D1E6A20313534007AEBB4 /* Info.plist */,
 				DD901D5F207A9681002B4F56 /* Assets.xcassets */,
 				DD9D1E6220313534007AEBB4 /* cimonv2.xcdatamodeld */,
 				DDC6EDA82060226800B5B0D4 /* AppTabController.swift */,
+				DD3995292085B49A007FBE0D /* TempProfileViewController.swift */,
 			);
 			path = cimonv2;
 			sourceTree = "<group>";
@@ -504,14 +536,9 @@
 		DD9D1E8F20314093007AEBB4 /* HomeManagement */ = {
 			isa = PBXGroup;
 			children = (
-				DD901D502078AB96002B4F56 /* AppCenter */,
-				DD901D4F2078AB5A002B4F56 /* OpenStudies */,
-				DD86EEA420758E3500A7AD4C /* PageViewController.swift */,
 				DD9D1EA62032205B007AEBB4 /* Home.storyboard */,
-				DD86EEA82075925200A7AD4C /* MyStudiesViewController.swift */,
-				DD8BDC99207AFDD0007EFE94 /* MyStudyDetailsViewController.swift */,
-				DD8BDC9B207B314E007EFE94 /* MyStudyListViewCell.swift */,
-				DD8BDC9C207B314E007EFE94 /* MyStudyListViewCell.xib */,
+				DD39951D2083EE9A007FBE0D /* HomeViewController.swift */,
+				DD39951F2083EF16007FBE0D /* HomeIconViewCell.swift */,
 			);
 			path = HomeManagement;
 			sourceTree = "<group>";
@@ -531,13 +558,9 @@
 				0213CE2C204C8A8A00567EA6 /* PagingViewController.swift */,
 				0213CE27204C8A8900567EA6 /* UIView+Shimmer.h */,
 				0213CE25204C8A8800567EA6 /* UIView+Shimmer.m */,
-				02773599204C7A5600121EBE /* RootViewController.swift */,
-				0277359B204C7A8800121EBE /* MoodViewController.swift */,
-				0277359D204C7AB700121EBE /* ActivityViewController.swift */,
-				0277359F204C7ACB00121EBE /* ContextViewController.swift */,
-				DD9D1EAA20322154007AEBB4 /* Label.storyboard */,
-				DD8BDC9F207B6123007EFE94 /* TestLabelCollectionViewController.swift */,
-				DD8BDCA1207B6EC6007EFE94 /* TestCollectionViewCell.swift */,
+				02773599204C7A5600121EBE /* ContextViewController.swift */,
+				DD8BDC9F207B6123007EFE94 /* LabelCollectionViewController.swift */,
+				DD8BDCA1207B6EC6007EFE94 /* LabelCollectionViewCell.swift */,
 				DD8BDCA3207B8A68007EFE94 /* LabelHeaderReusableView.swift */,
 			);
 			path = LabelManagement;
@@ -572,6 +595,10 @@
 			isa = PBXGroup;
 			children = (
 				DD9D1EAC203221AE007AEBB4 /* Settings.storyboard */,
+				DD39952120857FA1007FBE0D /* SettingsViewController.swift */,
+				DD399523208581FA007FBE0D /* ProfileViewController.swift */,
+				DD399525208585DF007FBE0D /* ProfileViewCell.swift */,
+				DD399526208585DF007FBE0D /* ProfileViewCell.xib */,
 			);
 			path = SettingsManagement;
 			sourceTree = "<group>";
@@ -760,12 +787,14 @@
 				023BDC1D20463F8700B1DD53 /* instruction_track.m4a in Resources */,
 				DD9D1E6920313534007AEBB4 /* LaunchScreen.storyboard in Resources */,
 				DD5F3B4B204B265E0069741D /* MotorTaskCell.xib in Resources */,
-				DD9D1EAB20322154007AEBB4 /* Label.storyboard in Resources */,
+				DD39951C2083D8EB007FBE0D /* Study.storyboard in Resources */,
 				DD9D1E6120313534007AEBB4 /* Main.storyboard in Resources */,
 				023BDC1E20463F8700B1DD53 /* tone.mp3 in Resources */,
 				023BDC1C20463F8700B1DD53 /* chime.mp3 in Resources */,
 				DD9D1EA72032205B007AEBB4 /* Home.storyboard in Resources */,
 				DD8BDC9E207B314E007EFE94 /* MyStudyListViewCell.xib in Resources */,
+				DD3995192081D831007FBE0D /* Notification.storyboard in Resources */,
+				DD399528208585DF007FBE0D /* ProfileViewCell.xib in Resources */,
 				DD9D1EAD203221AE007AEBB4 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,6 +826,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FSPagerView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/HockeySDK.framework",
 			);
 			outputPaths = (
 			);
@@ -813,8 +843,8 @@
 			files = (
 				DD507394204725A0001865A3 /* SigningView.swift in Sources */,
 				DD5073AB20472D73001865A3 /* StylusAcceleration+CoreDataProperties.swift in Sources */,
+				DD39951E2083EE9A007FBE0D /* HomeViewController.swift in Sources */,
 				DD901D4E20789D20002B4F56 /* OpenStudyDetailsViewController.swift in Sources */,
-				027735A0204C7ACB00121EBE /* ContextViewController.swift in Sources */,
 				DD901D5B2079462D002B4F56 /* OpenStudyBannerViewCell.swift in Sources */,
 				DD8BDC9A207AFDD0007EFE94 /* MyStudyDetailsViewController.swift in Sources */,
 				DD5073D220472EDA001865A3 /* ClosestPoint+CoreDataClass.swift in Sources */,
@@ -823,25 +853,28 @@
 				DD86EEA72075922900A7AD4C /* OpenStudiesViewController.swift in Sources */,
 				DD5073B720472E49001865A3 /* ConnectResult+CoreDataProperties.swift in Sources */,
 				DD5073D420472EDA001865A3 /* ClosestPoint+CoreDataProperties.swift in Sources */,
+				DD39952A2085B49A007FBE0D /* TempProfileViewController.swift in Sources */,
+				DD399524208581FA007FBE0D /* ProfileViewController.swift in Sources */,
 				023BDC1820463F5F00B1DD53 /* ViewController.swift in Sources */,
 				DDE93DF12062D52000D34393 /* ColorGameViewController.swift in Sources */,
 				DDC6EDA7205F178B00B5B0D4 /* ViewDataManager.swift in Sources */,
+				DD39952220857FA1007FBE0D /* SettingsViewController.swift in Sources */,
 				DD9D1E6420313534007AEBB4 /* cimonv2.xcdatamodeld in Sources */,
 				DD86EEAD207596AB00A7AD4C /* AppCenterIconCell.swift in Sources */,
 				DD5073D120472EDA001865A3 /* MemoryResult+CoreDataClass.swift in Sources */,
 				023BDC012044B0D600B1DD53 /* TargetGameViewController.swift in Sources */,
-				0277359C204C7A8800121EBE /* MoodViewController.swift in Sources */,
 				DD5073D820472EDA001865A3 /* MotorResult+CoreDataProperties.swift in Sources */,
 				DD901D522078AC67002B4F56 /* OpenStudyDescriptionViewCell.swift in Sources */,
 				0213CE32204C8A8B00567EA6 /* PagingMenuControllerCustomizable.swift in Sources */,
 				DD5073B620472E49001865A3 /* VisResult+CoreDataProperties.swift in Sources */,
-				DD8BDCA2207B6EC6007EFE94 /* TestCollectionViewCell.swift in Sources */,
+				DD8BDCA2207B6EC6007EFE94 /* LabelCollectionViewCell.swift in Sources */,
 				020256A420485C1700B1CD8A /* GameController.swift in Sources */,
-				0277359A204C7A5600121EBE /* RootViewController.swift in Sources */,
+				0277359A204C7A5600121EBE /* ContextViewController.swift in Sources */,
 				DD5073D720472EDA001865A3 /* PictureResult+CoreDataClass.swift in Sources */,
 				0213CE35204C8A8B00567EA6 /* MZTimerLabel.m in Sources */,
 				0213CE39204C8A8B00567EA6 /* MenuView.swift in Sources */,
 				DDAD93E22077015500C39467 /* StudyHeaderReusableView.swift in Sources */,
+				DD3995202083EF16007FBE0D /* HomeIconViewCell.swift in Sources */,
 				DD901D562078ACA2002B4F56 /* OpenStudyReviewViewCell.swift in Sources */,
 				DDAD93E42077342200C39467 /* NotificationDetailsViewController.swift in Sources */,
 				DD86EEA92075925200A7AD4C /* MyStudiesViewController.swift in Sources */,
@@ -853,13 +886,14 @@
 				DDC6ED8D2059CAB700B5B0D4 /* Syncer.swift in Sources */,
 				0213CE37204C8A8B00567EA6 /* MenuItemView.swift in Sources */,
 				DD8BDC9D207B314E007EFE94 /* MyStudyListViewCell.swift in Sources */,
-				DD8BDCA0207B6123007EFE94 /* TestLabelCollectionViewController.swift in Sources */,
+				DD399527208585DF007FBE0D /* ProfileViewCell.swift in Sources */,
+				DD8BDCA0207B6123007EFE94 /* LabelCollectionViewController.swift in Sources */,
 				0213CE31204C8A8B00567EA6 /* UIView+Shimmer.m in Sources */,
 				DD5073CE20472EDA001865A3 /* FallingBallResult+CoreDataProperties.swift in Sources */,
 				DD7C06652034118E0097C49B /* VerifyTokenViewController.swift in Sources */,
 				0213CE34204C8A8B00567EA6 /* MenuViewCustomizable.swift in Sources */,
 				DD5F3B51204B2A920069741D /* MotorTaskViewController.swift in Sources */,
-				DD86EEAB207592D000A7AD4C /* AppCenterViewController.swift in Sources */,
+				DD86EEAB207592D000A7AD4C /* NotificationViewController.swift in Sources */,
 				DD7C06612033E3360097C49B /* CommonStruct.swift in Sources */,
 				DDAD93E02076D9DE00C39467 /* OpenStudyViewCell.swift in Sources */,
 				DD507393204725A0001865A3 /* SignatureViewController.swift in Sources */,
@@ -879,7 +913,6 @@
 				DD9D1E5E20313534007AEBB4 /* SignupViewController.swift in Sources */,
 				DDE93DF42062D90D00D34393 /* MotorGameViewController.swift in Sources */,
 				0213CE36204C8A8B00567EA6 /* PagingViewController.swift in Sources */,
-				0277359E204C7AB700121EBE /* ActivityViewController.swift in Sources */,
 				DD5073D320472EDA001865A3 /* ColorResult+CoreDataClass.swift in Sources */,
 				DDE93DEC2062CEE100D34393 /* VisuospatialViewController.swift in Sources */,
 				DD9D1E5C20313534007AEBB4 /* AppDelegate.swift in Sources */,

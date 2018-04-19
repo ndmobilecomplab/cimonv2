@@ -41,7 +41,7 @@ class Syncer:NSObject{
             switch response.result {
             case .success:
                 let json = JSON(response.result.value as Any)
-                print("response after object : \(json)")
+                print("response my studies list : \(json)")
                 
                 var studyDict = Dictionary<Int32, Study>()
                 for localStudy in self.getAllStudies(){
@@ -89,13 +89,16 @@ class Syncer:NSObject{
                 
                 print("total study in before delete db \(self.getAllStudies().count)")
                 for (key, value) in studyDict{
+                    let tempId = key
+                    let tempName = value.name
+                    
                     //delete study with key, a chain operation
                     self.context.delete(value)
                     self.saveContext()
                     studyDict.removeValue(forKey: key)
                     print("removed from second operation")
                     
-                    self.syncSurveysOfStudy(studyId: key, studyName: value.name!)
+                    self.syncSurveysOfStudy(studyId: tempId, studyName: tempName!)
                 }
                 
                 print("total study in after db \(self.getAllStudies().count)")
@@ -195,7 +198,7 @@ class Syncer:NSObject{
                     self.context.delete(value)
                     self.saveContext()
                     surveyDict.removeValue(forKey: key)
-                    print("removed from second operation")
+                    print("removed from second operation survey")
                     
                     self.syncTask(studyId: studyId, surveyId: key)
                 }

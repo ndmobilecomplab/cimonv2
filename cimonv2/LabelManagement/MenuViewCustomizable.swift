@@ -47,7 +47,7 @@ public extension MenuViewCustomizable {
     }
     var focusMode: MenuFocusMode {
         //return .underline(height: 3, color: UIColor.blue, horizontalPadding: 0, verticalPadding: 0)
-        let focusColor = UIColor(red: 0, green: 0.7804, blue: 0.902, alpha: 1.0) /* #00c7e6 */
+        let focusColor = UIColor(red: 0.051, green: 0.1216, blue: 0.2118, alpha: 1.0) /* #0d1f36 */
         return .underline(height: 3, color: focusColor, horizontalPadding: 0, verticalPadding: 0)
     }
     var dummyItemViewsSet: Int {

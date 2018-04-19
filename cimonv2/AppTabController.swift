@@ -17,6 +17,8 @@ class AppTabController: UITabBarController, UITabBarControllerDelegate {
         //self.selectedIndex = 1
         //setTabBarVisible(visible: false, animated: false)
         
+        self.tabBar.unselectedItemTintColor = UIColor.white
+        
         //DispatchQueue.global().async {
             self.synData()
         //}

@@ -1,0 +1,3478 @@
+BCSymbolMap Version: 2.0
+___BITHockeyBundle_block_invoke
+_BITHockeyBundle.bundle
+_BITHockeyBundle.predicate
+___block_descriptor_tmp
+___block_literal_global
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/HockeySDKPrivate.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Support
+BITHockeyMD5
+BITHockeyLocalizedString
+__BITHockeyBundle_block_invoke
+BITHockeyBundle
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/dispatch/once.h
+-[BITUser serializeToDictionary]
+-[BITUser initWithCoder:]
+-[BITUser encodeWithCoder:]
+-[BITUser isEqualToUser:]
+-[BITUser accountAcquisitionDate]
+-[BITUser setAccountAcquisitionDate:]
+-[BITUser accountId]
+-[BITUser setAccountId:]
+-[BITUser userAgent]
+-[BITUser setUserAgent:]
+-[BITUser userId]
+-[BITUser setUserId:]
+-[BITUser storeRegion]
+-[BITUser setStoreRegion:]
+-[BITUser authUserId]
+-[BITUser setAuthUserId:]
+-[BITUser anonUserAcquisitionDate]
+-[BITUser setAnonUserAcquisitionDate:]
+-[BITUser authUserAcquisitionDate]
+-[BITUser setAuthUserAcquisitionDate:]
+-[BITUser .cxx_destruct]
+_OBJC_IVAR_$_BITUser._accountAcquisitionDate
+_OBJC_IVAR_$_BITUser._accountId
+_OBJC_IVAR_$_BITUser._userAgent
+_OBJC_IVAR_$_BITUser._userId
+_OBJC_IVAR_$_BITUser._storeRegion
+_OBJC_IVAR_$_BITUser._authUserId
+_OBJC_IVAR_$_BITUser._anonUserAcquisitionDate
+_OBJC_IVAR_$_BITUser._authUserAcquisitionDate
+l_OBJC_PROTOCOL_$_NSCoding
+l_OBJC_LABEL_PROTOCOL_$_NSCoding
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITUser.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITUser.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITArrowImageAnnotation.m
+-[BITEventData init]
+-[BITEventData serializeToDictionary]
+-[BITEventData initWithCoder:]
+-[BITEventData encodeWithCoder:]
+-[BITEventData envelopeTypeName]
+-[BITEventData dataTypeName]
+-[BITEventData version]
+-[BITEventData setVersion:]
+-[BITEventData properties]
+-[BITEventData setProperties:]
+-[BITEventData measurements]
+-[BITEventData setMeasurements:]
+-[BITEventData .cxx_destruct]
+_OBJC_IVAR_$_BITEventData._envelopeTypeName
+_OBJC_IVAR_$_BITEventData._dataTypeName
+_OBJC_IVAR_$_BITEventData._version
+_OBJC_IVAR_$_BITEventData._properties
+_OBJC_IVAR_$_BITEventData._measurements
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITEventData.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITEventData.h
+-[BITTelemetryData setProperties:]
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITTelemetryData.h
+-[BITTelemetryData properties]
+-[BITTelemetryData setVersion:]
+-[BITTelemetryData version]
+-[BITInternal serializeToDictionary]
+-[BITInternal initWithCoder:]
+-[BITInternal encodeWithCoder:]
+-[BITInternal sdkVersion]
+-[BITInternal setSdkVersion:]
+-[BITInternal agentVersion]
+-[BITInternal setAgentVersion:]
+-[BITInternal .cxx_destruct]
+_OBJC_IVAR_$_BITInternal._sdkVersion
+_OBJC_IVAR_$_BITInternal._agentVersion
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITInternal.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITInternal.h
+-[BITSession serializeToDictionary]
+-[BITSession initWithCoder:]
+-[BITSession encodeWithCoder:]
+-[BITSession sessionId]
+-[BITSession setSessionId:]
+-[BITSession isFirst]
+-[BITSession setIsFirst:]
+-[BITSession isNew]
+-[BITSession setIsNew:]
+-[BITSession .cxx_destruct]
+_OBJC_IVAR_$_BITSession._sessionId
+_OBJC_IVAR_$_BITSession._isFirst
+_OBJC_IVAR_$_BITSession._isNew
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITSession.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITSession.h
+-[BITPersistence init]
+-[BITPersistence persistBundle:]
+___32-[BITPersistence persistBundle:]_block_invoke
+___32-[BITPersistence persistBundle:]_block_invoke_2
+___copy_helper_block_
+___destroy_helper_block_
+___32-[BITPersistence persistBundle:]_block_invoke_2.33
+___copy_helper_block_.36
+___destroy_helper_block_.37
+___copy_helper_block_.39
+___destroy_helper_block_.40
+___32-[BITPersistence persistBundle:]_block_invoke.43
+___copy_helper_block_.46
+___destroy_helper_block_.47
+-[BITPersistence persistMetaData:]
+___34-[BITPersistence persistMetaData:]_block_invoke
+___copy_helper_block_.52
+___destroy_helper_block_.53
+-[BITPersistence isFreeSpaceAvailable]
+-[BITPersistence requestNextFilePath]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___37-[BITPersistence requestNextFilePath]_block_invoke
+___copy_helper_block_.67
+___destroy_helper_block_.68
+-[BITPersistence metaData]
+___26-[BITPersistence metaData]_block_invoke
+-[BITPersistence bundleAtFilePath:withFileBaseString:]
+-[BITPersistence dataAtFilePath:]
+-[BITPersistence deleteFileAtPath:]
+___35-[BITPersistence deleteFileAtPath:]_block_invoke
+___35-[BITPersistence deleteFileAtPath:]_block_invoke_2
+___copy_helper_block_.97
+___destroy_helper_block_.98
+___35-[BITPersistence deleteFileAtPath:]_block_invoke_2.100
+___copy_helper_block_.103
+___destroy_helper_block_.104
+___35-[BITPersistence deleteFileAtPath:]_block_invoke_2.108
+___copy_helper_block_.113
+___destroy_helper_block_.114
+-[BITPersistence giveBackRequestedFilePath:]
+___44-[BITPersistence giveBackRequestedFilePath:]_block_invoke
+___copy_helper_block_.116
+___destroy_helper_block_.117
+-[BITPersistence fileURLForType:]
+-[BITPersistence createDirectoryStructureIfNeeded]
+___50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke
+___copy_helper_block_.134
+___destroy_helper_block_.135
+___50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke.139
+___copy_helper_block_.140
+___destroy_helper_block_.141
+___50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke.143
+___copy_helper_block_.144
+___destroy_helper_block_.145
+___50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke.152
+___copy_helper_block_.157
+___destroy_helper_block_.158
+___50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke.160
+___copy_helper_block_.163
+___destroy_helper_block_.164
+-[BITPersistence nextURLOfType:]
+-[BITPersistence persistedFilesForType:]
+-[BITPersistence folderPathForType:]
+-[BITPersistence sendBundleSavedNotification]
+___45-[BITPersistence sendBundleSavedNotification]_block_invoke
+___45-[BITPersistence sendBundleSavedNotification]_block_invoke_2
+-[BITPersistence appHockeySDKDirectoryPath]
+-[BITPersistence directorySetupComplete]
+-[BITPersistence setDirectorySetupComplete:]
+-[BITPersistence persistenceQueue]
+-[BITPersistence setPersistenceQueue:]
+-[BITPersistence maxFileCount]
+-[BITPersistence setMaxFileCount:]
+-[BITPersistence setAppHockeySDKDirectoryPath:]
+-[BITPersistence requestedBundlePaths]
+-[BITPersistence setRequestedBundlePaths:]
+-[BITPersistence .cxx_destruct]
+_OBJC_IVAR_$_BITPersistence._persistenceQueue
+_OBJC_IVAR_$_BITPersistence._requestedBundlePaths
+_OBJC_IVAR_$_BITPersistence._maxFileCount
+_OBJC_IVAR_$_BITPersistence._directorySetupComplete
+___block_descriptor_tmp.38
+___block_descriptor_tmp.42
+___block_descriptor_tmp.48
+___block_descriptor_tmp.54
+___block_descriptor_tmp.69
+___block_descriptor_tmp.77
+___block_descriptor_tmp.99
+___block_descriptor_tmp.105
+___block_descriptor_tmp.109
+___block_literal_global.110
+___block_descriptor_tmp.115
+___block_descriptor_tmp.118
+___block_descriptor_tmp.136
+___block_descriptor_tmp.142
+___block_descriptor_tmp.146
+___block_descriptor_tmp.159
+___block_descriptor_tmp.165
+___block_descriptor_tmp.183
+___block_literal_global.184
+___block_descriptor_tmp.185
+___block_literal_global.186
+_OBJC_IVAR_$_BITPersistence._appHockeySDKDirectoryPath
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITPersistence.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITPersistencePrivate.h
+__45-[BITPersistence sendBundleSavedNotification]_block_invoke_2
+__45-[BITPersistence sendBundleSavedNotification]_block_invoke
+__destroy_helper_block_
+__copy_helper_block_
+__50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke.160
+__50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke.152
+__50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke.143
+__50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke.139
+__50-[BITPersistence createDirectoryStructureIfNeeded]_block_invoke
+__44-[BITPersistence giveBackRequestedFilePath:]_block_invoke
+__35-[BITPersistence deleteFileAtPath:]_block_invoke_2.108
+__35-[BITPersistence deleteFileAtPath:]_block_invoke_2.100
+__35-[BITPersistence deleteFileAtPath:]_block_invoke_2
+__35-[BITPersistence deleteFileAtPath:]_block_invoke
+__26-[BITPersistence metaData]_block_invoke
+__37-[BITPersistence requestNextFilePath]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__34-[BITPersistence persistMetaData:]_block_invoke
+__32-[BITPersistence persistBundle:]_block_invoke.43
+__32-[BITPersistence persistBundle:]_block_invoke_2.33
+__32-[BITPersistence persistBundle:]_block_invoke_2
+__32-[BITPersistence persistBundle:]_block_invoke
+-[BITCrashCXXExceptionWrapperException initWithCXXExceptionInfo:]
+-[BITCrashCXXExceptionWrapperException callStackReturnAddresses]
+-[BITCrashCXXExceptionWrapperException info]
+-[BITCrashManager initWithAppIdentifier:appEnvironment:hockeyAppClient:]
+___72-[BITCrashManager initWithAppIdentifier:appEnvironment:hockeyAppClient:]_block_invoke
+-[BITCrashManager dealloc]
+-[BITCrashManager setCrashManagerStatus:]
+-[BITCrashManager setServerURL:]
+-[BITCrashManager saveSettings]
+___31-[BITCrashManager saveSettings]_block_invoke
+-[BITCrashManager loadSettings]
+___31-[BITCrashManager loadSettings]_block_invoke
+-[BITCrashManager cleanCrashReportWithFilename:]
+-[BITCrashManager cleanCrashReports]
+-[BITCrashManager persistAttachment:withFilename:]
+-[BITCrashManager persistUserProvidedMetaData:]
+-[BITCrashManager attachmentForCrashReport:]
+-[BITCrashManager extractAppUUIDs:]
+-[BITCrashManager registerObservers]
+___36-[BITCrashManager registerObservers]_block_invoke
+___copy_helper_block_.252
+___destroy_helper_block_.253
+___36-[BITCrashManager registerObservers]_block_invoke.264
+___copy_helper_block_.265
+___destroy_helper_block_.266
+___36-[BITCrashManager registerObservers]_block_invoke.272
+___copy_helper_block_.275
+___destroy_helper_block_.276
+___36-[BITCrashManager registerObservers]_block_invoke.282
+___copy_helper_block_.283
+___destroy_helper_block_.284
+___36-[BITCrashManager registerObservers]_block_invoke.290
+___copy_helper_block_.293
+___destroy_helper_block_.294
+___36-[BITCrashManager registerObservers]_block_invoke.300
+___36-[BITCrashManager registerObservers]_block_invoke_2
+___copy_helper_block_.307
+___destroy_helper_block_.308
+___copy_helper_block_.311
+___destroy_helper_block_.312
+___36-[BITCrashManager registerObservers]_block_invoke.314
+___copy_helper_block_.315
+___destroy_helper_block_.316
+-[BITCrashManager unregisterObservers]
+-[BITCrashManager unregisterObserver:]
+-[BITCrashManager leavingAppSafely]
+-[BITCrashManager appEnteredForeground]
+___39-[BITCrashManager appEnteredForeground]_block_invoke
+___copy_helper_block_.354
+___destroy_helper_block_.355
+-[BITCrashManager deviceArchitecture]
+-[BITCrashManager osBuild]
+-[BITCrashManager userIDForCrashReport]
+-[BITCrashManager userNameForCrashReport]
+-[BITCrashManager userEmailForCrashReport]
+-[BITCrashManager setCrashCallbacks:]
+___37-[BITCrashManager setCrashCallbacks:]_block_invoke
+-[BITCrashManager configDefaultCrashCallback]
+-[BITCrashManager setAlertViewHandler:]
+-[BITCrashManager isDebuggerAttached]
+-[BITCrashManager generateTestCrash]
+___36-[BITCrashManager generateTestCrash]_block_invoke
+-[BITCrashManager storeMetaDataForCrashReportFilename:]
+___55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke
+___copy_helper_block_.415
+___destroy_helper_block_.416
+___55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke.430
+___copy_helper_block_.433
+___destroy_helper_block_.434
+___55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke.440
+___55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke_2
+___55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke_3
+___55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke_4
+___55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke_5
+___copy_helper_block_.463
+___destroy_helper_block_.464
+___55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke.466
+-[BITCrashManager handleUserInput:withUserProvidedMetaData:]
+-[BITCrashManager handleCrashReport]
+___36-[BITCrashManager handleCrashReport]_block_invoke
+___36-[BITCrashManager handleCrashReport]_block_invoke_2
+___36-[BITCrashManager handleCrashReport]_block_invoke_3
+___copy_helper_block_.512
+___destroy_helper_block_.513
+___36-[BITCrashManager handleCrashReport]_block_invoke.518
+___36-[BITCrashManager handleCrashReport]_block_invoke_2.566
+-[BITCrashManager firstNotApprovedCrashReport]
+-[BITCrashManager hasPendingCrashReport]
+___40-[BITCrashManager hasPendingCrashReport]_block_invoke
+___copy_helper_block_.589
+___destroy_helper_block_.590
+-[BITCrashManager approveLatestCrashReport]
+-[BITCrashManager triggerDelayedProcessing]
+___43-[BITCrashManager triggerDelayedProcessing]_block_invoke
+-[BITCrashManager invokeDelayedProcessing]
+___42-[BITCrashManager invokeDelayedProcessing]_block_invoke
+___42-[BITCrashManager invokeDelayedProcessing]_block_invoke_2
+___42-[BITCrashManager invokeDelayedProcessing]_block_invoke_3
+___copy_helper_block_.650
+___destroy_helper_block_.651
+___42-[BITCrashManager invokeDelayedProcessing]_block_invoke.660
+___copy_helper_block_.661
+___destroy_helper_block_.662
+___42-[BITCrashManager invokeDelayedProcessing]_block_invoke.668
+___copy_helper_block_.669
+___destroy_helper_block_.670
+-[BITCrashManager startManager]
+___31-[BITCrashManager startManager]_block_invoke
+___31-[BITCrashManager startManager]_block_invoke_2
+___31-[BITCrashManager startManager]_block_invoke_3
+___copy_helper_block_.706
+___destroy_helper_block_.707
+___31-[BITCrashManager startManager]_block_invoke_2.711
+___31-[BITCrashManager startManager]_block_invoke_3.716
+___31-[BITCrashManager startManager]_block_invoke_4
+_uncaught_cxx_exception_handler
+___copy_helper_block_.730
+___destroy_helper_block_.731
+___31-[BITCrashManager startManager]_block_invoke.739
+___31-[BITCrashManager startManager]_block_invoke_2.746
+-[BITCrashManager createCrashReportForAppKill]
+___46-[BITCrashManager createCrashReportForAppKill]_block_invoke
+___copy_helper_block_.823
+___destroy_helper_block_.824
+-[BITCrashManager sendNextCrashReport]
+___38-[BITCrashManager sendNextCrashReport]_block_invoke
+___38-[BITCrashManager sendNextCrashReport]_block_invoke_2
+___copy_helper_block_.850
+___destroy_helper_block_.851
+___38-[BITCrashManager sendNextCrashReport]_block_invoke.867
+___copy_helper_block_.870
+___destroy_helper_block_.871
+-[BITCrashManager postBodyWithXML:attachment:boundary:]
+-[BITCrashManager requestWithBoundary:]
+-[BITCrashManager processUploadResultWithFilename:responseData:statusCode:error:]
+___81-[BITCrashManager processUploadResultWithFilename:responseData:statusCode:error:]_block_invoke
+___81-[BITCrashManager processUploadResultWithFilename:responseData:statusCode:error:]_block_invoke_2
+___copy_helper_block_.949
+___destroy_helper_block_.950
+___81-[BITCrashManager processUploadResultWithFilename:responseData:statusCode:error:]_block_invoke_2.960
+___copy_helper_block_.963
+___destroy_helper_block_.964
+___copy_helper_block_.966
+___destroy_helper_block_.967
+-[BITCrashManager sendCrashReportWithFilename:xml:attachment:]
+___62-[BITCrashManager sendCrashReportWithFilename:xml:attachment:]_block_invoke
+___copy_helper_block_.985
+___destroy_helper_block_.986
+___62-[BITCrashManager sendCrashReportWithFilename:xml:attachment:]_block_invoke.995
+-[BITCrashManager timeintervalCrashInLastSessionOccured]
+-[BITCrashManager crashManagerStatus]
+-[BITCrashManager isMachExceptionHandlerEnabled]
+-[BITCrashManager setEnableMachExceptionHandler:]
+-[BITCrashManager isOnDeviceSymbolicationEnabled]
+-[BITCrashManager setEnableOnDeviceSymbolication:]
+-[BITCrashManager isAppNotTerminatingCleanlyDetectionEnabled]
+-[BITCrashManager setEnableAppNotTerminatingCleanlyDetection:]
+-[BITCrashManager shouldShowAlwaysButton]
+-[BITCrashManager setShowAlwaysButton:]
+-[BITCrashManager didCrashInLastSession]
+-[BITCrashManager setDidCrashInLastSession:]
+-[BITCrashManager lastSessionCrashDetails]
+-[BITCrashManager setLastSessionCrashDetails:]
+-[BITCrashManager didReceiveMemoryWarningInLastSession]
+-[BITCrashManager setDidReceiveMemoryWarningInLastSession:]
+-[BITCrashManager timeIntervalCrashInLastSessionOccurred]
+-[BITCrashManager setTimeIntervalCrashInLastSessionOccurred:]
+-[BITCrashManager approvedCrashReports]
+-[BITCrashManager setApprovedCrashReports:]
+-[BITCrashManager crashFiles]
+-[BITCrashManager setCrashFiles:]
+-[BITCrashManager settingsFile]
+-[BITCrashManager setSettingsFile:]
+-[BITCrashManager analyzerInProgressFile]
+-[BITCrashManager setAnalyzerInProgressFile:]
+-[BITCrashManager crashIdenticalCurrentVersion]
+-[BITCrashManager setCrashIdenticalCurrentVersion:]
+-[BITCrashManager sendingInProgress]
+-[BITCrashManager setSendingInProgress:]
+-[BITCrashManager isSetup]
+-[BITCrashManager setIsSetup:]
+-[BITCrashManager didLogLowMemoryWarning]
+-[BITCrashManager setDidLogLowMemoryWarning:]
+-[BITCrashManager appDidBecomeActiveObserver]
+-[BITCrashManager setAppDidBecomeActiveObserver:]
+-[BITCrashManager appWillTerminateObserver]
+-[BITCrashManager setAppWillTerminateObserver:]
+-[BITCrashManager appDidEnterBackgroundObserver]
+-[BITCrashManager setAppDidEnterBackgroundObserver:]
+-[BITCrashManager appWillEnterForegroundObserver]
+-[BITCrashManager setAppWillEnterForegroundObserver:]
+-[BITCrashManager appDidReceiveLowMemoryWarningObserver]
+-[BITCrashManager setAppDidReceiveLowMemoryWarningObserver:]
+-[BITCrashManager networkDidBecomeReachableObserver]
+-[BITCrashManager setNetworkDidBecomeReachableObserver:]
+-[BITCrashManager delegate]
+-[BITCrashManager setDelegate:]
+-[BITCrashManager hockeyAppClient]
+-[BITCrashManager setHockeyAppClient:]
+-[BITCrashManager exceptionHandler]
+-[BITCrashManager setExceptionHandler:]
+-[BITCrashManager fileManager]
+-[BITCrashManager setFileManager:]
+-[BITCrashManager plCrashReporter]
+-[BITCrashManager setPlCrashReporter:]
+-[BITCrashManager lastCrashFilename]
+-[BITCrashManager setLastCrashFilename:]
+-[BITCrashManager alertViewHandler]
+-[BITCrashManager crashesDir]
+-[BITCrashManager setCrashesDir:]
+-[BITCrashManager installationIdentification]
+-[BITCrashManager setInstallationIdentification:]
+-[BITCrashManager installationIdentificationType]
+-[BITCrashManager setInstallationIdentificationType:]
+-[BITCrashManager installationIdentified]
+-[BITCrashManager setInstallationIdentified:]
+-[BITCrashManager .cxx_destruct]
+_plcr_post_crash_callback
+_OBJC_IVAR_$_BITCrashCXXExceptionWrapperException._info
+_OBJC_IVAR_$_BITCrashManager._delegate
+_OBJC_IVAR_$_BITCrashManager._isSetup
+_OBJC_IVAR_$_BITCrashManager._hockeyAppClient
+_OBJC_IVAR_$_BITCrashManager._showAlwaysButton
+_OBJC_IVAR_$_BITCrashManager._alertViewHandler
+_OBJC_IVAR_$_BITCrashManager._plCrashReporter
+_OBJC_IVAR_$_BITCrashManager._exceptionHandler
+_OBJC_IVAR_$_BITCrashManager._crashIdenticalCurrentVersion
+_OBJC_IVAR_$_BITCrashManager._didCrashInLastSession
+_OBJC_IVAR_$_BITCrashManager._timeIntervalCrashInLastSessionOccurred
+_OBJC_IVAR_$_BITCrashManager._didLogLowMemoryWarning
+_OBJC_IVAR_$_BITCrashManager._approvedCrashReports
+_OBJC_IVAR_$_BITCrashManager._fileManager
+_OBJC_IVAR_$_BITCrashManager._crashFiles
+_OBJC_IVAR_$_BITCrashManager._crashManagerStatus
+_OBJC_IVAR_$_BITCrashManager._crashesDir
+_OBJC_IVAR_$_BITCrashManager._settingsFile
+_OBJC_IVAR_$_BITCrashManager._analyzerInProgressFile
+___block_descriptor_tmp.135
+___block_descriptor_tmp.149
+___block_literal_global.150
+___block_descriptor_tmp.255
+___block_descriptor_tmp.267
+___block_descriptor_tmp.277
+___block_descriptor_tmp.285
+___block_descriptor_tmp.295
+_registerObservers.onceToken
+___block_descriptor_tmp.310
+___block_descriptor_tmp.313
+___block_descriptor_tmp.317
+_appEnteredForeground.predAppData
+___block_descriptor_tmp.356
+___block_descriptor_tmp.395
+___block_literal_global.396
+_plCrashCallbacks
+_BITSaveEventsFilePath
+___block_descriptor_tmp.409
+___block_literal_global.410
+___block_descriptor_tmp.417
+___block_descriptor_tmp.435
+___block_descriptor_tmp.441
+___block_literal_global.442
+___block_descriptor_tmp.445
+___block_literal_global.446
+___block_descriptor_tmp.449
+___block_literal_global.450
+___block_descriptor_tmp.457
+___block_literal_global.458
+___block_descriptor_tmp.465
+___block_descriptor_tmp.467
+___block_literal_global.468
+___block_descriptor_tmp.485
+___block_literal_global.486
+___block_descriptor_tmp.495
+___block_literal_global.496
+___block_descriptor_tmp.514
+___block_descriptor_tmp.519
+___block_literal_global.520
+___block_descriptor_tmp.567
+___block_literal_global.568
+___block_descriptor_tmp.591
+___block_descriptor_tmp.598
+___block_literal_global.599
+___block_descriptor_tmp.612
+___block_literal_global.613
+___block_descriptor_tmp.618
+___block_literal_global.619
+___block_descriptor_tmp.653
+___block_descriptor_tmp.663
+___block_descriptor_tmp.671
+_startManager.plcrPredicate
+___block_descriptor_tmp.692
+___block_literal_global.693
+___block_descriptor_tmp.708
+___block_descriptor_tmp.712
+___block_literal_global.713
+___block_descriptor_tmp.717
+___block_literal_global.718
+___block_descriptor_tmp.721
+___block_literal_global.722
+___block_descriptor_tmp.732
+___block_descriptor_tmp.740
+___block_literal_global.741
+___block_descriptor_tmp.747
+___block_literal_global.748
+___block_descriptor_tmp.825
+___block_descriptor_tmp.836
+___block_literal_global.837
+___block_descriptor_tmp.852
+___block_descriptor_tmp.872
+___block_descriptor_tmp.951
+___block_descriptor_tmp.965
+___block_descriptor_tmp.968
+___block_descriptor_tmp.988
+___block_descriptor_tmp.996
+___block_literal_global.997
+_OBJC_IVAR_$_BITCrashManager._enableMachExceptionHandler
+_OBJC_IVAR_$_BITCrashManager._enableOnDeviceSymbolication
+_OBJC_IVAR_$_BITCrashManager._enableAppNotTerminatingCleanlyDetection
+_OBJC_IVAR_$_BITCrashManager._lastSessionCrashDetails
+_OBJC_IVAR_$_BITCrashManager._didReceiveMemoryWarningInLastSession
+_OBJC_IVAR_$_BITCrashManager._sendingInProgress
+_OBJC_IVAR_$_BITCrashManager._appDidBecomeActiveObserver
+_OBJC_IVAR_$_BITCrashManager._appWillTerminateObserver
+_OBJC_IVAR_$_BITCrashManager._appDidEnterBackgroundObserver
+_OBJC_IVAR_$_BITCrashManager._appWillEnterForegroundObserver
+_OBJC_IVAR_$_BITCrashManager._appDidReceiveLowMemoryWarningObserver
+_OBJC_IVAR_$_BITCrashManager._networkDidBecomeReachableObserver
+_OBJC_IVAR_$_BITCrashManager._lastCrashFilename
+_OBJC_IVAR_$_BITCrashManager._installationIdentification
+_OBJC_IVAR_$_BITCrashManager._installationIdentificationType
+_OBJC_IVAR_$_BITCrashManager._installationIdentified
+_bitCrashCallbacks.0
+_bitCrashCallbacks.1
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashManager.m
+plcr_post_crash_callback
+bit_save_events_callback
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashManagerPrivate.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashManager.h
+__62-[BITCrashManager sendCrashReportWithFilename:xml:attachment:]_block_invoke.995
+__62-[BITCrashManager sendCrashReportWithFilename:xml:attachment:]_block_invoke
+__81-[BITCrashManager processUploadResultWithFilename:responseData:statusCode:error:]_block_invoke_2.960
+__81-[BITCrashManager processUploadResultWithFilename:responseData:statusCode:error:]_block_invoke_2
+__81-[BITCrashManager processUploadResultWithFilename:responseData:statusCode:error:]_block_invoke
+__38-[BITCrashManager sendNextCrashReport]_block_invoke.867
+__38-[BITCrashManager sendNextCrashReport]_block_invoke_2
+__38-[BITCrashManager sendNextCrashReport]_block_invoke
+__46-[BITCrashManager createCrashReportForAppKill]_block_invoke
+__31-[BITCrashManager startManager]_block_invoke_2.746
+__31-[BITCrashManager startManager]_block_invoke.739
+uncaught_cxx_exception_handler
+__31-[BITCrashManager startManager]_block_invoke_4
+__31-[BITCrashManager startManager]_block_invoke_3.716
+__31-[BITCrashManager startManager]_block_invoke_2.711
+__31-[BITCrashManager startManager]_block_invoke_3
+__31-[BITCrashManager startManager]_block_invoke_2
+__31-[BITCrashManager startManager]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Dispatch/once.h
+__42-[BITCrashManager invokeDelayedProcessing]_block_invoke.668
+__42-[BITCrashManager invokeDelayedProcessing]_block_invoke.660
+__42-[BITCrashManager invokeDelayedProcessing]_block_invoke_3
+__42-[BITCrashManager invokeDelayedProcessing]_block_invoke_2
+__42-[BITCrashManager invokeDelayedProcessing]_block_invoke
+__43-[BITCrashManager triggerDelayedProcessing]_block_invoke
+__40-[BITCrashManager hasPendingCrashReport]_block_invoke
+__36-[BITCrashManager handleCrashReport]_block_invoke_2.566
+__36-[BITCrashManager handleCrashReport]_block_invoke.518
+__36-[BITCrashManager handleCrashReport]_block_invoke_3
+__36-[BITCrashManager handleCrashReport]_block_invoke_2
+__36-[BITCrashManager handleCrashReport]_block_invoke
+__55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke.466
+__55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke_5
+__55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke_4
+__55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke_3
+__55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke_2
+__55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke.440
+__55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke.430
+__55-[BITCrashManager storeMetaDataForCrashReportFilename:]_block_invoke
+__36-[BITCrashManager generateTestCrash]_block_invoke
+__37-[BITCrashManager setCrashCallbacks:]_block_invoke
+__39-[BITCrashManager appEnteredForeground]_block_invoke
+__36-[BITCrashManager registerObservers]_block_invoke.314
+__36-[BITCrashManager registerObservers]_block_invoke_2
+__36-[BITCrashManager registerObservers]_block_invoke.300
+__36-[BITCrashManager registerObservers]_block_invoke.290
+__36-[BITCrashManager registerObservers]_block_invoke.282
+__36-[BITCrashManager registerObservers]_block_invoke.272
+__36-[BITCrashManager registerObservers]_block_invoke.264
+__36-[BITCrashManager registerObservers]_block_invoke
+__31-[BITCrashManager loadSettings]_block_invoke
+__31-[BITCrashManager saveSettings]_block_invoke
+__72-[BITCrashManager initWithAppIdentifier:appEnvironment:hockeyAppClient:]_block_invoke
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITFeedbackMessageAttachment.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITFeedbackListViewCell.m
+-[BITHockeyBaseManager init]
+-[BITHockeyBaseManager initWithAppIdentifier:appEnvironment:]
+-[BITHockeyBaseManager reportError:]
+___36-[BITHockeyBaseManager reportError:]_block_invoke
+-[BITHockeyBaseManager encodedAppIdentifier]
+-[BITHockeyBaseManager getDevicePlatform]
+-[BITHockeyBaseManager executableUUID]
+-[BITHockeyBaseManager findVisibleWindow]
+___41-[BITHockeyBaseManager findVisibleWindow]_block_invoke
+___copy_helper_block_.60
+___destroy_helper_block_.61
+-[BITHockeyBaseManager customNavigationControllerWithRootViewController:presentationStyle:]
+-[BITHockeyBaseManager visibleWindowRootViewController]
+-[BITHockeyBaseManager showAlertController:]
+___44-[BITHockeyBaseManager showAlertController:]_block_invoke
+___44-[BITHockeyBaseManager showAlertController:]_block_invoke_2
+___copy_helper_block_.121
+___destroy_helper_block_.122
+-[BITHockeyBaseManager showView:]
+___33-[BITHockeyBaseManager showView:]_block_invoke
+___33-[BITHockeyBaseManager showView:]_block_invoke_2
+___copy_helper_block_.148
+___destroy_helper_block_.149
+-[BITHockeyBaseManager addStringValueToKeychain:forKey:]
+-[BITHockeyBaseManager addStringValueToKeychainForThisDeviceOnly:forKey:]
+-[BITHockeyBaseManager stringValueFromKeychainForKey:]
+-[BITHockeyBaseManager removeKeyFromKeychain:]
+-[BITHockeyBaseManager startManager]
+-[BITHockeyBaseManager parseRFC3339Date:]
+___41-[BITHockeyBaseManager parseRFC3339Date:]_block_invoke
+___copy_helper_block_.170
+___destroy_helper_block_.171
+-[BITHockeyBaseManager serverURL]
+-[BITHockeyBaseManager setServerURL:]
+-[BITHockeyBaseManager barStyle]
+-[BITHockeyBaseManager setBarStyle:]
+-[BITHockeyBaseManager navigationBarTintColor]
+-[BITHockeyBaseManager setNavigationBarTintColor:]
+-[BITHockeyBaseManager modalPresentationStyle]
+-[BITHockeyBaseManager setModalPresentationStyle:]
+-[BITHockeyBaseManager navController]
+-[BITHockeyBaseManager setNavController:]
+-[BITHockeyBaseManager rfc3339Formatter]
+-[BITHockeyBaseManager setRfc3339Formatter:]
+-[BITHockeyBaseManager appIdentifier]
+-[BITHockeyBaseManager setAppIdentifier:]
+-[BITHockeyBaseManager appEnvironment]
+-[BITHockeyBaseManager .cxx_destruct]
+_OBJC_IVAR_$_BITHockeyBaseManager._serverURL
+_OBJC_IVAR_$_BITHockeyBaseManager._barStyle
+_OBJC_IVAR_$_BITHockeyBaseManager._modalPresentationStyle
+_OBJC_IVAR_$_BITHockeyBaseManager._rfc3339Formatter
+_OBJC_IVAR_$_BITHockeyBaseManager._appIdentifier
+_OBJC_IVAR_$_BITHockeyBaseManager._appEnvironment
+___block_descriptor_tmp.62
+___block_descriptor_tmp.112
+___block_descriptor_tmp.124
+___block_descriptor_tmp.125
+___block_literal_global.126
+___block_descriptor_tmp.150
+___block_descriptor_tmp.172
+_OBJC_IVAR_$_BITHockeyBaseManager._navigationBarTintColor
+_OBJC_IVAR_$_BITHockeyBaseManager._navController
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyBaseManager.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyBaseManagerPrivate.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyBaseManager.h
+__41-[BITHockeyBaseManager parseRFC3339Date:]_block_invoke
+__33-[BITHockeyBaseManager showView:]_block_invoke_2
+__33-[BITHockeyBaseManager showView:]_block_invoke
+UI_USER_INTERFACE_IDIOM
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+__44-[BITHockeyBaseManager showAlertController:]_block_invoke_2
+__44-[BITHockeyBaseManager showAlertController:]_block_invoke
+__41-[BITHockeyBaseManager findVisibleWindow]_block_invoke
+__36-[BITHockeyBaseManager reportError:]_block_invoke
+-[BITChannel init]
+-[BITChannel initWithTelemetryContext:persistence:]
+-[BITChannel dealloc]
+-[BITChannel registerObservers]
+___31-[BITChannel registerObservers]_block_invoke
+-[BITChannel unregisterObservers]
+-[BITChannel isQueueBusy]
+-[BITChannel persistDataItemQueue:]
+-[BITChannel persistDataItemQueueWithBackgroundTask:]
+___53-[BITChannel persistDataItemQueueWithBackgroundTask:]_block_invoke
+___copy_helper_block_.55
+___destroy_helper_block_.56
+-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke
+___copy_helper_block_.66
+___destroy_helper_block_.67
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke.69
+___copy_helper_block_.70
+___destroy_helper_block_.71
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke.74
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_2
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_3
+___copy_helper_block_.91
+___destroy_helper_block_.92
+___Block_byref_object_copy_.96
+___Block_byref_object_dispose_.97
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke.98
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_2.103
+___copy_helper_block_.110
+___destroy_helper_block_.111
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_2.113
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_3.118
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_4
+___copy_helper_block_.123
+___destroy_helper_block_.124
+___copy_helper_block_.126
+___destroy_helper_block_.127
+___70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke.129
+-[BITChannel resetQueue]
+-[BITChannel enqueueTelemetryItem:]
+-[BITChannel enqueueTelemetryItem:completionHandler:]
+___53-[BITChannel enqueueTelemetryItem:completionHandler:]_block_invoke
+___53-[BITChannel enqueueTelemetryItem:completionHandler:]_block_invoke_2
+___53-[BITChannel enqueueTelemetryItem:completionHandler:]_block_invoke_3
+___copy_helper_block_.146
+___destroy_helper_block_.147
+___copy_helper_block_.162
+___destroy_helper_block_.163
+-[BITChannel dictionaryForTelemetryData:]
+-[BITChannel envelopeForTelemetryData:]
+-[BITChannel serializeDictionaryToJSONString:]
+___46-[BITChannel serializeDictionaryToJSONString:]_block_invoke
+___copy_helper_block_.212
+___destroy_helper_block_.213
+-[BITChannel appendDictionaryToEventBuffer:]
+___44-[BITChannel appendDictionaryToEventBuffer:]_block_invoke
+___copy_helper_block_.223
+___destroy_helper_block_.224
+-[BITChannel maxBatchSize]
+-[BITChannel invalidateTimer]
+-[BITChannel timerIsRunning]
+-[BITChannel startTimer]
+___24-[BITChannel startTimer]_block_invoke
+___copy_helper_block_.237
+___destroy_helper_block_.238
+-[BITChannel sendBlockingChannelNotification]
+___45-[BITChannel sendBlockingChannelNotification]_block_invoke
+___45-[BITChannel sendBlockingChannelNotification]_block_invoke_2
+-[BITChannel persistence]
+-[BITChannel setPersistence:]
+-[BITChannel channelBlocked]
+-[BITChannel setChannelBlocked:]
+-[BITChannel appDidEnterBackgroundObserver]
+-[BITChannel setAppDidEnterBackgroundObserver:]
+-[BITChannel telemetryContext]
+-[BITChannel setTelemetryContext:]
+-[BITChannel setMaxBatchSize:]
+-[BITChannel batchInterval]
+-[BITChannel setBatchInterval:]
+-[BITChannel timerSource]
+-[BITChannel setTimerSource:]
+-[BITChannel dataItemsOperations]
+-[BITChannel setDataItemsOperations:]
+-[BITChannel dataItemCount]
+-[BITChannel setDataItemCount:]
+-[BITChannel .cxx_destruct]
+_OBJC_IVAR_$_BITChannel._dataItemCount
+_OBJC_IVAR_$_BITChannel._maxBatchSize
+_OBJC_IVAR_$_BITChannel._batchInterval
+_OBJC_IVAR_$_BITChannel._dataItemsOperations
+_OBJC_IVAR_$_BITChannel._telemetryContext
+_OBJC_IVAR_$_BITChannel._persistence
+___block_descriptor_tmp.58
+___block_descriptor_tmp.68
+___block_descriptor_tmp.72
+___block_descriptor_tmp.76
+___block_descriptor_tmp.85
+___block_literal_global.86
+___block_descriptor_tmp.93
+___block_descriptor_tmp.114
+___block_literal_global.115
+___block_descriptor_tmp.119
+___block_literal_global.120
+___block_descriptor_tmp.128
+___block_descriptor_tmp.130
+___block_literal_global.131
+___block_literal_global.137
+___block_descriptor_tmp.148
+___block_descriptor_tmp.164
+___block_descriptor_tmp.214
+___block_descriptor_tmp.225
+___block_descriptor_tmp.239
+___block_descriptor_tmp.240
+___block_literal_global.241
+___block_descriptor_tmp.242
+___block_literal_global.243
+_OBJC_IVAR_$_BITChannel._channelBlocked
+_OBJC_IVAR_$_BITChannel._appDidEnterBackgroundObserver
+_OBJC_IVAR_$_BITChannel._timerSource
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITChannel.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITChannelPrivate.h
+__45-[BITChannel sendBlockingChannelNotification]_block_invoke_2
+__45-[BITChannel sendBlockingChannelNotification]_block_invoke
+__24-[BITChannel startTimer]_block_invoke
+__44-[BITChannel appendDictionaryToEventBuffer:]_block_invoke
+bit_appendStringToEventBuffer
+__46-[BITChannel serializeDictionaryToJSONString:]_block_invoke
+__53-[BITChannel enqueueTelemetryItem:completionHandler:]_block_invoke_3
+__53-[BITChannel enqueueTelemetryItem:completionHandler:]_block_invoke_2
+__53-[BITChannel enqueueTelemetryItem:completionHandler:]_block_invoke
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke.129
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_4
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_3.118
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_2.113
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_2.103
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke.98
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_3
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke_2
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke.74
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke.69
+__70-[BITChannel createBackgroundTaskWhileDataIsSending:withWaitingGroup:]_block_invoke
+__53-[BITChannel persistDataItemQueueWithBackgroundTask:]_block_invoke
+__31-[BITChannel registerObservers]_block_invoke
+bit_resetEventBuffer
++[BITCategoryContainer activateCategory]
+-[NSData(BITGZIP) bit_gzippedDataWithCompressionLevel:]
+-[NSData(BITGZIP) bit_gzippedData]
+-[NSData(BITGZIP) bit_gunzippedData]
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCategoryContainer.m
+_defaultLogHandler_block_invoke
++[BITHockeyLogger initialize]
++[BITHockeyLogger currentLogLevel]
++[BITHockeyLogger setCurrentLogLevel:]
++[BITHockeyLogger setLogHandler:]
++[BITHockeyLogger logMessage:level:file:function:line:]
+__currentLogLevel
+_currentLogHandler
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyLogger.m
+defaultLogHandler_block_invoke
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITImageAnnotationViewController.m
+-[BITEnvelope init]
+-[BITEnvelope serializeToDictionary]
+___36-[BITEnvelope serializeToDictionary]_block_invoke
+-[BITEnvelope initWithCoder:]
+-[BITEnvelope encodeWithCoder:]
+-[BITEnvelope version]
+-[BITEnvelope setVersion:]
+-[BITEnvelope name]
+-[BITEnvelope setName:]
+-[BITEnvelope time]
+-[BITEnvelope setTime:]
+-[BITEnvelope sampleRate]
+-[BITEnvelope setSampleRate:]
+-[BITEnvelope seq]
+-[BITEnvelope setSeq:]
+-[BITEnvelope iKey]
+-[BITEnvelope setIKey:]
+-[BITEnvelope flags]
+-[BITEnvelope setFlags:]
+-[BITEnvelope deviceId]
+-[BITEnvelope setDeviceId:]
+-[BITEnvelope os]
+-[BITEnvelope setOs:]
+-[BITEnvelope osVer]
+-[BITEnvelope setOsVer:]
+-[BITEnvelope appId]
+-[BITEnvelope setAppId:]
+-[BITEnvelope appVer]
+-[BITEnvelope setAppVer:]
+-[BITEnvelope userId]
+-[BITEnvelope setUserId:]
+-[BITEnvelope tags]
+-[BITEnvelope setTags:]
+-[BITEnvelope data]
+-[BITEnvelope setData:]
+-[BITEnvelope .cxx_destruct]
+_OBJC_IVAR_$_BITEnvelope._version
+_OBJC_IVAR_$_BITEnvelope._sampleRate
+_OBJC_IVAR_$_BITEnvelope._tags
+_OBJC_IVAR_$_BITEnvelope._name
+_OBJC_IVAR_$_BITEnvelope._time
+_OBJC_IVAR_$_BITEnvelope._seq
+_OBJC_IVAR_$_BITEnvelope._iKey
+_OBJC_IVAR_$_BITEnvelope._flags
+_OBJC_IVAR_$_BITEnvelope._deviceId
+_OBJC_IVAR_$_BITEnvelope._os
+_OBJC_IVAR_$_BITEnvelope._osVer
+_OBJC_IVAR_$_BITEnvelope._appId
+_OBJC_IVAR_$_BITEnvelope._appVer
+_OBJC_IVAR_$_BITEnvelope._userId
+_OBJC_IVAR_$_BITEnvelope._data
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITEnvelope.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITEnvelope.h
+__36-[BITEnvelope serializeToDictionary]_block_invoke
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITBlurImageAnnotation.m
+-[BITStoreUpdateManager reportError:]
+___37-[BITStoreUpdateManager reportError:]_block_invoke
+-[BITStoreUpdateManager didBecomeActiveActions]
+-[BITStoreUpdateManager registerObservers]
+___42-[BITStoreUpdateManager registerObservers]_block_invoke
+___copy_helper_block_.30
+___destroy_helper_block_.31
+___42-[BITStoreUpdateManager registerObservers]_block_invoke.42
+___copy_helper_block_.43
+___destroy_helper_block_.44
+-[BITStoreUpdateManager unregisterObservers]
+-[BITStoreUpdateManager init]
+___29-[BITStoreUpdateManager init]_block_invoke
+-[BITStoreUpdateManager dealloc]
+-[BITStoreUpdateManager lastStoreVersion]
+-[BITStoreUpdateManager hasNewVersion:]
+___39-[BITStoreUpdateManager hasNewVersion:]_block_invoke
+___39-[BITStoreUpdateManager hasNewVersion:]_block_invoke.128
+___copy_helper_block_.131
+___destroy_helper_block_.132
+-[BITStoreUpdateManager shouldAutoCheckForUpdates]
+-[BITStoreUpdateManager shouldCancelProcessing]
+___47-[BITStoreUpdateManager shouldCancelProcessing]_block_invoke
+-[BITStoreUpdateManager processStoreResponseWithString:]
+___56-[BITStoreUpdateManager processStoreResponseWithString:]_block_invoke
+___copy_helper_block_.155
+___destroy_helper_block_.156
+___56-[BITStoreUpdateManager processStoreResponseWithString:]_block_invoke.167
+___copy_helper_block_.172
+___destroy_helper_block_.173
+___56-[BITStoreUpdateManager processStoreResponseWithString:]_block_invoke.177
+-[BITStoreUpdateManager checkForUpdateManual:]
+___46-[BITStoreUpdateManager checkForUpdateManual:]_block_invoke
+___46-[BITStoreUpdateManager checkForUpdateManual:]_block_invoke_2
+___46-[BITStoreUpdateManager checkForUpdateManual:]_block_invoke_3
+___copy_helper_block_.221
+___destroy_helper_block_.222
+___46-[BITStoreUpdateManager checkForUpdateManual:]_block_invoke.243
+___copy_helper_block_.248
+___destroy_helper_block_.249
+-[BITStoreUpdateManager handleResponeWithData:error:]
+___53-[BITStoreUpdateManager handleResponeWithData:error:]_block_invoke
+___copy_helper_block_.266
+___destroy_helper_block_.267
+-[BITStoreUpdateManager checkForUpdateDelayed]
+-[BITStoreUpdateManager checkForUpdate]
+-[BITStoreUpdateManager startManager]
+___37-[BITStoreUpdateManager startManager]_block_invoke
+-[BITStoreUpdateManager showUpdateAlert]
+___40-[BITStoreUpdateManager showUpdateAlert]_block_invoke
+___40-[BITStoreUpdateManager showUpdateAlert]_block_invoke_2
+___copy_helper_block_.304
+___destroy_helper_block_.305
+___40-[BITStoreUpdateManager showUpdateAlert]_block_invoke.314
+___copy_helper_block_.317
+___destroy_helper_block_.318
+___40-[BITStoreUpdateManager showUpdateAlert]_block_invoke.322
+___copy_helper_block_.325
+___destroy_helper_block_.326
+___copy_helper_block_.332
+___destroy_helper_block_.333
+-[BITStoreUpdateManager setLastCheck:]
+-[BITStoreUpdateManager ignoreAction]
+-[BITStoreUpdateManager remindAction]
+-[BITStoreUpdateManager showAction]
+___35-[BITStoreUpdateManager showAction]_block_invoke
+-[BITStoreUpdateManager updateSetting]
+-[BITStoreUpdateManager setUpdateSetting:]
+-[BITStoreUpdateManager countryCode]
+-[BITStoreUpdateManager setCountryCode:]
+-[BITStoreUpdateManager isCheckingForUpdateOnLaunch]
+-[BITStoreUpdateManager setCheckForUpdateOnLaunch:]
+-[BITStoreUpdateManager isUpdateUIEnabled]
+-[BITStoreUpdateManager setUpdateUIEnabled:]
+-[BITStoreUpdateManager latestStoreVersion]
+-[BITStoreUpdateManager setLatestStoreVersion:]
+-[BITStoreUpdateManager appStoreURLString]
+-[BITStoreUpdateManager setAppStoreURLString:]
+-[BITStoreUpdateManager currentUUID]
+-[BITStoreUpdateManager setCurrentUUID:]
+-[BITStoreUpdateManager updateAlertShowing]
+-[BITStoreUpdateManager setUpdateAlertShowing:]
+-[BITStoreUpdateManager lastCheckFailed]
+-[BITStoreUpdateManager setLastCheckFailed:]
+-[BITStoreUpdateManager appDidBecomeActiveObserver]
+-[BITStoreUpdateManager setAppDidBecomeActiveObserver:]
+-[BITStoreUpdateManager networkDidBecomeReachableObserver]
+-[BITStoreUpdateManager setNetworkDidBecomeReachableObserver:]
+-[BITStoreUpdateManager delegate]
+-[BITStoreUpdateManager setDelegate:]
+-[BITStoreUpdateManager isUpdateAvailable]
+-[BITStoreUpdateManager setUpdateAvailable:]
+-[BITStoreUpdateManager isCheckInProgress]
+-[BITStoreUpdateManager setCheckInProgress:]
+-[BITStoreUpdateManager lastCheck]
+-[BITStoreUpdateManager isStoreUpdateManagerEnabled]
+-[BITStoreUpdateManager setEnableStoreUpdateManager:]
+-[BITStoreUpdateManager mainBundle]
+-[BITStoreUpdateManager setMainBundle:]
+-[BITStoreUpdateManager currentLocale]
+-[BITStoreUpdateManager setCurrentLocale:]
+-[BITStoreUpdateManager userDefaults]
+-[BITStoreUpdateManager setUserDefaults:]
+-[BITStoreUpdateManager .cxx_destruct]
+___block_descriptor_tmp.33
+___block_descriptor_tmp.45
+_OBJC_IVAR_$_BITStoreUpdateManager._checkInProgress
+_OBJC_IVAR_$_BITStoreUpdateManager._updateAvailable
+_OBJC_IVAR_$_BITStoreUpdateManager._lastCheckFailed
+_OBJC_IVAR_$_BITStoreUpdateManager._enableStoreUpdateManager
+_OBJC_IVAR_$_BITStoreUpdateManager._updateAlertShowing
+_OBJC_IVAR_$_BITStoreUpdateManager._updateUIEnabled
+_OBJC_IVAR_$_BITStoreUpdateManager._latestStoreVersion
+_OBJC_IVAR_$_BITStoreUpdateManager._appStoreURLString
+_OBJC_IVAR_$_BITStoreUpdateManager._currentUUID
+_OBJC_IVAR_$_BITStoreUpdateManager._countryCode
+_OBJC_IVAR_$_BITStoreUpdateManager._mainBundle
+_OBJC_IVAR_$_BITStoreUpdateManager._currentLocale
+_OBJC_IVAR_$_BITStoreUpdateManager._userDefaults
+___block_descriptor_tmp.123
+___block_descriptor_tmp.133
+___block_literal_global.143
+___block_descriptor_tmp.157
+___block_descriptor_tmp.174
+___block_descriptor_tmp.178
+___block_literal_global.179
+___block_descriptor_tmp.199
+___block_literal_global.200
+___block_descriptor_tmp.209
+___block_literal_global.210
+___block_descriptor_tmp.223
+___block_descriptor_tmp.251
+___block_descriptor_tmp.268
+___block_descriptor_tmp.273
+___block_literal_global.274
+___block_descriptor_tmp.307
+___block_descriptor_tmp.319
+___block_descriptor_tmp.327
+___block_descriptor_tmp.335
+_OBJC_IVAR_$_BITStoreUpdateManager._lastCheck
+___block_descriptor_tmp.341
+___block_literal_global.342
+_OBJC_IVAR_$_BITStoreUpdateManager._updateSetting
+_OBJC_IVAR_$_BITStoreUpdateManager._checkForUpdateOnLaunch
+_OBJC_IVAR_$_BITStoreUpdateManager._appDidBecomeActiveObserver
+_OBJC_IVAR_$_BITStoreUpdateManager._networkDidBecomeReachableObserver
+_OBJC_IVAR_$_BITStoreUpdateManager._delegate
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITStoreUpdateManager.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITStoreUpdateManagerPrivate.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITStoreUpdateManager.h
+__35-[BITStoreUpdateManager showAction]_block_invoke
+__40-[BITStoreUpdateManager showUpdateAlert]_block_invoke.322
+__40-[BITStoreUpdateManager showUpdateAlert]_block_invoke.314
+__40-[BITStoreUpdateManager showUpdateAlert]_block_invoke_2
+__40-[BITStoreUpdateManager showUpdateAlert]_block_invoke
+__37-[BITStoreUpdateManager startManager]_block_invoke
+__53-[BITStoreUpdateManager handleResponeWithData:error:]_block_invoke
+__46-[BITStoreUpdateManager checkForUpdateManual:]_block_invoke.243
+__46-[BITStoreUpdateManager checkForUpdateManual:]_block_invoke_3
+__46-[BITStoreUpdateManager checkForUpdateManual:]_block_invoke_2
+__46-[BITStoreUpdateManager checkForUpdateManual:]_block_invoke
+__56-[BITStoreUpdateManager processStoreResponseWithString:]_block_invoke.177
+__56-[BITStoreUpdateManager processStoreResponseWithString:]_block_invoke.167
+__56-[BITStoreUpdateManager processStoreResponseWithString:]_block_invoke
+__47-[BITStoreUpdateManager shouldCancelProcessing]_block_invoke
+__39-[BITStoreUpdateManager hasNewVersion:]_block_invoke.128
+__39-[BITStoreUpdateManager hasNewVersion:]_block_invoke
+__29-[BITStoreUpdateManager init]_block_invoke
+__42-[BITStoreUpdateManager registerObservers]_block_invoke.42
+__42-[BITStoreUpdateManager registerObservers]_block_invoke
+__37-[BITStoreUpdateManager reportError:]_block_invoke
++[BITCrashReportTextFormatter stringValueForCrashReport:crashReporterKey:]
+_bit_binaryImageSort
++[BITCrashReportTextFormatter selectorForRegisterWithName:ofThread:report:]
++[BITCrashReportTextFormatter arrayOfAppUUIDsForCrashReport:]
++[BITCrashReportTextFormatter bit_imageTypeForImagePath:processPath:]
++[BITCrashReportTextFormatter bit_archNameFromImageInfo:]
++[BITCrashReportTextFormatter bit_archNameFromCPUType:subType:]
++[BITCrashReportTextFormatter bit_formatStackFrame:frameIndex:report:lp64:]
+___75+[BITCrashReportTextFormatter bit_formatStackFrame:frameIndex:report:lp64:]_block_invoke
++[BITCrashReportTextFormatter anonymizedPathFromPath:]
+___54+[BITCrashReportTextFormatter anonymizedPathFromPath:]_block_invoke
+___block_descriptor_tmp.391
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashReportTextFormatter.m
+__54+[BITCrashReportTextFormatter anonymizedPathFromPath:]_block_invoke
+__75+[BITCrashReportTextFormatter bit_formatStackFrame:frameIndex:report:lp64:]_block_invoke
+findSEL
+safer_string_read
+bit_binaryImageSort
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITFeedbackListViewController.m
+-[BITHockeyAppClient initWithBaseURL:]
+-[BITHockeyAppClient requestWithMethod:path:parameters:]
+___56-[BITHockeyAppClient requestWithMethod:path:parameters:]_block_invoke
++[BITHockeyAppClient dataWithPostValue:forKey:boundary:]
++[BITHockeyAppClient dataWithPostValue:forKey:contentType:boundary:filename:]
++[BITHockeyAppClient queryStringFromParameters:withEncoding:]
+___61+[BITHockeyAppClient queryStringFromParameters:withEncoding:]_block_invoke
+___copy_helper_block_.90
+___destroy_helper_block_.91
+-[BITHockeyAppClient operationQueue]
+-[BITHockeyAppClient baseURL]
+-[BITHockeyAppClient setBaseURL:]
+-[BITHockeyAppClient setOperationQueue:]
+-[BITHockeyAppClient .cxx_destruct]
+_OBJC_IVAR_$_BITHockeyAppClient._baseURL
+___block_descriptor_tmp.92
+_OBJC_IVAR_$_BITHockeyAppClient._operationQueue
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyAppClient.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyAppClient.h
+__61+[BITHockeyAppClient queryStringFromParameters:withEncoding:]_block_invoke
+__56-[BITHockeyAppClient requestWithMethod:path:parameters:]_block_invoke
+_importCategories
++[BITHockeyHelper isURLSessionSupported]
++[BITHockeyHelper isPhotoAccessPossible]
+___bit_settingsDir_block_invoke
+___bit_keychainHockeySDKServiceName_block_invoke
+___bit_fixBackupAttributeForURL_block_invoke
+___bit_fixBackupAttributeForURL_block_invoke_2
+___bit_fixBackupAttributeForURL_block_invoke_2.83
+___copy_helper_block_.86
+___destroy_helper_block_.87
+___copy_helper_block_.89
+___destroy_helper_block_.90
+___bit_appAnonID_block_invoke
+___copy_helper_block_.125
+___destroy_helper_block_.126
+___bit_appAnonID_block_invoke.128
+___bit_appAnonID_block_invoke_2
+___bit_isPreiOS10Environment_block_invoke
+___bit_isRunningInAppExtension_block_invoke
+___bit_isDebuggerAttached_block_invoke
+___bit_isDebuggerAttached_block_invoke_2
+___bit_utcDateString_block_invoke
+_bit_addRoundedRectToPath
+_bit_settingsDir.settingsDir
+_bit_settingsDir.predSettingsDir
+_bit_keychainHockeySDKServiceName.serviceName
+_bit_keychainHockeySDKServiceName.predServiceName
+___block_descriptor_tmp.49
+___block_literal_global.50
+___block_descriptor_tmp.79
+___block_descriptor_tmp.88
+___block_descriptor_tmp.91
+_bit_appAnonID.appAnonID
+_bit_appAnonID.predAppAnonID
+___block_descriptor_tmp.127
+_bit_isPreiOS10Environment.isPreOS10Environment
+_bit_isPreiOS10Environment.checkOS10
+___block_descriptor_tmp.137
+___block_literal_global.138
+_bit_isRunningInAppExtension.isRunningInAppExtension
+_bit_isRunningInAppExtension.checkAppExtension
+___block_descriptor_tmp.155
+___block_literal_global.156
+_bit_isDebuggerAttached.debuggerIsAttached
+_bit_isDebuggerAttached.debuggerPredicate
+___block_descriptor_tmp.163
+___block_literal_global.164
+___block_literal_global.166
+_bit_utcDateString.dateFormatter
+_bit_utcDateString.dateFormatterToken
+___block_descriptor_tmp.177
+___block_literal_global.178
+_hockeyapp_library_info
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyHelper.m
+bit_screenshot
+bit_appIcon
+bit_addRoundedRectToPath
+bit_roundedCornerImage
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+bit_imageWithContentsOfResolutionIndependentFile
+bit_newWithContentsOfResolutionIndependentFile
+bit_reflectedImageWithHeight
+bit_CreateGradientImage
+bit_MyOpenBitmapContext
+CGSizeMake
+bit_imageToFitSize
+__tg_round
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/tgmath.h
+bit_imageNamed
+bit_addGlossToImage
+bit_imageWithAlpha
+bit_hasAlpha
+bit_validAppIconFilename
+bit_validAppIconStringFromIcons
+bit_appVersion
+bit_sdkVersion
+bit_screenSize
+bit_deviceLanguage
+bit_deviceLocale
+bit_osName
+bit_osVersionBuild
+bit_deviceType
+bit_devicePlatform
+__bit_utcDateString_block_invoke
+bit_utcDateString
+__bit_isDebuggerAttached_block_invoke_2
+__bit_isDebuggerAttached_block_invoke
+bit_isDebuggerAttached
+__bit_isRunningInAppExtension_block_invoke
+bit_currentAppEnvironment
+bit_hasEmbeddedMobileProvision
+bit_isAppStoreReceiptSandbox
+__bit_isPreiOS10Environment_block_invoke
+__tg_floor
+__bit_appAnonID_block_invoke_2
+__bit_appAnonID_block_invoke.128
+__bit_appAnonID_block_invoke
+bit_appAnonID
+bit_UUID
+bit_appName
+bit_appIdentifierToGuid
+bit_URLEncodedString
+bit_encodeAppIdentifier
+__bit_fixBackupAttributeForURL_block_invoke_2.83
+__bit_fixBackupAttributeForURL_block_invoke_2
+__bit_fixBackupAttributeForURL_block_invoke
+bit_fixBackupAttributeForURL
+bit_versionCompare
+bit_mainBundleIdentifier
+__bit_keychainHockeySDKServiceName_block_invoke
+bit_keychainHockeySDKServiceName
+bit_validateEmail
+__bit_settingsDir_block_invoke
+bit_settingsDir
+bit_isPreiOS10Environment
+bit_isRunningInAppExtension
+importCategories
++[BITAppVersionMetaInfo appVersionMetaInfoFromDict:]
+-[BITAppVersionMetaInfo isEqual:]
+-[BITAppVersionMetaInfo isEqualComparingString:withString:]
+-[BITAppVersionMetaInfo isEqualComparingNumber:withNumber:]
+-[BITAppVersionMetaInfo isEqualComparingDate:withDate:]
+-[BITAppVersionMetaInfo isEqualComparingDictionary:withDate:]
+-[BITAppVersionMetaInfo isEqualToAppVersionMetaInfo:]
+-[BITAppVersionMetaInfo encodeWithCoder:]
+-[BITAppVersionMetaInfo initWithCoder:]
+-[BITAppVersionMetaInfo nameAndVersionString]
+-[BITAppVersionMetaInfo versionString]
+-[BITAppVersionMetaInfo dateString]
+-[BITAppVersionMetaInfo sizeInMB]
+-[BITAppVersionMetaInfo setDateWithTimestamp:]
+-[BITAppVersionMetaInfo notesOrEmptyString]
+-[BITAppVersionMetaInfo isValid]
+-[BITAppVersionMetaInfo hasUUID:]
+___33-[BITAppVersionMetaInfo hasUUID:]_block_invoke
+-[BITAppVersionMetaInfo name]
+-[BITAppVersionMetaInfo setName:]
+-[BITAppVersionMetaInfo version]
+-[BITAppVersionMetaInfo setVersion:]
+-[BITAppVersionMetaInfo shortVersion]
+-[BITAppVersionMetaInfo setShortVersion:]
+-[BITAppVersionMetaInfo minOSVersion]
+-[BITAppVersionMetaInfo setMinOSVersion:]
+-[BITAppVersionMetaInfo notes]
+-[BITAppVersionMetaInfo setNotes:]
+-[BITAppVersionMetaInfo date]
+-[BITAppVersionMetaInfo setDate:]
+-[BITAppVersionMetaInfo size]
+-[BITAppVersionMetaInfo setSize:]
+-[BITAppVersionMetaInfo mandatory]
+-[BITAppVersionMetaInfo setMandatory:]
+-[BITAppVersionMetaInfo versionID]
+-[BITAppVersionMetaInfo setVersionID:]
+-[BITAppVersionMetaInfo uuids]
+-[BITAppVersionMetaInfo setUuids:]
+-[BITAppVersionMetaInfo .cxx_destruct]
+_OBJC_IVAR_$_BITAppVersionMetaInfo._name
+_OBJC_IVAR_$_BITAppVersionMetaInfo._version
+_OBJC_IVAR_$_BITAppVersionMetaInfo._shortVersion
+_OBJC_IVAR_$_BITAppVersionMetaInfo._minOSVersion
+_OBJC_IVAR_$_BITAppVersionMetaInfo._notes
+_OBJC_IVAR_$_BITAppVersionMetaInfo._date
+_OBJC_IVAR_$_BITAppVersionMetaInfo._size
+_OBJC_IVAR_$_BITAppVersionMetaInfo._mandatory
+_OBJC_IVAR_$_BITAppVersionMetaInfo._versionID
+_OBJC_IVAR_$_BITAppVersionMetaInfo._uuids
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAppVersionMetaInfo.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAppVersionMetaInfo.h
+__33-[BITAppVersionMetaInfo hasUUID:]_block_invoke
+-[BITData serializeToDictionary]
+___32-[BITData serializeToDictionary]_block_invoke
+-[BITData initWithCoder:]
+-[BITData encodeWithCoder:]
+-[BITData baseData]
+-[BITData setBaseData:]
+-[BITData .cxx_destruct]
+_OBJC_IVAR_$_BITData._baseData
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITData.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITData.h
+__32-[BITData serializeToDictionary]_block_invoke
+-[BITSender initWithPersistence:serverURL:]
+-[BITSender dealloc]
+-[BITSender registerObservers]
+___30-[BITSender registerObservers]_block_invoke
+___30-[BITSender registerObservers]_block_invoke.20
+___copy_helper_block_.21
+___destroy_helper_block_.22
+-[BITSender unregisterObservers]
+-[BITSender sendSavedDataAsync]
+___31-[BITSender sendSavedDataAsync]_block_invoke
+___copy_helper_block_.32
+___destroy_helper_block_.33
+-[BITSender sendSavedData]
+___26-[BITSender sendSavedData]_block_invoke
+___copy_helper_block_.48
+___destroy_helper_block_.49
+-[BITSender sendData:withFilePath:]
+___35-[BITSender sendData:withFilePath:]_block_invoke
+___copy_helper_block_.75
+___destroy_helper_block_.76
+___35-[BITSender sendData:withFilePath:]_block_invoke.80
+___copy_helper_block_.83
+___destroy_helper_block_.84
+-[BITSender sendRequest:filePath:]
+___34-[BITSender sendRequest:filePath:]_block_invoke
+___copy_helper_block_.92
+___destroy_helper_block_.93
+-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]
+___70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke
+___copy_helper_block_.102
+___destroy_helper_block_.103
+___70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke.107
+___70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke_2
+___70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke.121
+___70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke_2.125
+___copy_helper_block_.130
+___destroy_helper_block_.131
+-[BITSender sendSenderFinishSendingDataNotification]
+___52-[BITSender sendSenderFinishSendingDataNotification]_block_invoke
+___52-[BITSender sendSenderFinishSendingDataNotification]_block_invoke_2
+-[BITSender requestForData:]
+-[BITSender shouldDeleteDataWithStatusCode:]
+-[BITSender session]
+-[BITSender runningRequestsCount]
+-[BITSender setRunningRequestsCount:]
+-[BITSender persistence]
+-[BITSender senderTasksQueue]
+-[BITSender setSenderTasksQueue:]
+-[BITSender endpointPath]
+-[BITSender setEndpointPath:]
+-[BITSender maxRequestCount]
+-[BITSender setMaxRequestCount:]
+-[BITSender serverURL]
+-[BITSender setSession:]
+-[BITSender persistenceSuccessObserver]
+-[BITSender setPersistenceSuccessObserver:]
+-[BITSender channelBlockedObserver]
+-[BITSender setChannelBlockedObserver:]
+-[BITSender .cxx_destruct]
+_OBJC_IVAR_$_BITSender._senderTasksQueue
+_OBJC_IVAR_$_BITSender._maxRequestCount
+_OBJC_IVAR_$_BITSender._serverURL
+_OBJC_IVAR_$_BITSender._persistence
+___block_descriptor_tmp.23
+___block_descriptor_tmp.35
+___block_descriptor_tmp.51
+___block_descriptor_tmp.95
+___block_descriptor_tmp.104
+___block_descriptor_tmp.110
+___block_descriptor_tmp.122
+___block_descriptor_tmp.132
+___block_descriptor_tmp.139
+___block_literal_global.140
+_OBJC_IVAR_$_BITSender._session
+_OBJC_IVAR_$_BITSender._runningRequestsCount
+_OBJC_IVAR_$_BITSender._endpointPath
+_OBJC_IVAR_$_BITSender._persistenceSuccessObserver
+_OBJC_IVAR_$_BITSender._channelBlockedObserver
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITSender.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITSender.h
+__52-[BITSender sendSenderFinishSendingDataNotification]_block_invoke_2
+__52-[BITSender sendSenderFinishSendingDataNotification]_block_invoke
+__70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke_2.125
+__70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke.121
+__70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke_2
+__70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke.107
+__70-[BITSender handleResponseWithStatusCode:responseData:filePath:error:]_block_invoke
+__34-[BITSender sendRequest:filePath:]_block_invoke
+__35-[BITSender sendData:withFilePath:]_block_invoke.80
+__35-[BITSender sendData:withFilePath:]_block_invoke
+__26-[BITSender sendSavedData]_block_invoke
+__31-[BITSender sendSavedDataAsync]_block_invoke
+__30-[BITSender registerObservers]_block_invoke.20
+__30-[BITSender registerObservers]_block_invoke
+-[BITCrashDetails initWithIncidentIdentifier:reporterKey:signal:exceptionName:exceptionReason:appStartTime:crashTime:osVersion:osBuild:appVersion:appBuild:appProcessIdentifier:]
+-[BITCrashDetails isAppKill]
+-[BITCrashDetails incidentIdentifier]
+-[BITCrashDetails reporterKey]
+-[BITCrashDetails signal]
+-[BITCrashDetails exceptionName]
+-[BITCrashDetails exceptionReason]
+-[BITCrashDetails appStartTime]
+-[BITCrashDetails crashTime]
+-[BITCrashDetails osVersion]
+-[BITCrashDetails osBuild]
+-[BITCrashDetails appVersion]
+-[BITCrashDetails appBuild]
+-[BITCrashDetails appProcessIdentifier]
+-[BITCrashDetails .cxx_destruct]
+_OBJC_IVAR_$_BITCrashDetails._incidentIdentifier
+_OBJC_IVAR_$_BITCrashDetails._reporterKey
+_OBJC_IVAR_$_BITCrashDetails._signal
+_OBJC_IVAR_$_BITCrashDetails._exceptionName
+_OBJC_IVAR_$_BITCrashDetails._exceptionReason
+_OBJC_IVAR_$_BITCrashDetails._appStartTime
+_OBJC_IVAR_$_BITCrashDetails._crashTime
+_OBJC_IVAR_$_BITCrashDetails._osVersion
+_OBJC_IVAR_$_BITCrashDetails._osBuild
+_OBJC_IVAR_$_BITCrashDetails._appVersion
+_OBJC_IVAR_$_BITCrashDetails._appBuild
+_OBJC_IVAR_$_BITCrashDetails._appProcessIdentifier
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashDetails.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashDetails.h
+-[BITTelemetryContext init]
+-[BITTelemetryContext initWithAppIdentifier:persistence:]
+-[BITTelemetryContext dealloc]
+-[BITTelemetryContext newUser]
+-[BITTelemetryContext saveUser:]
+-[BITTelemetryContext loadUser]
+-[BITTelemetryContext appIdentifier]
+___36-[BITTelemetryContext appIdentifier]_block_invoke
+-[BITTelemetryContext setAppIdentifier:]
+___40-[BITTelemetryContext setAppIdentifier:]_block_invoke
+___copy_helper_block_.65
+___destroy_helper_block_.66
+-[BITTelemetryContext screenResolution]
+___39-[BITTelemetryContext screenResolution]_block_invoke
+___copy_helper_block_.72
+___destroy_helper_block_.73
+-[BITTelemetryContext setScreenResolution:]
+___43-[BITTelemetryContext setScreenResolution:]_block_invoke
+-[BITTelemetryContext appVersion]
+___33-[BITTelemetryContext appVersion]_block_invoke
+___copy_helper_block_.82
+___destroy_helper_block_.83
+-[BITTelemetryContext setAppVersion:]
+___37-[BITTelemetryContext setAppVersion:]_block_invoke
+___copy_helper_block_.85
+___destroy_helper_block_.86
+-[BITTelemetryContext anonymousUserId]
+___38-[BITTelemetryContext anonymousUserId]_block_invoke
+-[BITTelemetryContext setAnonymousUserId:]
+___42-[BITTelemetryContext setAnonymousUserId:]_block_invoke
+___copy_helper_block_.95
+___destroy_helper_block_.96
+-[BITTelemetryContext anonymousUserAquisitionDate]
+___50-[BITTelemetryContext anonymousUserAquisitionDate]_block_invoke
+___copy_helper_block_.100
+___destroy_helper_block_.101
+-[BITTelemetryContext setAnonymousUserAquisitionDate:]
+___54-[BITTelemetryContext setAnonymousUserAquisitionDate:]_block_invoke
+___copy_helper_block_.105
+___destroy_helper_block_.106
+-[BITTelemetryContext sdkVersion]
+___33-[BITTelemetryContext sdkVersion]_block_invoke
+___copy_helper_block_.112
+___destroy_helper_block_.113
+-[BITTelemetryContext setSdkVersion:]
+___37-[BITTelemetryContext setSdkVersion:]_block_invoke
+___copy_helper_block_.115
+___destroy_helper_block_.116
+-[BITTelemetryContext sessionId]
+___32-[BITTelemetryContext sessionId]_block_invoke
+___copy_helper_block_.122
+___destroy_helper_block_.123
+-[BITTelemetryContext setSessionId:]
+___36-[BITTelemetryContext setSessionId:]_block_invoke
+___copy_helper_block_.127
+___destroy_helper_block_.128
+-[BITTelemetryContext isFirstSession]
+___37-[BITTelemetryContext isFirstSession]_block_invoke
+___copy_helper_block_.132
+___destroy_helper_block_.133
+-[BITTelemetryContext setIsFirstSession:]
+___41-[BITTelemetryContext setIsFirstSession:]_block_invoke
+___copy_helper_block_.137
+___destroy_helper_block_.138
+-[BITTelemetryContext isNewSession]
+___35-[BITTelemetryContext isNewSession]_block_invoke
+___copy_helper_block_.142
+___destroy_helper_block_.143
+-[BITTelemetryContext setIsNewSession:]
+___39-[BITTelemetryContext setIsNewSession:]_block_invoke
+___copy_helper_block_.147
+___destroy_helper_block_.148
+-[BITTelemetryContext osVersion]
+___32-[BITTelemetryContext osVersion]_block_invoke
+___copy_helper_block_.152
+___destroy_helper_block_.153
+-[BITTelemetryContext setOsVersion:]
+___36-[BITTelemetryContext setOsVersion:]_block_invoke
+-[BITTelemetryContext osName]
+___29-[BITTelemetryContext osName]_block_invoke
+___copy_helper_block_.160
+___destroy_helper_block_.161
+-[BITTelemetryContext setOsName:]
+___33-[BITTelemetryContext setOsName:]_block_invoke
+-[BITTelemetryContext deviceModel]
+___34-[BITTelemetryContext deviceModel]_block_invoke
+___copy_helper_block_.168
+___destroy_helper_block_.169
+-[BITTelemetryContext setDeviceModel:]
+___38-[BITTelemetryContext setDeviceModel:]_block_invoke
+___copy_helper_block_.171
+___destroy_helper_block_.172
+-[BITTelemetryContext deviceOemName]
+___36-[BITTelemetryContext deviceOemName]_block_invoke
+___copy_helper_block_.176
+___destroy_helper_block_.177
+-[BITTelemetryContext setDeviceOemName:]
+___40-[BITTelemetryContext setDeviceOemName:]_block_invoke
+___copy_helper_block_.179
+___destroy_helper_block_.180
+-[BITTelemetryContext osLocale]
+___31-[BITTelemetryContext osLocale]_block_invoke
+___copy_helper_block_.184
+___destroy_helper_block_.185
+-[BITTelemetryContext setOsLocale:]
+___35-[BITTelemetryContext setOsLocale:]_block_invoke
+___copy_helper_block_.187
+___destroy_helper_block_.188
+-[BITTelemetryContext osLanguage]
+___33-[BITTelemetryContext osLanguage]_block_invoke
+___copy_helper_block_.192
+___destroy_helper_block_.193
+-[BITTelemetryContext setOsLanguage:]
+___37-[BITTelemetryContext setOsLanguage:]_block_invoke
+___copy_helper_block_.195
+___destroy_helper_block_.196
+-[BITTelemetryContext deviceId]
+___31-[BITTelemetryContext deviceId]_block_invoke
+___copy_helper_block_.200
+___destroy_helper_block_.201
+-[BITTelemetryContext setDeviceId:]
+___35-[BITTelemetryContext setDeviceId:]_block_invoke
+___copy_helper_block_.203
+___destroy_helper_block_.204
+-[BITTelemetryContext deviceType]
+___33-[BITTelemetryContext deviceType]_block_invoke
+___copy_helper_block_.208
+___destroy_helper_block_.209
+-[BITTelemetryContext setDeviceType:]
+___37-[BITTelemetryContext setDeviceType:]_block_invoke
+___copy_helper_block_.211
+___destroy_helper_block_.212
+-[BITTelemetryContext contextDictionary]
+___40-[BITTelemetryContext contextDictionary]_block_invoke
+___copy_helper_block_.219
+___destroy_helper_block_.220
+-[BITTelemetryContext tags]
+-[BITTelemetryContext persistence]
+-[BITTelemetryContext setPersistence:]
+-[BITTelemetryContext operationsQueue]
+-[BITTelemetryContext setOperationsQueue:]
+-[BITTelemetryContext application]
+-[BITTelemetryContext device]
+-[BITTelemetryContext session]
+-[BITTelemetryContext user]
+-[BITTelemetryContext internal]
+-[BITTelemetryContext setTags:]
+-[BITTelemetryContext .cxx_destruct]
+_OBJC_IVAR_$_BITTelemetryContext._operationsQueue
+_OBJC_IVAR_$_BITTelemetryContext._persistence
+_OBJC_IVAR_$_BITTelemetryContext._appIdentifier
+_OBJC_IVAR_$_BITTelemetryContext._application
+_OBJC_IVAR_$_BITTelemetryContext._device
+_OBJC_IVAR_$_BITTelemetryContext._user
+_OBJC_IVAR_$_BITTelemetryContext._internal
+_OBJC_IVAR_$_BITTelemetryContext._session
+_OBJC_IVAR_$_BITTelemetryContext._tags
+___block_descriptor_tmp.67
+___block_descriptor_tmp.74
+___block_descriptor_tmp.84
+___block_descriptor_tmp.87
+___block_descriptor_tmp.94
+___block_descriptor_tmp.97
+___block_descriptor_tmp.102
+___block_descriptor_tmp.107
+___block_descriptor_tmp.117
+___block_descriptor_tmp.129
+___block_descriptor_tmp.134
+___block_descriptor_tmp.144
+___block_descriptor_tmp.154
+___block_descriptor_tmp.162
+___block_descriptor_tmp.170
+___block_descriptor_tmp.173
+___block_descriptor_tmp.181
+___block_descriptor_tmp.186
+___block_descriptor_tmp.189
+___block_descriptor_tmp.194
+___block_descriptor_tmp.197
+___block_descriptor_tmp.202
+___block_descriptor_tmp.205
+___block_descriptor_tmp.210
+___block_descriptor_tmp.213
+___block_descriptor_tmp.221
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITTelemetryContext.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITTelemetryContext.h
+__40-[BITTelemetryContext contextDictionary]_block_invoke
+__37-[BITTelemetryContext setDeviceType:]_block_invoke
+__33-[BITTelemetryContext deviceType]_block_invoke
+__35-[BITTelemetryContext setDeviceId:]_block_invoke
+__31-[BITTelemetryContext deviceId]_block_invoke
+__37-[BITTelemetryContext setOsLanguage:]_block_invoke
+__33-[BITTelemetryContext osLanguage]_block_invoke
+__35-[BITTelemetryContext setOsLocale:]_block_invoke
+__31-[BITTelemetryContext osLocale]_block_invoke
+__40-[BITTelemetryContext setDeviceOemName:]_block_invoke
+__36-[BITTelemetryContext deviceOemName]_block_invoke
+__38-[BITTelemetryContext setDeviceModel:]_block_invoke
+__34-[BITTelemetryContext deviceModel]_block_invoke
+__33-[BITTelemetryContext setOsName:]_block_invoke
+__29-[BITTelemetryContext osName]_block_invoke
+__36-[BITTelemetryContext setOsVersion:]_block_invoke
+__32-[BITTelemetryContext osVersion]_block_invoke
+__39-[BITTelemetryContext setIsNewSession:]_block_invoke
+__35-[BITTelemetryContext isNewSession]_block_invoke
+__41-[BITTelemetryContext setIsFirstSession:]_block_invoke
+__37-[BITTelemetryContext isFirstSession]_block_invoke
+__36-[BITTelemetryContext setSessionId:]_block_invoke
+__32-[BITTelemetryContext sessionId]_block_invoke
+__37-[BITTelemetryContext setSdkVersion:]_block_invoke
+__33-[BITTelemetryContext sdkVersion]_block_invoke
+__54-[BITTelemetryContext setAnonymousUserAquisitionDate:]_block_invoke
+__50-[BITTelemetryContext anonymousUserAquisitionDate]_block_invoke
+__42-[BITTelemetryContext setAnonymousUserId:]_block_invoke
+__38-[BITTelemetryContext anonymousUserId]_block_invoke
+__37-[BITTelemetryContext setAppVersion:]_block_invoke
+__33-[BITTelemetryContext appVersion]_block_invoke
+__43-[BITTelemetryContext setScreenResolution:]_block_invoke
+__39-[BITTelemetryContext screenResolution]_block_invoke
+__40-[BITTelemetryContext setAppIdentifier:]_block_invoke
+__36-[BITTelemetryContext appIdentifier]_block_invoke
+-[BITStoreButtonData initWithLabel:enabled:]
++[BITStoreButtonData dataWithLabel:enabled:]
+-[BITStoreButtonData label]
+-[BITStoreButtonData setLabel:]
+-[BITStoreButtonData isEnabled]
+-[BITStoreButtonData setEnabled:]
+-[BITStoreButtonData .cxx_destruct]
+-[BITStoreButton buttonPressed:]
+-[BITStoreButton animationDidStop:finished:context:]
+-[BITStoreButton updateButtonAnimated:]
+-[BITStoreButton alignToSuperview]
+-[BITStoreButton initWithFrame:]
+-[BITStoreButton initWithPadding:style:]
+-[BITStoreButton sizeThatFits:]
+-[BITStoreButton setFrame:]
+-[BITStoreButton setButtonData:]
+-[BITStoreButton setButtonData:animated:]
+-[BITStoreButton buttonDelegate]
+-[BITStoreButton setButtonDelegate:]
+-[BITStoreButton buttonData]
+-[BITStoreButton customPadding]
+-[BITStoreButton setCustomPadding:]
+-[BITStoreButton style]
+-[BITStoreButton setStyle:]
+-[BITStoreButton defaultBorderLayer]
+-[BITStoreButton setDefaultBorderLayer:]
+-[BITStoreButton inActiveBorderLayer]
+-[BITStoreButton setInActiveBorderLayer:]
+-[BITStoreButton .cxx_destruct]
+_OBJC_IVAR_$_BITStoreButtonData._label
+_OBJC_IVAR_$_BITStoreButtonData._enabled
+_OBJC_IVAR_$_BITStoreButton._customPadding
+_OBJC_IVAR_$_BITStoreButton._style
+_OBJC_IVAR_$_BITStoreButton._defaultBorderLayer
+_OBJC_IVAR_$_BITStoreButton._inActiveBorderLayer
+_OBJC_IVAR_$_BITStoreButton._buttonData
+_OBJC_IVAR_$_BITStoreButton._buttonDelegate
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITStoreButton.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITStoreButton.h
+-[BITCrashMetaData userProvidedDescription]
+-[BITCrashMetaData setUserProvidedDescription:]
+-[BITCrashMetaData userName]
+-[BITCrashMetaData setUserName:]
+-[BITCrashMetaData userEmail]
+-[BITCrashMetaData setUserEmail:]
+-[BITCrashMetaData userID]
+-[BITCrashMetaData setUserID:]
+-[BITCrashMetaData .cxx_destruct]
+_OBJC_IVAR_$_BITCrashMetaData._userProvidedDescription
+_OBJC_IVAR_$_BITCrashMetaData._userName
+_OBJC_IVAR_$_BITCrashMetaData._userEmail
+_OBJC_IVAR_$_BITCrashMetaData._userID
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashMetaData.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashMetaData.h
+-[BITSessionStateData init]
+-[BITSessionStateData serializeToDictionary]
+-[BITSessionStateData initWithCoder:]
+-[BITSessionStateData encodeWithCoder:]
+-[BITSessionStateData envelopeTypeName]
+-[BITSessionStateData dataTypeName]
+-[BITSessionStateData version]
+-[BITSessionStateData setVersion:]
+-[BITSessionStateData state]
+-[BITSessionStateData setState:]
+-[BITSessionStateData .cxx_destruct]
+_OBJC_IVAR_$_BITSessionStateData._envelopeTypeName
+_OBJC_IVAR_$_BITSessionStateData._dataTypeName
+_OBJC_IVAR_$_BITSessionStateData._version
+_OBJC_IVAR_$_BITSessionStateData._state
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITSessionStateData.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITSessionStateData.h
+-[BITAuthenticationViewController initWithDelegate:]
+-[BITAuthenticationViewController viewDidLoad]
+-[BITAuthenticationViewController viewWillAppear:]
+-[BITAuthenticationViewController updateBarButtons]
+-[BITAuthenticationViewController setShowsLoginViaWebButton:]
+-[BITAuthenticationViewController updateWebLoginButton]
+-[BITAuthenticationViewController handleWebLoginButton:]
+-[BITAuthenticationViewController setEmail:]
+-[BITAuthenticationViewController setTableViewTitle:]
+-[BITAuthenticationViewController supportedInterfaceOrientations]
+-[BITAuthenticationViewController allRequiredFieldsEntered]
+-[BITAuthenticationViewController numberOfSectionsInTableView:]
+-[BITAuthenticationViewController tableView:numberOfRowsInSection:]
+-[BITAuthenticationViewController tableView:titleForFooterInSection:]
+-[BITAuthenticationViewController tableView:cellForRowAtIndexPath:]
+-[BITAuthenticationViewController userEmailEntered:]
+-[BITAuthenticationViewController userPasswordEntered:]
+-[BITAuthenticationViewController textFieldShouldReturn:]
+-[BITAuthenticationViewController saveAction:]
+___46-[BITAuthenticationViewController saveAction:]_block_invoke
+___46-[BITAuthenticationViewController saveAction:]_block_invoke_2
+___46-[BITAuthenticationViewController saveAction:]_block_invoke_3
+___copy_helper_block_.197
+___destroy_helper_block_.198
+-[BITAuthenticationViewController setLoginUIEnabled:]
+-[BITAuthenticationViewController showsLoginViaWebButton]
+-[BITAuthenticationViewController tableViewTitle]
+-[BITAuthenticationViewController requirePassword]
+-[BITAuthenticationViewController setRequirePassword:]
+-[BITAuthenticationViewController delegate]
+-[BITAuthenticationViewController setDelegate:]
+-[BITAuthenticationViewController email]
+-[BITAuthenticationViewController emailField]
+-[BITAuthenticationViewController setEmailField:]
+-[BITAuthenticationViewController password]
+-[BITAuthenticationViewController setPassword:]
+-[BITAuthenticationViewController .cxx_destruct]
+_OBJC_IVAR_$_BITAuthenticationViewController._delegate
+_OBJC_IVAR_$_BITAuthenticationViewController._showsLoginViaWebButton
+_OBJC_IVAR_$_BITAuthenticationViewController._email
+_OBJC_IVAR_$_BITAuthenticationViewController._tableViewTitle
+___block_descriptor_tmp.196
+___block_descriptor_tmp.200
+_OBJC_IVAR_$_BITAuthenticationViewController._requirePassword
+_OBJC_IVAR_$_BITAuthenticationViewController._emailField
+_OBJC_IVAR_$_BITAuthenticationViewController._password
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_UITextFieldDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAuthenticationViewController.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAuthenticationViewController.h
+__46-[BITAuthenticationViewController saveAction:]_block_invoke_3
+__46-[BITAuthenticationViewController saveAction:]_block_invoke_2
+__46-[BITAuthenticationViewController saveAction:]_block_invoke
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITRectangleImageAnnotation.m
+-[BITCrashAttachment initWithFilename:crashAttachmentData:contentType:]
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashAttachment.m
+-[BITMetricsManager init]
+-[BITMetricsManager initWithChannel:telemetryContext:persistence:userDefaults:]
+-[BITMetricsManager startManager]
+-[BITMetricsManager setDisabled:]
+-[BITMetricsManager registerObservers]
+___38-[BITMetricsManager registerObservers]_block_invoke
+___38-[BITMetricsManager registerObservers]_block_invoke.57
+-[BITMetricsManager unregisterObservers]
+-[BITMetricsManager updateDidEnterBackgroundTime]
+-[BITMetricsManager startNewSessionIfNeeded]
+-[BITMetricsManager startNewSessionWithId:]
+-[BITMetricsManager createNewSessionWithId:]
+-[BITMetricsManager trackSessionWithState:]
+___43-[BITMetricsManager trackSessionWithState:]_block_invoke
+-[BITMetricsManager trackEventWithName:]
+___40-[BITMetricsManager trackEventWithName:]_block_invoke
+___40-[BITMetricsManager trackEventWithName:]_block_invoke_2
+___copy_helper_block_.139
+___destroy_helper_block_.140
+-[BITMetricsManager trackEventWithName:properties:measurements:]
+___64-[BITMetricsManager trackEventWithName:properties:measurements:]_block_invoke
+___64-[BITMetricsManager trackEventWithName:properties:measurements:]_block_invoke_2
+-[BITMetricsManager trackDataItem:]
+___35-[BITMetricsManager trackDataItem:]_block_invoke
+___35-[BITMetricsManager trackDataItem:]_block_invoke_2
+___copy_helper_block_.166
+___destroy_helper_block_.167
+-[BITMetricsManager channel]
+-[BITMetricsManager telemetryContext]
+-[BITMetricsManager persistence]
+-[BITMetricsManager userDefaults]
+-[BITMetricsManager serverURL]
+-[BITMetricsManager setServerURL:]
+-[BITMetricsManager disabled]
+-[BITMetricsManager appWillEnterForegroundObserver]
+-[BITMetricsManager setAppWillEnterForegroundObserver:]
+-[BITMetricsManager appDidEnterBackgroundObserver]
+-[BITMetricsManager setAppDidEnterBackgroundObserver:]
+-[BITMetricsManager metricsEventQueue]
+-[BITMetricsManager sender]
+-[BITMetricsManager setSender:]
+-[BITMetricsManager appBackgroundTimeBeforeSessionExpires]
+-[BITMetricsManager setAppBackgroundTimeBeforeSessionExpires:]
+-[BITMetricsManager .cxx_destruct]
+_OBJC_IVAR_$_BITMetricsManager._disabled
+_OBJC_IVAR_$_BITMetricsManager._metricsEventQueue
+_OBJC_IVAR_$_BITMetricsManager._appBackgroundTimeBeforeSessionExpires
+_OBJC_IVAR_$_BITMetricsManager._serverURL
+_OBJC_IVAR_$_BITMetricsManager._channel
+_OBJC_IVAR_$_BITMetricsManager._telemetryContext
+_OBJC_IVAR_$_BITMetricsManager._persistence
+_OBJC_IVAR_$_BITMetricsManager._userDefaults
+___block_descriptor_tmp.151
+___block_literal_global.152
+___block_descriptor_tmp.160
+___block_literal_global.161
+___block_descriptor_tmp.168
+_OBJC_IVAR_$_BITMetricsManager._appWillEnterForegroundObserver
+_OBJC_IVAR_$_BITMetricsManager._appDidEnterBackgroundObserver
+_OBJC_IVAR_$_BITMetricsManager._sender
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITMetricsManager.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITMetricsManagerPrivate.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITMetricsManager.h
+__35-[BITMetricsManager trackDataItem:]_block_invoke_2
+__35-[BITMetricsManager trackDataItem:]_block_invoke
+__64-[BITMetricsManager trackEventWithName:properties:measurements:]_block_invoke_2
+__64-[BITMetricsManager trackEventWithName:properties:measurements:]_block_invoke
+__40-[BITMetricsManager trackEventWithName:]_block_invoke_2
+__40-[BITMetricsManager trackEventWithName:]_block_invoke
+__43-[BITMetricsManager trackSessionWithState:]_block_invoke
+__38-[BITMetricsManager registerObservers]_block_invoke.57
+__38-[BITMetricsManager registerObservers]_block_invoke
+-[BITWebTableViewCell addWebView]
+-[BITWebTableViewCell showWebView]
+-[BITWebTableViewCell removeWebView]
+-[BITWebTableViewCell setWebViewContent:]
+-[BITWebTableViewCell initWithStyle:reuseIdentifier:]
+-[BITWebTableViewCell dealloc]
+-[BITWebTableViewCell setFrame:]
+-[BITWebTableViewCell prepareForReuse]
+-[BITWebTableViewCell webView:shouldStartLoadWithRequest:navigationType:]
+-[BITWebTableViewCell webViewDidFinishLoad:]
+-[BITWebTableViewCell openURL:]
+-[BITWebTableViewCell webView]
+-[BITWebTableViewCell setWebView:]
+-[BITWebTableViewCell webViewContent]
+-[BITWebTableViewCell webViewSize]
+-[BITWebTableViewCell setWebViewSize:]
+-[BITWebTableViewCell cellBackgroundColor]
+-[BITWebTableViewCell setCellBackgroundColor:]
+-[BITWebTableViewCell .cxx_destruct]
+_OBJC_IVAR_$_BITWebTableViewCell._webViewContent
+_OBJC_IVAR_$_BITWebTableViewCell._webView
+_OBJC_IVAR_$_BITWebTableViewCell._webViewSize
+_OBJC_IVAR_$_BITWebTableViewCell._cellBackgroundColor
+l_OBJC_PROTOCOL_$_UIWebViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIWebViewDelegate
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITWebTableViewCell.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITWebTableViewCell.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITFeedbackManager.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITFeedbackUserDataViewController.m
+-[BITUpdateViewController backgroundColor]
+-[BITUpdateViewController restoreStoreButtonStateAnimated:]
+-[BITUpdateViewController updateAppStoreHeader]
+-[BITUpdateViewController appDidBecomeActive]
+-[BITUpdateViewController addGlossToImage:]
+-[BITUpdateViewController realignPreviousVersionButton]
+-[BITUpdateViewController changePreviousVersionButtonBackground:]
+-[BITUpdateViewController changePreviousVersionButtonBackgroundHighlighted:]
+-[BITUpdateViewController gradientButtonHighlightImage]
+-[BITUpdateViewController showHidePreviousVersionsButton]
+-[BITUpdateViewController configureWebCell:forAppVersion:]
+-[BITUpdateViewController initWithStyle:]
+-[BITUpdateViewController dealloc]
+-[BITUpdateViewController viewDidLoad]
+-[BITUpdateViewController viewWillAppear:]
+-[BITUpdateViewController viewWillDisappear:]
+-[BITUpdateViewController redrawTableView]
+-[BITUpdateViewController webCellWithAppVersion:]
+-[BITUpdateViewController showPreviousVersionAction]
+-[BITUpdateViewController numberOfSectionsInTableView:]
+-[BITUpdateViewController tableView:heightForRowAtIndexPath:]
+-[BITUpdateViewController tableView:numberOfRowsInSection:]
+-[BITUpdateViewController observeValueForKeyPath:ofObject:change:context:]
+-[BITUpdateViewController tableView:cellForRowAtIndexPath:]
+___59-[BITUpdateViewController tableView:cellForRowAtIndexPath:]_block_invoke
+-[BITUpdateViewController willAnimateRotationToInterfaceOrientation:duration:]
+-[BITUpdateViewController setAppStoreButtonState:]
+-[BITUpdateViewController setAppStoreButtonState:animated:]
+-[BITUpdateViewController storeButtonFired:]
+-[BITUpdateViewController kvoRegistered]
+-[BITUpdateViewController setKvoRegistered:]
+-[BITUpdateViewController showAllVersions]
+-[BITUpdateViewController setShowAllVersions:]
+-[BITUpdateViewController appStoreHeader]
+-[BITUpdateViewController setAppStoreHeader:]
+-[BITUpdateViewController appStoreButton]
+-[BITUpdateViewController setAppStoreButton:]
+-[BITUpdateViewController popOverController]
+-[BITUpdateViewController setPopOverController:]
+-[BITUpdateViewController cells]
+-[BITUpdateViewController setCells:]
+-[BITUpdateViewController appEnvironment]
+-[BITUpdateViewController setAppEnvironment:]
+-[BITUpdateViewController updateManager]
+-[BITUpdateViewController setUpdateManager:]
+-[BITUpdateViewController mandatoryUpdate]
+-[BITUpdateViewController setMandatoryUpdate:]
+-[BITUpdateViewController appStoreButtonState]
+-[BITUpdateViewController .cxx_destruct]
+_OBJC_IVAR_$_BITUpdateViewController._appStoreButtonState
+_OBJC_IVAR_$_BITUpdateViewController._kvoRegistered
+_OBJC_IVAR_$_BITUpdateViewController._showAllVersions
+_OBJC_IVAR_$_BITUpdateViewController._appStoreHeader
+_OBJC_IVAR_$_BITUpdateViewController._appStoreButton
+_OBJC_IVAR_$_BITUpdateViewController._popOverController
+_OBJC_IVAR_$_BITUpdateViewController._cells
+_OBJC_IVAR_$_BITUpdateViewController._appEnvironment
+_OBJC_IVAR_$_BITUpdateViewController._updateManager
+_OBJC_IVAR_$_BITUpdateViewController._mandatoryUpdate
+l_OBJC_PROTOCOL_$_BITStoreButtonDelegate
+l_OBJC_LABEL_PROTOCOL_$_BITStoreButtonDelegate
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITUpdateViewController.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITUpdateViewControllerPrivate.h
+__59-[BITUpdateViewController tableView:cellForRowAtIndexPath:]_block_invoke
+-[BITTelemetryObject serializeToDictionary]
+-[BITTelemetryObject encodeWithCoder:]
+-[BITTelemetryObject initWithCoder:]
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITTelemetryObject.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITActivityIndicatorButton.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITFeedbackActivity.m
++[BITKeychainUtils getPasswordForUsername:andServiceName:error:]
++[BITKeychainUtils storeUsername:andPassword:forServiceName:updateExisting:error:]
++[BITKeychainUtils storeUsername:andPassword:forServiceName:updateExisting:accessibility:error:]
++[BITKeychainUtils deleteItemForUsername:andServiceName:error:]
++[BITKeychainUtils purgeItemsForServiceName:error:]
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITKeychainUtils.m
++[BITHockeyHelper(Application) applicationState]
+___48+[BITHockeyHelper(Application) applicationState]_block_invoke
++[BITHockeyHelper(Application) sharedApplication]
++[BITHockeyHelper(Application) sharedAppState]
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyHelper+Application.m
+__48+[BITHockeyHelper(Application) applicationState]_block_invoke
+-[BITAuthenticator initWithAppIdentifier:appEnvironment:]
+-[BITAuthenticator dealloc]
+-[BITAuthenticator startManager]
+-[BITAuthenticator authenticateInstallation]
+-[BITAuthenticator authenticate]
+___32-[BITAuthenticator authenticate]_block_invoke
+___32-[BITAuthenticator authenticate]_block_invoke_2
+___copy_helper_block_.57
+___destroy_helper_block_.58
+-[BITAuthenticator identifyWithCompletion:]
+___43-[BITAuthenticator identifyWithCompletion:]_block_invoke
+___43-[BITAuthenticator identifyWithCompletion:]_block_invoke_2
+___43-[BITAuthenticator identifyWithCompletion:]_block_invoke_3
+___copy_helper_block_.135
+___destroy_helper_block_.136
+-[BITAuthenticator needsValidation]
+-[BITAuthenticator validate]
+___28-[BITAuthenticator validate]_block_invoke
+___28-[BITAuthenticator validate]_block_invoke_2
+___28-[BITAuthenticator validate]_block_invoke_3
+___copy_helper_block_.151
+___destroy_helper_block_.152
+___28-[BITAuthenticator validate]_block_invoke_2.162
+___copy_helper_block_.173
+___destroy_helper_block_.174
+-[BITAuthenticator validateWithCompletion:]
+___43-[BITAuthenticator validateWithCompletion:]_block_invoke
+___copy_helper_block_.209
+___destroy_helper_block_.210
+-[BITAuthenticator handleValidationResponseWithData:error:completion:]
+-[BITAuthenticator validationParameters]
++[BITAuthenticator isValidationResponseValid:error:]
+-[BITAuthenticator dismissAuthenticationControllerAnimated:completion:]
+-[BITAuthenticator authenticationViewController:handleAuthenticationWithEmail:password:completion:]
+-[BITAuthenticator authenticationViewController:handleAuthenticationWithEmail:request:completion:]
+___98-[BITAuthenticator authenticationViewController:handleAuthenticationWithEmail:request:completion:]_block_invoke
+___copy_helper_block_.273
+___destroy_helper_block_.274
+-[BITAuthenticator authenticationViewControllerDidTapWebButton:]
+-[BITAuthenticator handleAuthenticationWithResponse:email:data:completion:]
+___75-[BITAuthenticator handleAuthenticationWithResponse:email:data:completion:]_block_invoke
+___copy_helper_block_.285
+___destroy_helper_block_.286
+-[BITAuthenticator requestForAuthenticationEmail:password:]
+-[BITAuthenticator authenticationPath]
++[BITAuthenticator authenticationTokenFromURLResponse:data:error:]
+-[BITAuthenticator deviceAuthenticationURL]
+-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]
+___63-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]_block_invoke
+___63-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]_block_invoke_2
+___copy_helper_block_.371
+___destroy_helper_block_.372
+___63-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]_block_invoke.380
+___63-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]_block_invoke_2.385
++[BITAuthenticator UDIDFromOpenURL:annotation:]
++[BITAuthenticator email:andIUID:fromOpenURL:]
+-[BITAuthenticator alertOnFailureStoringTokenInKeychain]
+___56-[BITAuthenticator alertOnFailureStoringTokenInKeychain]_block_invoke
+-[BITAuthenticator cleanupInternalStorage]
+-[BITAuthenticator processFullSizeImage]
+___40-[BITAuthenticator processFullSizeImage]_block_invoke
+___40-[BITAuthenticator processFullSizeImage]_block_invoke_2
+___copy_helper_block_.434
+___destroy_helper_block_.435
+___40-[BITAuthenticator processFullSizeImage]_block_invoke.439
+-[BITAuthenticator registerObservers]
+___37-[BITAuthenticator registerObservers]_block_invoke
+___copy_helper_block_.454
+___destroy_helper_block_.455
+___37-[BITAuthenticator registerObservers]_block_invoke.464
+___copy_helper_block_.467
+___destroy_helper_block_.468
+-[BITAuthenticator unregisterObservers]
+-[BITAuthenticator storeInstallationIdentifier:withType:]
+-[BITAuthenticator installationIdentifier]
+-[BITAuthenticator setLastAuthenticatedVersion:]
+-[BITAuthenticator lastAuthenticatedVersion]
+-[BITAuthenticator installationIdentifierParameterString]
++[BITAuthenticator stringForIdentificationType:]
+-[BITAuthenticator setIdentificationType:]
+-[BITAuthenticator publicInstallationIdentifier]
+-[BITAuthenticator applicationDidBecomeActive:]
+-[BITAuthenticator applicationDidEnterBackground:]
+-[BITAuthenticator identificationType]
+-[BITAuthenticator restrictApplicationUsage]
+-[BITAuthenticator setRestrictApplicationUsage:]
+-[BITAuthenticator restrictionEnforcementFrequency]
+-[BITAuthenticator setRestrictionEnforcementFrequency:]
+-[BITAuthenticator authenticationSecret]
+-[BITAuthenticator setAuthenticationSecret:]
+-[BITAuthenticator webpageURL]
+-[BITAuthenticator setWebpageURL:]
+-[BITAuthenticator urlScheme]
+-[BITAuthenticator setUrlScheme:]
+-[BITAuthenticator isIdentified]
+-[BITAuthenticator setIdentified:]
+-[BITAuthenticator isValidated]
+-[BITAuthenticator setValidated:]
+-[BITAuthenticator isSetup]
+-[BITAuthenticator setIsSetup:]
+-[BITAuthenticator appDidBecomeActiveObserver]
+-[BITAuthenticator setAppDidBecomeActiveObserver:]
+-[BITAuthenticator appDidEnterBackgroundObserver]
+-[BITAuthenticator setAppDidEnterBackgroundObserver:]
+-[BITAuthenticator authenticationController]
+-[BITAuthenticator setAuthenticationController:]
+-[BITAuthenticator delegate]
+-[BITAuthenticator setDelegate:]
+-[BITAuthenticator hockeyAppClient]
+-[BITAuthenticator setHockeyAppClient:]
+-[BITAuthenticator identificationCompletion]
+-[BITAuthenticator setIdentificationCompletion:]
+-[BITAuthenticator .cxx_destruct]
+_OBJC_IVAR_$_BITAuthenticator._webpageURL
+_OBJC_IVAR_$_BITAuthenticator._identificationType
+_OBJC_IVAR_$_BITAuthenticator._isSetup
+_OBJC_IVAR_$_BITAuthenticator._restrictApplicationUsage
+_OBJC_IVAR_$_BITAuthenticator._restrictionEnforcementFrequency
+___block_descriptor_tmp.60
+___block_descriptor_tmp.65
+___block_descriptor_tmp.78
+___block_literal_global.79
+___block_descriptor_tmp.138
+___block_descriptor_tmp.153
+___block_descriptor_tmp.166
+___block_descriptor_tmp.175
+___block_descriptor_tmp.212
+___block_descriptor_tmp.275
+___block_descriptor_tmp.287
+___block_descriptor_tmp.363
+___block_literal_global.364
+___block_descriptor_tmp.373
+___block_descriptor_tmp.381
+___block_literal_global.382
+___block_descriptor_tmp.386
+___block_literal_global.387
+___block_descriptor_tmp.404
+___block_literal_global.405
+___block_descriptor_tmp.421
+___block_literal_global.422
+_kBITPNGHeader
+_kBITPNGEndChunk
+___block_descriptor_tmp.436
+___block_descriptor_tmp.440
+___block_literal_global.441
+___block_descriptor_tmp.469
+_OBJC_IVAR_$_BITAuthenticator._authenticationSecret
+_OBJC_IVAR_$_BITAuthenticator._urlScheme
+_OBJC_IVAR_$_BITAuthenticator._identified
+_OBJC_IVAR_$_BITAuthenticator._validated
+_OBJC_IVAR_$_BITAuthenticator._appDidBecomeActiveObserver
+_OBJC_IVAR_$_BITAuthenticator._appDidEnterBackgroundObserver
+_OBJC_IVAR_$_BITAuthenticator._authenticationController
+_OBJC_IVAR_$_BITAuthenticator._delegate
+_OBJC_IVAR_$_BITAuthenticator._hockeyAppClient
+_OBJC_IVAR_$_BITAuthenticator._identificationCompletion
+l_OBJC_PROTOCOL_$_BITAuthenticationViewControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_BITAuthenticationViewControllerDelegate
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAuthenticator.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAuthenticator_Private.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAuthenticator.h
+__37-[BITAuthenticator registerObservers]_block_invoke.464
+__37-[BITAuthenticator registerObservers]_block_invoke
+__40-[BITAuthenticator processFullSizeImage]_block_invoke.439
+__40-[BITAuthenticator processFullSizeImage]_block_invoke_2
+__40-[BITAuthenticator processFullSizeImage]_block_invoke
+_OSSwapInt32
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/libkern/arm/OSByteOrder.h
+__56-[BITAuthenticator alertOnFailureStoringTokenInKeychain]_block_invoke
+__63-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]_block_invoke_2.385
+__63-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]_block_invoke.380
+__63-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]_block_invoke_2
+__63-[BITAuthenticator handleOpenURL:sourceApplication:annotation:]_block_invoke
+__75-[BITAuthenticator handleAuthenticationWithResponse:email:data:completion:]_block_invoke
+__98-[BITAuthenticator authenticationViewController:handleAuthenticationWithEmail:request:completion:]_block_invoke
+__43-[BITAuthenticator validateWithCompletion:]_block_invoke
+__28-[BITAuthenticator validate]_block_invoke_2.162
+__28-[BITAuthenticator validate]_block_invoke_3
+__28-[BITAuthenticator validate]_block_invoke_2
+__28-[BITAuthenticator validate]_block_invoke
+__43-[BITAuthenticator identifyWithCompletion:]_block_invoke_3
+__43-[BITAuthenticator identifyWithCompletion:]_block_invoke_2
+__43-[BITAuthenticator identifyWithCompletion:]_block_invoke
+__32-[BITAuthenticator authenticate]_block_invoke_2
+__32-[BITAuthenticator authenticate]_block_invoke
+-[BITAppStoreHeader initWithFrame:]
+-[BITAppStoreHeader drawRect:]
+-[BITAppStoreHeader layoutSubviews]
+-[BITAppStoreHeader setHeaderText:]
+-[BITAppStoreHeader setSubHeaderText:]
+-[BITAppStoreHeader setIconImage:]
+-[BITAppStoreHeader headerText]
+-[BITAppStoreHeader subHeaderText]
+-[BITAppStoreHeader iconImage]
+-[BITAppStoreHeader headerLabelView]
+-[BITAppStoreHeader setHeaderLabelView:]
+-[BITAppStoreHeader middleLabelView]
+-[BITAppStoreHeader setMiddleLabelView:]
+-[BITAppStoreHeader .cxx_destruct]
+_OBJC_IVAR_$_BITAppStoreHeader._headerText
+_OBJC_IVAR_$_BITAppStoreHeader._subHeaderText
+_OBJC_IVAR_$_BITAppStoreHeader._iconImage
+_OBJC_IVAR_$_BITAppStoreHeader._headerLabelView
+_OBJC_IVAR_$_BITAppStoreHeader._middleLabelView
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAppStoreHeader.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAppStoreHeader.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITImageAnnotation.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITAttributedLabel.m
+-[BITHockeyBaseViewController initWithStyle:]
+-[BITHockeyBaseViewController initWithStyle:modal:]
+-[BITHockeyBaseViewController initWithModalStyle:]
+-[BITHockeyBaseViewController onDismissModal:]
+-[BITHockeyBaseViewController supportedInterfaceOrientations]
+-[BITHockeyBaseViewController modalAnimated]
+-[BITHockeyBaseViewController setModalAnimated:]
+-[BITHockeyBaseViewController modal]
+-[BITHockeyBaseViewController setModal:]
+_OBJC_IVAR_$_BITHockeyBaseViewController._modalAnimated
+_OBJC_IVAR_$_BITHockeyBaseViewController._modal
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyBaseViewController.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyBaseViewController.h
+-[BITDomain init]
+-[BITDomain serializeToDictionary]
+-[BITDomain initWithCoder:]
+-[BITDomain encodeWithCoder:]
+-[BITDomain envelopeTypeName]
+-[BITDomain dataTypeName]
+-[BITDomain properties]
+-[BITDomain setProperties:]
+-[BITDomain .cxx_destruct]
+_OBJC_IVAR_$_BITDomain._envelopeTypeName
+_OBJC_IVAR_$_BITDomain._dataTypeName
+_OBJC_IVAR_$_BITDomain._properties
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITDomain.m
+-[BITTelemetryData dataTypeName]
+-[BITTelemetryData envelopeTypeName]
+__ZNSt3__16vectorIPFvPK32BITCrashUncaughtCXXExceptionInfoENS_9allocatorIS5_EEED1Ev
+_____cxa_throw_block_invoke
++[BITCrashUncaughtCXXExceptionHandlerManager addCXXExceptionHandler:]
+___69+[BITCrashUncaughtCXXExceptionHandlerManager addCXXExceptionHandler:]_block_invoke
+__ZL35BITCrashUncaughtCXXTerminateHandlerv
++[BITCrashUncaughtCXXExceptionHandlerManager removeCXXExceptionHandler:]
+___clang_call_terminate
+__GLOBAL__sub_I_BITCrashCXXExceptionHandler.mm
+__ZL37_BITCrashUncaughtExceptionHandlerList
+__ZZ11__cxa_throwE9predicate
+__ZZ11__cxa_throwE21__original__cxa_throw
+__ZZ11__cxa_throwE25__real_objc_ehtype_vtable
+__ZL39_BITCrashIsOurTerminateHandlerInstalled
+__ZL31_BITCrashCXXExceptionInfoTSDKey
+__ZZ69+[BITCrashUncaughtCXXExceptionHandlerManager addCXXExceptionHandler:]E13key_predicate
+___block_descriptor_tmp.3
+___block_literal_global.4
+__ZL33_BITCrashCXXExceptionHandlingLock
+__ZL33_BITCrashOriginalTerminateHandler
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITCrashCXXExceptionHandler.mm
+_GLOBAL__sub_I_BITCrashCXXExceptionHandler.mm
+__cxx_global_var_init
+vector
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector
+__vector_base
+__compressed_pair<nullptr_t, true>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory
+__compressed_pair_elem<nullptr_t, void>
+__split_buffer
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__split_buffer
+allocate
+__allocate
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/new
+__throw_length_error
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdexcept
+length_error
+__compressed_pair<nullptr_t, std::__1::allocator<void (*)(const BITCrashUncaughtCXXExceptionInfo *)> &>
+__compressed_pair_elem<std::__1::allocator<void (*)(const BITCrashUncaughtCXXExceptionInfo *)> &, void>
+__push_back_slow_path<void (*const &)(const BITCrashUncaughtCXXExceptionInfo *)>
+~__split_buffer
+deallocate
+__libcpp_deallocate
+clear
+__destruct_at_end
+__swap_out_circular_buffer
+swap<void (**)(const BITCrashUncaughtCXXExceptionInfo *)>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/type_traits
+__end_cap
+first
+__get
+__construct_backward<void (*)(const BITCrashUncaughtCXXExceptionInfo *)>
+construct<void (*)(const BITCrashUncaughtCXXExceptionInfo *), void (*const &)(const BITCrashUncaughtCXXExceptionInfo *)>
+__construct<void (*)(const BITCrashUncaughtCXXExceptionInfo *), void (*const &)(const BITCrashUncaughtCXXExceptionInfo *)>
+__recommend
+max<unsigned long>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
+max<unsigned long, std::__1::__less<unsigned long, unsigned long> >
+operator()
+capacity
+size
+__alloc
+second
+empty
+erase
+move<void (**)(const BITCrashUncaughtCXXExceptionInfo *), void (**)(const BITCrashUncaughtCXXExceptionInfo *)>
+__move<void (*)(const BITCrashUncaughtCXXExceptionInfo *), void (*)(const BITCrashUncaughtCXXExceptionInfo *)>
+operator-<void (*const *)(const BITCrashUncaughtCXXExceptionInfo *), void (*const *)(const BITCrashUncaughtCXXExceptionInfo *)>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator
+operator!=<void (**)(const BITCrashUncaughtCXXExceptionInfo *)>
+operator==<void (**)(const BITCrashUncaughtCXXExceptionInfo *), void (**)(const BITCrashUncaughtCXXExceptionInfo *)>
+find<std::__1::__wrap_iter<void (**)(const BITCrashUncaughtCXXExceptionInfo *)>, void (*)(const BITCrashUncaughtCXXExceptionInfo *)>
+operator++
+base
+end
+begin
+BITCrashUncaughtCXXTerminateHandler
+BITCrashIterateExceptionHandlers_unlocked
+c_str
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string
+data
+__get_pointer
+__get_short_pointer
+__get_long_pointer
+__is_long
+name
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/typeinfo
+operator bool
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/exception
+__69+[BITCrashUncaughtCXXExceptionHandlerManager addCXXExceptionHandler:]_block_invoke
+push_back
+____cxa_throw_block_invoke
+__cxa_throw
+~vector
+~__vector_base
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITFeedbackComposeViewController.m
+-[BITTelemetryData serializeToDictionary]
+-[BITTelemetryData initWithCoder:]
+-[BITTelemetryData encodeWithCoder:]
+-[BITTelemetryData name]
+-[BITTelemetryData setName:]
+-[BITTelemetryData .cxx_destruct]
+_OBJC_IVAR_$_BITTelemetryData._version
+_OBJC_IVAR_$_BITTelemetryData._name
+_OBJC_IVAR_$_BITTelemetryData._properties
+_OBJC_IVAR_$_BITTelemetryData._envelopeTypeName
+_OBJC_IVAR_$_BITTelemetryData._dataTypeName
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITTelemetryData.m
+-[BITDevice serializeToDictionary]
+-[BITDevice initWithCoder:]
+-[BITDevice encodeWithCoder:]
+-[BITDevice deviceId]
+-[BITDevice setDeviceId:]
+-[BITDevice ip]
+-[BITDevice setIp:]
+-[BITDevice language]
+-[BITDevice setLanguage:]
+-[BITDevice locale]
+-[BITDevice setLocale:]
+-[BITDevice machineName]
+-[BITDevice setMachineName:]
+-[BITDevice model]
+-[BITDevice setModel:]
+-[BITDevice network]
+-[BITDevice setNetwork:]
+-[BITDevice networkName]
+-[BITDevice setNetworkName:]
+-[BITDevice oemName]
+-[BITDevice setOemName:]
+-[BITDevice os]
+-[BITDevice setOs:]
+-[BITDevice osVersion]
+-[BITDevice setOsVersion:]
+-[BITDevice roleInstance]
+-[BITDevice setRoleInstance:]
+-[BITDevice roleName]
+-[BITDevice setRoleName:]
+-[BITDevice screenResolution]
+-[BITDevice setScreenResolution:]
+-[BITDevice type]
+-[BITDevice setType:]
+-[BITDevice vmName]
+-[BITDevice setVmName:]
+-[BITDevice .cxx_destruct]
+_OBJC_IVAR_$_BITDevice._deviceId
+_OBJC_IVAR_$_BITDevice._ip
+_OBJC_IVAR_$_BITDevice._language
+_OBJC_IVAR_$_BITDevice._locale
+_OBJC_IVAR_$_BITDevice._model
+_OBJC_IVAR_$_BITDevice._network
+_OBJC_IVAR_$_BITDevice._oemName
+_OBJC_IVAR_$_BITDevice._os
+_OBJC_IVAR_$_BITDevice._osVersion
+_OBJC_IVAR_$_BITDevice._roleInstance
+_OBJC_IVAR_$_BITDevice._roleName
+_OBJC_IVAR_$_BITDevice._screenResolution
+_OBJC_IVAR_$_BITDevice._type
+_OBJC_IVAR_$_BITDevice._machineName
+_OBJC_IVAR_$_BITDevice._networkName
+_OBJC_IVAR_$_BITDevice._vmName
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITDevice.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITDevice.h
+-[BITHockeyAttachment initWithFilename:hockeyAttachmentData:contentType:]
+-[BITHockeyAttachment encodeWithCoder:]
+-[BITHockeyAttachment initWithCoder:]
+-[BITHockeyAttachment filename]
+-[BITHockeyAttachment hockeyAttachmentData]
+-[BITHockeyAttachment contentType]
+-[BITHockeyAttachment .cxx_destruct]
+_OBJC_IVAR_$_BITHockeyAttachment._filename
+_OBJC_IVAR_$_BITHockeyAttachment._hockeyAttachmentData
+_OBJC_IVAR_$_BITHockeyAttachment._contentType
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyAttachment.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyAttachment.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITFeedbackMessage.m
+-[BITBase serializeToDictionary]
+-[BITBase initWithCoder:]
+-[BITBase encodeWithCoder:]
+-[BITBase baseType]
+-[BITBase setBaseType:]
+-[BITBase .cxx_destruct]
+_OBJC_IVAR_$_BITBase._baseType
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITBase.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITBase.h
+-[BITHockeyManager checkValidityOfAppIdentifier:]
+-[BITHockeyManager logInvalidIdentifier:]
+___41-[BITHockeyManager logInvalidIdentifier:]_block_invoke
+___41-[BITHockeyManager logInvalidIdentifier:]_block_invoke_2
++[BITHockeyManager sharedHockeyManager]
+___39+[BITHockeyManager sharedHockeyManager]_block_invoke
+-[BITHockeyManager init]
+-[BITHockeyManager dealloc]
+-[BITHockeyManager configureWithIdentifier:]
+-[BITHockeyManager configureWithIdentifier:delegate:]
+-[BITHockeyManager configureWithBetaIdentifier:liveIdentifier:delegate:]
+-[BITHockeyManager startManager]
+___32-[BITHockeyManager startManager]_block_invoke
+___32-[BITHockeyManager startManager]_block_invoke_2
+___32-[BITHockeyManager startManager]_block_invoke_3
+___32-[BITHockeyManager startManager]_block_invoke_4
+___32-[BITHockeyManager startManager]_block_invoke_5
+___32-[BITHockeyManager startManager]_block_invoke_6
+-[BITHockeyManager setDisableUpdateManager:]
+-[BITHockeyManager setEnableStoreUpdateManager:]
+-[BITHockeyManager setDisableMetricsManager:]
+-[BITHockeyManager setServerURL:]
+-[BITHockeyManager setDelegate:]
+___32-[BITHockeyManager setDelegate:]_block_invoke
+-[BITHockeyManager setDebugLogEnabled:]
+-[BITHockeyManager logLevel]
+-[BITHockeyManager setLogLevel:]
+-[BITHockeyManager setLogHandler:]
+-[BITHockeyManager modifyKeychainUserValue:forKey:]
+___51-[BITHockeyManager modifyKeychainUserValue:forKey:]_block_invoke
+___copy_helper_block_.194
+___destroy_helper_block_.195
+-[BITHockeyManager setUserID:]
+-[BITHockeyManager setUserName:]
+-[BITHockeyManager setUserEmail:]
+-[BITHockeyManager testIdentifier]
+-[BITHockeyManager version]
+-[BITHockeyManager build]
+-[BITHockeyManager observeValueForKeyPath:ofObject:change:context:]
+-[BITHockeyManager hockeyAppClient]
+-[BITHockeyManager integrationFlowTimeString]
+-[BITHockeyManager integrationFlowStartedWithTimeString:]
+-[BITHockeyManager pingServerForIntegrationStartWorkflowWithTimeString:appIdentifier:]
+___86-[BITHockeyManager pingServerForIntegrationStartWorkflowWithTimeString:appIdentifier:]_block_invoke
+___copy_helper_block_.254
+___destroy_helper_block_.255
+___86-[BITHockeyManager pingServerForIntegrationStartWorkflowWithTimeString:appIdentifier:]_block_invoke.284
+___copy_helper_block_.291
+___destroy_helper_block_.292
+-[BITHockeyManager logPingMessageForStatusCode:]
+___48-[BITHockeyManager logPingMessageForStatusCode:]_block_invoke
+___48-[BITHockeyManager logPingMessageForStatusCode:]_block_invoke_2
+___48-[BITHockeyManager logPingMessageForStatusCode:]_block_invoke_3
+___48-[BITHockeyManager logPingMessageForStatusCode:]_block_invoke_4
+-[BITHockeyManager validateStartManagerIsInvoked]
+___49-[BITHockeyManager validateStartManagerIsInvoked]_block_invoke
+-[BITHockeyManager invokeStartUpdateManager]
+___44-[BITHockeyManager invokeStartUpdateManager]_block_invoke
+-[BITHockeyManager isSetUpOnMainThread]
+___39-[BITHockeyManager isSetUpOnMainThread]_block_invoke
+___copy_helper_block_.338
+___destroy_helper_block_.339
+___39-[BITHockeyManager isSetUpOnMainThread]_block_invoke.341
+___copy_helper_block_.342
+___destroy_helper_block_.343
+-[BITHockeyManager shouldUseLiveIdentifier]
+-[BITHockeyManager initializeModules]
+___37-[BITHockeyManager initializeModules]_block_invoke
+___37-[BITHockeyManager initializeModules]_block_invoke_2
+___37-[BITHockeyManager initializeModules]_block_invoke_3
+___37-[BITHockeyManager initializeModules]_block_invoke_4
+___37-[BITHockeyManager initializeModules]_block_invoke_5
+___37-[BITHockeyManager initializeModules]_block_invoke_6
+-[BITHockeyManager delegate]
+-[BITHockeyManager serverURL]
+-[BITHockeyManager crashManager]
+-[BITHockeyManager setCrashManager:]
+-[BITHockeyManager isCrashManagerDisabled]
+-[BITHockeyManager setDisableCrashManager:]
+-[BITHockeyManager updateManager]
+-[BITHockeyManager setUpdateManager:]
+-[BITHockeyManager isUpdateManagerDisabled]
+-[BITHockeyManager storeUpdateManager]
+-[BITHockeyManager setStoreUpdateManager:]
+-[BITHockeyManager isStoreUpdateManagerEnabled]
+-[BITHockeyManager authenticator]
+-[BITHockeyManager setAuthenticator:]
+-[BITHockeyManager metricsManager]
+-[BITHockeyManager setMetricsManager:]
+-[BITHockeyManager isMetricsManagerDisabled]
+-[BITHockeyManager appEnvironment]
+-[BITHockeyManager installString]
+-[BITHockeyManager setInstallString:]
+-[BITHockeyManager isInstallTrackingDisabled]
+-[BITHockeyManager setDisableInstallTracking:]
+-[BITHockeyManager isDebugLogEnabled]
+-[BITHockeyManager userID]
+-[BITHockeyManager userName]
+-[BITHockeyManager userEmail]
+-[BITHockeyManager appIdentifier]
+-[BITHockeyManager setAppIdentifier:]
+-[BITHockeyManager liveIdentifier]
+-[BITHockeyManager setLiveIdentifier:]
+-[BITHockeyManager validAppIdentifier]
+-[BITHockeyManager setValidAppIdentifier:]
+-[BITHockeyManager startManagerIsInvoked]
+-[BITHockeyManager setStartManagerIsInvoked:]
+-[BITHockeyManager startUpdateManagerIsInvoked]
+-[BITHockeyManager setStartUpdateManagerIsInvoked:]
+-[BITHockeyManager managersInitialized]
+-[BITHockeyManager setManagersInitialized:]
+-[BITHockeyManager setHockeyAppClient:]
+-[BITHockeyManager .cxx_destruct]
+_sharedHockeyManager.sharedInstance
+_sharedHockeyManager.pred
+___block_descriptor_tmp.25
+___block_literal_global.26
+_OBJC_IVAR_$_BITHockeyManager._serverURL
+_OBJC_IVAR_$_BITHockeyManager._delegate
+_OBJC_IVAR_$_BITHockeyManager._managersInitialized
+_OBJC_IVAR_$_BITHockeyManager._hockeyAppClient
+_OBJC_IVAR_$_BITHockeyManager._disableCrashManager
+_OBJC_IVAR_$_BITHockeyManager._disableMetricsManager
+_OBJC_IVAR_$_BITHockeyManager._disableUpdateManager
+_OBJC_IVAR_$_BITHockeyManager._enableStoreUpdateManager
+_OBJC_IVAR_$_BITHockeyManager._appEnvironment
+_OBJC_IVAR_$_BITHockeyManager._startManagerIsInvoked
+_OBJC_IVAR_$_BITHockeyManager._startUpdateManagerIsInvoked
+_OBJC_IVAR_$_BITHockeyManager._liveIdentifier
+_OBJC_IVAR_$_BITHockeyManager._installString
+_OBJC_IVAR_$_BITHockeyManager._disableInstallTracking
+___block_descriptor_tmp.66
+___block_literal_global.67
+___block_descriptor_tmp.83
+___block_literal_global.84
+___block_literal_global.92
+___block_descriptor_tmp.113
+___block_literal_global.114
+___block_literal_global.125
+_OBJC_IVAR_$_BITHockeyManager._debugLogEnabled
+_OBJC_IVAR_$_BITHockeyManager._userID
+_OBJC_IVAR_$_BITHockeyManager._userName
+_OBJC_IVAR_$_BITHockeyManager._userEmail
+_bitstadium_library_info
+___block_descriptor_tmp.256
+___block_descriptor_tmp.294
+___block_descriptor_tmp.299
+___block_literal_global.300
+___block_descriptor_tmp.303
+___block_literal_global.304
+___block_literal_global.308
+___block_descriptor_tmp.311
+___block_literal_global.312
+___block_descriptor_tmp.315
+___block_literal_global.316
+___block_descriptor_tmp.323
+___block_literal_global.324
+___block_descriptor_tmp.340
+___block_descriptor_tmp.344
+___block_descriptor_tmp.353
+___block_literal_global.354
+___block_descriptor_tmp.359
+___block_literal_global.360
+___block_descriptor_tmp.368
+___block_literal_global.369
+___block_descriptor_tmp.377
+___block_literal_global.378
+___block_descriptor_tmp.384
+___block_literal_global.385
+___block_descriptor_tmp.393
+___block_literal_global.394
+_OBJC_IVAR_$_BITHockeyManager._crashManager
+_OBJC_IVAR_$_BITHockeyManager._updateManager
+_OBJC_IVAR_$_BITHockeyManager._storeUpdateManager
+_OBJC_IVAR_$_BITHockeyManager._authenticator
+_OBJC_IVAR_$_BITHockeyManager._metricsManager
+_OBJC_IVAR_$_BITHockeyManager._appIdentifier
+_OBJC_IVAR_$_BITHockeyManager._validAppIdentifier
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyManager.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITHockeyManager.h
+__37-[BITHockeyManager initializeModules]_block_invoke_6
+__37-[BITHockeyManager initializeModules]_block_invoke_5
+__37-[BITHockeyManager initializeModules]_block_invoke_4
+__37-[BITHockeyManager initializeModules]_block_invoke_3
+__37-[BITHockeyManager initializeModules]_block_invoke_2
+__37-[BITHockeyManager initializeModules]_block_invoke
+__39-[BITHockeyManager isSetUpOnMainThread]_block_invoke.341
+__39-[BITHockeyManager isSetUpOnMainThread]_block_invoke
+__44-[BITHockeyManager invokeStartUpdateManager]_block_invoke
+__49-[BITHockeyManager validateStartManagerIsInvoked]_block_invoke
+__48-[BITHockeyManager logPingMessageForStatusCode:]_block_invoke_4
+__48-[BITHockeyManager logPingMessageForStatusCode:]_block_invoke_3
+__48-[BITHockeyManager logPingMessageForStatusCode:]_block_invoke_2
+__48-[BITHockeyManager logPingMessageForStatusCode:]_block_invoke
+__86-[BITHockeyManager pingServerForIntegrationStartWorkflowWithTimeString:appIdentifier:]_block_invoke.284
+__86-[BITHockeyManager pingServerForIntegrationStartWorkflowWithTimeString:appIdentifier:]_block_invoke
+__51-[BITHockeyManager modifyKeychainUserValue:forKey:]_block_invoke
+__32-[BITHockeyManager setDelegate:]_block_invoke
+__32-[BITHockeyManager startManager]_block_invoke_6
+__32-[BITHockeyManager startManager]_block_invoke_5
+__32-[BITHockeyManager startManager]_block_invoke_4
+__32-[BITHockeyManager startManager]_block_invoke_3
+__32-[BITHockeyManager startManager]_block_invoke_2
+__32-[BITHockeyManager startManager]_block_invoke
+__39+[BITHockeyManager sharedHockeyManager]_block_invoke
+__41-[BITHockeyManager logInvalidIdentifier:]_block_invoke_2
+__41-[BITHockeyManager logInvalidIdentifier:]_block_invoke
+-[BITApplication serializeToDictionary]
+-[BITApplication initWithCoder:]
+-[BITApplication encodeWithCoder:]
+-[BITApplication version]
+-[BITApplication setVersion:]
+-[BITApplication build]
+-[BITApplication setBuild:]
+-[BITApplication typeId]
+-[BITApplication setTypeId:]
+-[BITApplication .cxx_destruct]
+_OBJC_IVAR_$_BITApplication._version
+_OBJC_IVAR_$_BITApplication._build
+_OBJC_IVAR_$_BITApplication._typeId
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITApplication.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITApplication.h
+-[BITUpdateManager reportError:]
+___32-[BITUpdateManager reportError:]_block_invoke
+___32-[BITUpdateManager reportError:]_block_invoke.20
+-[BITUpdateManager didBecomeActiveActions]
+-[BITUpdateManager didEnterBackgroundActions]
+-[BITUpdateManager registerObservers]
+___37-[BITUpdateManager registerObservers]_block_invoke
+___copy_helper_block_.79
+___destroy_helper_block_.80
+___37-[BITUpdateManager registerObservers]_block_invoke.89
+___37-[BITUpdateManager registerObservers]_block_invoke.101
+-[BITUpdateManager unregisterObservers]
+-[BITUpdateManager expiryDateReached]
+-[BITUpdateManager checkExpiryDateReached]
+-[BITUpdateManager loadAppVersionUsageData]
+-[BITUpdateManager startUsage]
+-[BITUpdateManager stopUsage]
+-[BITUpdateManager storeUsageTimeForCurrentVersion:]
+-[BITUpdateManager currentUsageString]
+-[BITUpdateManager installationDateString]
+-[BITUpdateManager checkUpdateAvailable]
+___40-[BITUpdateManager checkUpdateAvailable]_block_invoke
+___copy_helper_block_.246
+___destroy_helper_block_.247
+-[BITUpdateManager loadAppCache]
+-[BITUpdateManager saveAppCache]
+-[BITUpdateManager init]
+___24-[BITUpdateManager init]_block_invoke
+-[BITUpdateManager dealloc]
+-[BITUpdateManager hockeyViewController:]
+___41-[BITUpdateManager hockeyViewController:]_block_invoke
+-[BITUpdateManager showUpdateView]
+___34-[BITUpdateManager showUpdateView]_block_invoke
+___34-[BITUpdateManager showUpdateView]_block_invoke_2
+___34-[BITUpdateManager showUpdateView]_block_invoke_3
+___copy_helper_block_.345
+___destroy_helper_block_.346
+-[BITUpdateManager showCheckForUpdateAlert]
+___43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke
+___43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke.376
+___copy_helper_block_.379
+___destroy_helper_block_.380
+___43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke.386
+___copy_helper_block_.389
+___destroy_helper_block_.390
+___43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke.392
+___copy_helper_block_.393
+___destroy_helper_block_.394
+___43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke.398
+___copy_helper_block_.399
+___destroy_helper_block_.400
+-[BITUpdateManager showBlockingScreen:image:]
+-[BITUpdateManager checkForUpdateForExpiredVersion]
+-[BITUpdateManager alertFallback:]
+___34-[BITUpdateManager alertFallback:]_block_invoke
+___copy_helper_block_.457
+___destroy_helper_block_.458
+___34-[BITUpdateManager alertFallback:]_block_invoke.462
+-[BITUpdateManager shouldCheckForUpdates]
+-[BITUpdateManager checkForUpdate]
+-[BITUpdateManager checkForUpdateShowFeedback:]
+___47-[BITUpdateManager checkForUpdateShowFeedback:]_block_invoke
+-[BITUpdateManager requestForUpdateCheck]
+___41-[BITUpdateManager requestForUpdateCheck]_block_invoke
+___copy_helper_block_.557
+___destroy_helper_block_.558
+-[BITUpdateManager initiateAppDownload]
+___39-[BITUpdateManager initiateAppDownload]_block_invoke
+___39-[BITUpdateManager initiateAppDownload]_block_invoke_2
+___copy_helper_block_.598
+___destroy_helper_block_.599
+___39-[BITUpdateManager initiateAppDownload]_block_invoke.606
+-[BITUpdateManager startManager]
+___32-[BITUpdateManager startManager]_block_invoke
+-[BITUpdateManager handleError:]
+-[BITUpdateManager finishLoading]
+___33-[BITUpdateManager finishLoading]_block_invoke
+___copy_helper_block_.634
+___destroy_helper_block_.635
+___33-[BITUpdateManager finishLoading]_block_invoke.650
+___33-[BITUpdateManager finishLoading]_block_invoke_2
+___copy_helper_block_.693
+___destroy_helper_block_.694
+-[BITUpdateManager URLSession:task:didCompleteWithError:]
+___57-[BITUpdateManager URLSession:task:didCompleteWithError:]_block_invoke
+-[BITUpdateManager URLSession:dataTask:didReceiveData:]
+-[BITUpdateManager URLSession:dataTask:didReceiveResponse:completionHandler:]
+-[BITUpdateManager URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]
+-[BITUpdateManager hasNewerMandatoryVersion]
+-[BITUpdateManager setCurrentHockeyViewController:]
+-[BITUpdateManager currentAppVersion]
+-[BITUpdateManager setLastCheck:]
+-[BITUpdateManager setAppVersions:]
+-[BITUpdateManager newestAppVersion]
+-[BITUpdateManager setBlockingView:]
+-[BITUpdateManager setInstallationIdentificationType:]
+-[BITUpdateManager setInstallationIdentification:]
+-[BITUpdateManager updateSetting]
+-[BITUpdateManager setUpdateSetting:]
+-[BITUpdateManager isCheckForUpdateOnLaunch]
+-[BITUpdateManager setCheckForUpdateOnLaunch:]
+-[BITUpdateManager alwaysShowUpdateReminder]
+-[BITUpdateManager setAlwaysShowUpdateReminder:]
+-[BITUpdateManager isShowingDirectInstallOption]
+-[BITUpdateManager setShowDirectInstallOption:]
+-[BITUpdateManager expiryDate]
+-[BITUpdateManager setExpiryDate:]
+-[BITUpdateManager disableUpdateCheckOptionWhenExpired]
+-[BITUpdateManager setDisableUpdateCheckOptionWhenExpired:]
+-[BITUpdateManager setCurrentAppVersion:]
+-[BITUpdateManager dataFound]
+-[BITUpdateManager setDataFound:]
+-[BITUpdateManager showFeedback]
+-[BITUpdateManager setShowFeedback:]
+-[BITUpdateManager updateAlertShowing]
+-[BITUpdateManager setUpdateAlertShowing:]
+-[BITUpdateManager lastCheckFailed]
+-[BITUpdateManager setLastCheckFailed:]
+-[BITUpdateManager fileManager]
+-[BITUpdateManager setFileManager:]
+-[BITUpdateManager updateDir]
+-[BITUpdateManager setUpdateDir:]
+-[BITUpdateManager usageDataFile]
+-[BITUpdateManager setUsageDataFile:]
+-[BITUpdateManager appDidBecomeActiveObserver]
+-[BITUpdateManager setAppDidBecomeActiveObserver:]
+-[BITUpdateManager appDidEnterBackgroundObserver]
+-[BITUpdateManager setAppDidEnterBackgroundObserver:]
+-[BITUpdateManager networkDidBecomeReachableObserver]
+-[BITUpdateManager setNetworkDidBecomeReachableObserver:]
+-[BITUpdateManager didStartUpdateProcess]
+-[BITUpdateManager setDidStartUpdateProcess:]
+-[BITUpdateManager didEnterBackgroundState]
+-[BITUpdateManager setDidEnterBackgroundState:]
+-[BITUpdateManager firstStartAfterInstall]
+-[BITUpdateManager setFirstStartAfterInstall:]
+-[BITUpdateManager versionID]
+-[BITUpdateManager setVersionID:]
+-[BITUpdateManager versionUUID]
+-[BITUpdateManager setVersionUUID:]
+-[BITUpdateManager uuid]
+-[BITUpdateManager setUuid:]
+-[BITUpdateManager blockingScreenMessage]
+-[BITUpdateManager setBlockingScreenMessage:]
+-[BITUpdateManager lastUpdateCheckFromBlockingScreen]
+-[BITUpdateManager setLastUpdateCheckFromBlockingScreen:]
+-[BITUpdateManager delegate]
+-[BITUpdateManager setDelegate:]
+-[BITUpdateManager isUpdateAvailable]
+-[BITUpdateManager setUpdateAvailable:]
+-[BITUpdateManager isCheckInProgress]
+-[BITUpdateManager setCheckInProgress:]
+-[BITUpdateManager receivedData]
+-[BITUpdateManager setReceivedData:]
+-[BITUpdateManager lastCheck]
+-[BITUpdateManager appVersions]
+-[BITUpdateManager currentAppVersionUsageTime]
+-[BITUpdateManager setCurrentAppVersionUsageTime:]
+-[BITUpdateManager usageStartTimestamp]
+-[BITUpdateManager setUsageStartTimestamp:]
+-[BITUpdateManager blockingView]
+-[BITUpdateManager companyName]
+-[BITUpdateManager setCompanyName:]
+-[BITUpdateManager installationIdentification]
+-[BITUpdateManager installationIdentificationType]
+-[BITUpdateManager installationIdentified]
+-[BITUpdateManager setInstallationIdentified:]
+-[BITUpdateManager isUpdateManagerDisabled]
+-[BITUpdateManager setDisableUpdateManager:]
+-[BITUpdateManager currentHockeyViewController]
+-[BITUpdateManager sendUsageData]
+-[BITUpdateManager setSendUsageData:]
+-[BITUpdateManager .cxx_destruct]
+___block_descriptor_tmp.22
+___block_descriptor_tmp.82
+___block_descriptor_tmp.249
+_OBJC_IVAR_$_BITUpdateManager._delegate
+_OBJC_IVAR_$_BITUpdateManager._expiryDate
+_OBJC_IVAR_$_BITUpdateManager._checkInProgress
+_OBJC_IVAR_$_BITUpdateManager._dataFound
+_OBJC_IVAR_$_BITUpdateManager._updateAvailable
+_OBJC_IVAR_$_BITUpdateManager._lastCheckFailed
+_OBJC_IVAR_$_BITUpdateManager._currentAppVersion
+_OBJC_IVAR_$_BITUpdateManager._blockingView
+_OBJC_IVAR_$_BITUpdateManager._lastCheck
+_OBJC_IVAR_$_BITUpdateManager._uuid
+_OBJC_IVAR_$_BITUpdateManager._versionUUID
+_OBJC_IVAR_$_BITUpdateManager._versionID
+_OBJC_IVAR_$_BITUpdateManager._sendUsageData
+_OBJC_IVAR_$_BITUpdateManager._disableUpdateManager
+_OBJC_IVAR_$_BITUpdateManager._firstStartAfterInstall
+_OBJC_IVAR_$_BITUpdateManager._companyName
+_OBJC_IVAR_$_BITUpdateManager._currentAppVersionUsageTime
+_OBJC_IVAR_$_BITUpdateManager._showDirectInstallOption
+_OBJC_IVAR_$_BITUpdateManager._alwaysShowUpdateReminder
+_OBJC_IVAR_$_BITUpdateManager._checkForUpdateOnLaunch
+_OBJC_IVAR_$_BITUpdateManager._updateSetting
+___block_literal_global.295
+_OBJC_IVAR_$_BITUpdateManager._fileManager
+_OBJC_IVAR_$_BITUpdateManager._usageDataFile
+_OBJC_IVAR_$_BITUpdateManager._installationIdentification
+___block_descriptor_tmp.321
+___block_literal_global.322
+___block_descriptor_tmp.329
+___block_literal_global.330
+___block_descriptor_tmp.333
+___block_literal_global.334
+___block_descriptor_tmp.348
+___block_descriptor_tmp.401
+___block_descriptor_tmp.459
+___block_descriptor_tmp.480
+___block_literal_global.481
+___block_descriptor_tmp.559
+___block_descriptor_tmp.580
+___block_literal_global.581
+___block_descriptor_tmp.600
+___block_descriptor_tmp.609
+___block_descriptor_tmp.610
+___block_literal_global.611
+___block_descriptor_tmp.636
+___block_descriptor_tmp.651
+___block_literal_global.652
+___block_descriptor_tmp.695
+_OBJC_IVAR_$_BITUpdateManager._currentHockeyViewController
+_OBJC_IVAR_$_BITUpdateManager._appVersions
+_OBJC_IVAR_$_BITUpdateManager._installationIdentificationType
+_OBJC_IVAR_$_BITUpdateManager._disableUpdateCheckOptionWhenExpired
+_OBJC_IVAR_$_BITUpdateManager._showFeedback
+_OBJC_IVAR_$_BITUpdateManager._updateAlertShowing
+_OBJC_IVAR_$_BITUpdateManager._updateDir
+_OBJC_IVAR_$_BITUpdateManager._appDidBecomeActiveObserver
+_OBJC_IVAR_$_BITUpdateManager._appDidEnterBackgroundObserver
+_OBJC_IVAR_$_BITUpdateManager._networkDidBecomeReachableObserver
+_OBJC_IVAR_$_BITUpdateManager._didStartUpdateProcess
+_OBJC_IVAR_$_BITUpdateManager._didEnterBackgroundState
+_OBJC_IVAR_$_BITUpdateManager._blockingScreenMessage
+_OBJC_IVAR_$_BITUpdateManager._lastUpdateCheckFromBlockingScreen
+_OBJC_IVAR_$_BITUpdateManager._receivedData
+_OBJC_IVAR_$_BITUpdateManager._usageStartTimestamp
+_OBJC_IVAR_$_BITUpdateManager._installationIdentified
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITUpdateManager.m
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITUpdateManagerPrivate.h
+/Users/afzalhossain/development/research/cimonv2/Carthage/Checkouts/HockeySDK-iOS/Classes/BITUpdateManager.h
+__57-[BITUpdateManager URLSession:task:didCompleteWithError:]_block_invoke
+__33-[BITUpdateManager finishLoading]_block_invoke_2
+__33-[BITUpdateManager finishLoading]_block_invoke.650
+__33-[BITUpdateManager finishLoading]_block_invoke
+__32-[BITUpdateManager startManager]_block_invoke
+__39-[BITUpdateManager initiateAppDownload]_block_invoke.606
+__39-[BITUpdateManager initiateAppDownload]_block_invoke_2
+__39-[BITUpdateManager initiateAppDownload]_block_invoke
+__41-[BITUpdateManager requestForUpdateCheck]_block_invoke
+__47-[BITUpdateManager checkForUpdateShowFeedback:]_block_invoke
+__34-[BITUpdateManager alertFallback:]_block_invoke.462
+__34-[BITUpdateManager alertFallback:]_block_invoke
+__43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke.398
+__43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke.392
+__43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke.386
+__43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke.376
+__43-[BITUpdateManager showCheckForUpdateAlert]_block_invoke
+__34-[BITUpdateManager showUpdateView]_block_invoke_3
+__34-[BITUpdateManager showUpdateView]_block_invoke_2
+__34-[BITUpdateManager showUpdateView]_block_invoke
+__41-[BITUpdateManager hockeyViewController:]_block_invoke
+__24-[BITUpdateManager init]_block_invoke
+__40-[BITUpdateManager checkUpdateAvailable]_block_invoke
+__37-[BITUpdateManager registerObservers]_block_invoke.101
+__37-[BITUpdateManager registerObservers]_block_invoke.89
+__37-[BITUpdateManager registerObservers]_block_invoke
+__32-[BITUpdateManager reportError:]_block_invoke.20
+__32-[BITUpdateManager reportError:]_block_invoke
+/Users/afzalhossain/Library/Caches/org.carthage.CarthageKit/DerivedData/9.3_9E145/HockeySDK-iOS/5.1.2/Build/Intermediates.noindex/ArchiveIntermediates/HockeySDK Framework/IntermediateBuildFilesPath/HockeySDK.build/ReleaseDefault-iphoneos/HockeySDK Framework.build/DerivedSources/HockeySDK_vers.c
+__ZN3$_0D1Ev
+__ZL26internal_callback_iteratoriP9__siginfoP17__darwin_ucontextPv
++[BITPLCrashSignalHandler initialize]
++[BITPLCrashSignalHandler sharedHandler]
++[BITPLCrashSignalHandler resetHandlers]
+-[BITPLCrashSignalHandler init]
+-[BITPLCrashSignalHandler registerHandlerWithSignal:error:]
+__ZL24previous_action_callbackiP9__siginfoP17__darwin_ucontextPvP28PLCrashSignalHandlerCallback
+-[BITPLCrashSignalHandler registerHandlerForSignal:callback:context:error:]
+__GLOBAL__sub_I_PLCrashSignalHandler.mm
+__ZL22shared_handler_context
+__ZL13sharedHandler
+_OBJC_IVAR_$_BITPLCrashSignalHandler._sigstk
+__ZZ59-[BITPLCrashSignalHandler registerHandlerWithSignal:error:]E16registerHandlers
+_test_stack_thr
+_plcrash_writer_write_system_info
+_plcrash_writer_write_machine_info
+_plcrash_writer_write_app_info
+_plcrash_writer_write_process_info
+_plcrash_writer_write_thread
+_plcrash_writer_write_binary_image
+_plcrash_writer_write_exception
+_plcrash_writer_write_signal
+_plcrash_writer_write_processor_info
+_plcrash_writer_write_thread_frame
+_plcrash_writer_write_thread_frame_symbol_cb
+_plcrash_writer_write_mach_signal
+_plcr_swap16
+_plcr_swap32
+_plcr_swap64
+_plcr_nswap16
+_plcr_nswap32
+_plcr_nswap64
+_uint64_pack
++[BITPLCrashReporter initialize]
+_image_add_callback
+_image_remove_callback
++[BITPLCrashReporter sharedReporter]
+-[BITPLCrashReporter init]
+-[BITPLCrashReporter initWithConfiguration:]
+-[BITPLCrashReporter hasPendingCrashReport]
+-[BITPLCrashReporter loadPendingCrashReportData]
+-[BITPLCrashReporter loadPendingCrashReportDataAndReturnError:]
+-[BITPLCrashReporter purgePendingCrashReport]
+-[BITPLCrashReporter purgePendingCrashReportAndReturnError:]
+-[BITPLCrashReporter enableCrashReporter]
+-[BITPLCrashReporter enableCrashReporterAndReturnError:]
+_signal_handler_callback
+_mach_exception_callback
+_uncaught_exception_handler
+-[BITPLCrashReporter generateLiveReportWithThread:]
+-[BITPLCrashReporter generateLiveReportWithThread:error:]
+_plcr_live_report_callback
+-[BITPLCrashReporter generateLiveReport]
+-[BITPLCrashReporter generateLiveReportAndReturnError:]
+-[BITPLCrashReporter setCrashCallbacks:]
+-[BITPLCrashReporter(PrivateMethods) initWithApplicationIdentifier:appVersion:appMarketingVersion:configuration:]
+-[BITPLCrashReporter(PrivateMethods) initWithBundle:configuration:]
+-[BITPLCrashReporter(PrivateMethods) enableMachExceptionServerWithPreviousPortSet:callback:context:error:]
+-[BITPLCrashReporter(PrivateMethods) dealloc]
+-[BITPLCrashReporter(PrivateMethods) mapToAsyncSymbolicationStrategy:]
+-[BITPLCrashReporter(PrivateMethods) populateCrashReportDirectoryAndReturnError:]
+-[BITPLCrashReporter(PrivateMethods) crashReportDirectory]
+-[BITPLCrashReporter(PrivateMethods) queuedCrashReportDirectory]
+-[BITPLCrashReporter(PrivateMethods) crashReportPath]
+_plcrash_write_report
+_mach_exception_callback_live_cb
+_shared_image_list
+_sharedReporter.onceLock
+_sharedReporter
+_enableCrashReporterAndReturnError:.enforceOne
+_OBJC_IVAR_$_BITPLCrashReporter._enabled
+_signal_handler_context
+_OBJC_IVAR_$_BITPLCrashReporter._applicationIdentifier
+_OBJC_IVAR_$_BITPLCrashReporter._applicationVersion
+_OBJC_IVAR_$_BITPLCrashReporter._applicationMarketingVersion
+_OBJC_IVAR_$_BITPLCrashReporter._config
+_monitored_signals
+_OBJC_IVAR_$_BITPLCrashReporter._previousMachPorts
+_OBJC_IVAR_$_BITPLCrashReporter._machServer
+_OBJC_IVAR_$_BITPLCrashReporter._crashReportDirectory
+_uncaught_exception_handler.exception_is_handled
+_crashCallbacks.1
+_crashCallbacks.2
+-[BITPLCrashReport initWithData:error:]
+_populate_nserror
+-[BITPLCrashReport dealloc]
+-[BITPLCrashReport imageForAddress:]
+-[BITPLCrashReport hasMachineInfo]
+-[BITPLCrashReport hasProcessInfo]
+-[BITPLCrashReport hasExceptionInfo]
+-[BITPLCrashReport systemInfo]
+-[BITPLCrashReport machineInfo]
+-[BITPLCrashReport applicationInfo]
+-[BITPLCrashReport processInfo]
+-[BITPLCrashReport signalInfo]
+-[BITPLCrashReport machExceptionInfo]
+-[BITPLCrashReport threads]
+-[BITPLCrashReport images]
+-[BITPLCrashReport exceptionInfo]
+-[BITPLCrashReport uuidRef]
+-[BITPLCrashReport(PrivateMethods) decodeCrashData:error:]
+-[BITPLCrashReport(PrivateMethods) extractSystemInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractProcessorInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractMachineInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractApplicationInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractProcessInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractSymbolInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractStackFrameInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractThreadInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractImageInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractExceptionInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractSignalInfo:error:]
+-[BITPLCrashReport(PrivateMethods) extractMachExceptionInfo:error:]
+_OBJC_IVAR_$_BITPLCrashReport._decoder
+_OBJC_IVAR_$_BITPLCrashReport._uuid
+_OBJC_IVAR_$_BITPLCrashReport._systemInfo
+_OBJC_IVAR_$_BITPLCrashReport._machineInfo
+_OBJC_IVAR_$_BITPLCrashReport._applicationInfo
+_OBJC_IVAR_$_BITPLCrashReport._processInfo
+_OBJC_IVAR_$_BITPLCrashReport._signalInfo
+_OBJC_IVAR_$_BITPLCrashReport._machExceptionInfo
+_OBJC_IVAR_$_BITPLCrashReport._threads
+_OBJC_IVAR_$_BITPLCrashReport._images
+_OBJC_IVAR_$_BITPLCrashReport._exceptionInfo
+_BITplcrash__crash_report__init.init_value
+_plcrash__crash_report__processor__type_encoding__value_ranges
+_plcrash__crash_report__processor__field_descriptors
+_plcrash__crash_report__processor__field_indices_by_name
+_plcrash__crash_report__processor__number_ranges
+_plcrash__crash_report__system_info__operating_system__value_ranges
+_plcrash__crash_report__system_info__field_descriptors
+_plcrash__crash_report__system_info__field_indices_by_name
+_plcrash__crash_report__system_info__number_ranges
+_plcrash__crash_report__application_info__field_descriptors
+_plcrash__crash_report__application_info__field_indices_by_name
+_plcrash__crash_report__application_info__number_ranges
+_plcrash__crash_report__symbol__field_descriptors
+_plcrash__crash_report__symbol__field_indices_by_name
+_plcrash__crash_report__symbol__number_ranges
+_plcrash__crash_report__thread__stack_frame__field_descriptors
+_plcrash__crash_report__thread__stack_frame__field_indices_by_name
+_plcrash__crash_report__thread__stack_frame__number_ranges
+_plcrash__crash_report__thread__register_value__field_descriptors
+_plcrash__crash_report__thread__register_value__field_indices_by_name
+_plcrash__crash_report__thread__register_value__number_ranges
+_plcrash__crash_report__thread__field_descriptors
+_plcrash__crash_report__thread__field_indices_by_name
+_plcrash__crash_report__thread__number_ranges
+_plcrash__crash_report__binary_image__field_descriptors
+_plcrash__crash_report__binary_image__field_indices_by_name
+_plcrash__crash_report__binary_image__number_ranges
+_plcrash__crash_report__exception__field_descriptors
+_plcrash__crash_report__exception__field_indices_by_name
+_plcrash__crash_report__exception__number_ranges
+_plcrash__crash_report__signal__mach_exception__field_descriptors
+_plcrash__crash_report__signal__mach_exception__field_indices_by_name
+_plcrash__crash_report__signal__mach_exception__number_ranges
+_plcrash__crash_report__signal__field_descriptors
+_plcrash__crash_report__signal__field_indices_by_name
+_plcrash__crash_report__signal__number_ranges
+_plcrash__crash_report__process_info__field_descriptors
+_plcrash__crash_report__process_info__field_indices_by_name
+_plcrash__crash_report__process_info__number_ranges
+_plcrash__crash_report__machine_info__field_descriptors
+_plcrash__crash_report__machine_info__field_indices_by_name
+_plcrash__crash_report__machine_info__number_ranges
+_plcrash__crash_report__report_info__field_descriptors
+_plcrash__crash_report__report_info__field_indices_by_name
+_plcrash__crash_report__report_info__number_ranges
+_plcrash__crash_report__field_descriptors
+_plcrash__crash_report__field_indices_by_name
+_plcrash__crash_report__number_ranges
+_plcrash__architecture__value_ranges
+_plcrash__crash_report__processor__encoding__default_value
+_plcrash__crash_report__system_info__operating_system__default_value
+_plcrash__crash_report__system_info__architecture__default_value
+_protobuf_c_out_of_memory_default
+_system_alloc
+_system_free
+_required_field_get_packed_size
+_required_field_pack
+_required_field_pack_to_buffer
+_service_machgen_invoke
+_tag_pack
+_parse_required_member
+_parse_uint64
+-[BITPLCrashReportSystemInfo initWithOperatingSystem:operatingSystemVersion:architecture:timestamp:]
+-[BITPLCrashReportSystemInfo initWithOperatingSystem:operatingSystemVersion:operatingSystemBuild:architecture:timestamp:]
+-[BITPLCrashReportSystemInfo dealloc]
+-[BITPLCrashReportSystemInfo operatingSystem]
+-[BITPLCrashReportSystemInfo operatingSystemVersion]
+-[BITPLCrashReportSystemInfo operatingSystemBuild]
+-[BITPLCrashReportSystemInfo architecture]
+-[BITPLCrashReportSystemInfo timestamp]
+_OBJC_IVAR_$_BITPLCrashReportSystemInfo._operatingSystem
+_OBJC_IVAR_$_BITPLCrashReportSystemInfo._osVersion
+_OBJC_IVAR_$_BITPLCrashReportSystemInfo._osBuild
+_OBJC_IVAR_$_BITPLCrashReportSystemInfo._architecture
+_OBJC_IVAR_$_BITPLCrashReportSystemInfo._timestamp
+-[BITPLCrashReportApplicationInfo initWithApplicationIdentifier:applicationVersion:applicationMarketingVersion:]
+-[BITPLCrashReportApplicationInfo dealloc]
+-[BITPLCrashReportApplicationInfo applicationIdentifier]
+-[BITPLCrashReportApplicationInfo applicationVersion]
+-[BITPLCrashReportApplicationInfo applicationMarketingVersion]
+_OBJC_IVAR_$_BITPLCrashReportApplicationInfo._applicationIdentifier
+_OBJC_IVAR_$_BITPLCrashReportApplicationInfo._applicationVersion
+_OBJC_IVAR_$_BITPLCrashReportApplicationInfo._applicationMarketingVersion
+-[BITPLCrashReportThreadInfo initWithThreadNumber:stackFrames:crashed:registers:]
+-[BITPLCrashReportThreadInfo dealloc]
+-[BITPLCrashReportThreadInfo threadNumber]
+-[BITPLCrashReportThreadInfo stackFrames]
+-[BITPLCrashReportThreadInfo crashed]
+-[BITPLCrashReportThreadInfo registers]
+_OBJC_IVAR_$_BITPLCrashReportThreadInfo._threadNumber
+_OBJC_IVAR_$_BITPLCrashReportThreadInfo._stackFrames
+_OBJC_IVAR_$_BITPLCrashReportThreadInfo._crashed
+_OBJC_IVAR_$_BITPLCrashReportThreadInfo._registers
+-[BITPLCrashReportBinaryImageInfo initWithCodeType:baseAddress:size:name:uuid:]
+-[BITPLCrashReportBinaryImageInfo dealloc]
+-[BITPLCrashReportBinaryImageInfo codeType]
+-[BITPLCrashReportBinaryImageInfo imageBaseAddress]
+-[BITPLCrashReportBinaryImageInfo imageSize]
+-[BITPLCrashReportBinaryImageInfo imageName]
+-[BITPLCrashReportBinaryImageInfo hasImageUUID]
+-[BITPLCrashReportBinaryImageInfo imageUUID]
+_OBJC_IVAR_$_BITPLCrashReportBinaryImageInfo._baseAddress
+_OBJC_IVAR_$_BITPLCrashReportBinaryImageInfo._imageSize
+_OBJC_IVAR_$_BITPLCrashReportBinaryImageInfo._imageName
+_OBJC_IVAR_$_BITPLCrashReportBinaryImageInfo._processorInfo
+_OBJC_IVAR_$_BITPLCrashReportBinaryImageInfo._hasImageUUID
+_initWithCodeType:baseAddress:size:name:uuid:.hex
+_OBJC_IVAR_$_BITPLCrashReportBinaryImageInfo._imageUUID
+-[BITPLCrashReportExceptionInfo initWithExceptionName:reason:]
+-[BITPLCrashReportExceptionInfo initWithExceptionName:reason:stackFrames:]
+-[BITPLCrashReportExceptionInfo dealloc]
+-[BITPLCrashReportExceptionInfo exceptionName]
+-[BITPLCrashReportExceptionInfo exceptionReason]
+-[BITPLCrashReportExceptionInfo stackFrames]
+_OBJC_IVAR_$_BITPLCrashReportExceptionInfo._name
+_OBJC_IVAR_$_BITPLCrashReportExceptionInfo._reason
+_OBJC_IVAR_$_BITPLCrashReportExceptionInfo._stackFrames
+_signal_codes
+_signal_names
+-[BITPLCrashReportSignalInfo initWithSignalName:code:address:]
+-[BITPLCrashReportSignalInfo dealloc]
+-[BITPLCrashReportSignalInfo name]
+-[BITPLCrashReportSignalInfo code]
+-[BITPLCrashReportSignalInfo address]
+_OBJC_IVAR_$_BITPLCrashReportSignalInfo._name
+_OBJC_IVAR_$_BITPLCrashReportSignalInfo._code
+_OBJC_IVAR_$_BITPLCrashReportSignalInfo._address
+-[BITPLCrashReportProcessInfo initWithProcessName:processID:processPath:processStartTime:parentProcessName:parentProcessID:native:]
+-[BITPLCrashReportProcessInfo dealloc]
+-[BITPLCrashReportProcessInfo processName]
+-[BITPLCrashReportProcessInfo processID]
+-[BITPLCrashReportProcessInfo processPath]
+-[BITPLCrashReportProcessInfo processStartTime]
+-[BITPLCrashReportProcessInfo parentProcessName]
+-[BITPLCrashReportProcessInfo parentProcessID]
+-[BITPLCrashReportProcessInfo native]
+_OBJC_IVAR_$_BITPLCrashReportProcessInfo._processName
+_OBJC_IVAR_$_BITPLCrashReportProcessInfo._processID
+_OBJC_IVAR_$_BITPLCrashReportProcessInfo._processPath
+_OBJC_IVAR_$_BITPLCrashReportProcessInfo._processStartTime
+_OBJC_IVAR_$_BITPLCrashReportProcessInfo._parentProcessName
+_OBJC_IVAR_$_BITPLCrashReportProcessInfo._parentProcessID
+_OBJC_IVAR_$_BITPLCrashReportProcessInfo._native
+-[BITPLCrashReportProcessorInfo initWithTypeEncoding:type:subtype:]
+-[BITPLCrashReportProcessorInfo typeEncoding]
+-[BITPLCrashReportProcessorInfo type]
+-[BITPLCrashReportProcessorInfo subtype]
+_OBJC_IVAR_$_BITPLCrashReportProcessorInfo._typeEncoding
+_OBJC_IVAR_$_BITPLCrashReportProcessorInfo._type
+_OBJC_IVAR_$_BITPLCrashReportProcessorInfo._subtype
+-[BITPLCrashReportMachineInfo initWithModelName:processorInfo:processorCount:logicalProcessorCount:]
+-[BITPLCrashReportMachineInfo dealloc]
+-[BITPLCrashReportMachineInfo modelName]
+-[BITPLCrashReportMachineInfo processorInfo]
+-[BITPLCrashReportMachineInfo processorCount]
+-[BITPLCrashReportMachineInfo logicalProcessorCount]
+_OBJC_IVAR_$_BITPLCrashReportMachineInfo._modelName
+_OBJC_IVAR_$_BITPLCrashReportMachineInfo._processorInfo
+_OBJC_IVAR_$_BITPLCrashReportMachineInfo._processorCount
+_OBJC_IVAR_$_BITPLCrashReportMachineInfo._logicalProcessorCount
+_plcrash_async_macho_find_best_symbol
+__ZL20free_mapped_sectionsP24plcrash_async_objc_cache
+__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_jPvES5_
+__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_jPv
+__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_jPv
+____ZL37plcrash_async_image_objc_has_ios9_abiv_block_invoke
+__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_jPvES5_
+__ZL12map_sectionsP19plcrash_async_machoP24plcrash_async_objc_cache
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
+__ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
+__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbjPFvbS4_S4_jPvES5_
+__ZL9cache_setP24plcrash_async_objc_cachejj
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
+__ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
+__GLOBAL__sub_I_PLCrashAsyncObjCSection.mm
+__ZZL37plcrash_async_image_objc_has_ios9_abivE9onceToken
+__ZZL37plcrash_async_image_objc_has_ios9_abivE7is_ios9
+_macho_symbol_callback
+_objc_symbol_callback
+_plcrash_async_macho_string_read
+-[BITPLCrashReportStackFrameInfo initWithInstructionPointer:symbolInfo:]
+-[BITPLCrashReportStackFrameInfo dealloc]
+-[BITPLCrashReportStackFrameInfo instructionPointer]
+-[BITPLCrashReportStackFrameInfo symbolInfo]
+_OBJC_IVAR_$_BITPLCrashReportStackFrameInfo._instructionPointer
+_OBJC_IVAR_$_BITPLCrashReportStackFrameInfo._symbolInfo
+-[BITPLCrashReportRegisterInfo initWithRegisterName:registerValue:]
+-[BITPLCrashReportRegisterInfo dealloc]
+-[BITPLCrashReportRegisterInfo registerName]
+-[BITPLCrashReportRegisterInfo registerValue]
+_OBJC_IVAR_$_BITPLCrashReportRegisterInfo._registerName
+_OBJC_IVAR_$_BITPLCrashReportRegisterInfo._registerValue
+-[BITPLCrashReportSymbolInfo initWithSymbolName:startAddress:endAddress:]
+-[BITPLCrashReportSymbolInfo dealloc]
+-[BITPLCrashReportSymbolInfo symbolName]
+-[BITPLCrashReportSymbolInfo startAddress]
+-[BITPLCrashReportSymbolInfo endAddress]
+_OBJC_IVAR_$_BITPLCrashReportSymbolInfo._symbolName
+_OBJC_IVAR_$_BITPLCrashReportSymbolInfo._startAddress
+_OBJC_IVAR_$_BITPLCrashReportSymbolInfo._endAddress
+-[BITPLCrashMachExceptionServer initWithCallBack:context:error:]
+_exception_server_thread
+-[BITPLCrashMachExceptionServer serverThread]
+-[BITPLCrashMachExceptionServer copySendRightForServerAndReturningError:]
+-[BITPLCrashMachExceptionServer exceptionPortWithMask:error:]
+-[BITPLCrashMachExceptionServer dealloc]
+_exception_server_reply
+_OBJC_IVAR_$_BITPLCrashMachExceptionServer._serverContext
+_arm_nonvolatile_registers
+_arm64_nonvolatile_registers
+_arm_dwarf_table
+_arm64_dwarf_table
++[BITPLCrashProcessInfo currentProcessInfo]
+-[BITPLCrashProcessInfo initWithProcessID:]
+-[BITPLCrashProcessInfo dealloc]
+-[BITPLCrashProcessInfo processID]
+-[BITPLCrashProcessInfo processName]
+-[BITPLCrashProcessInfo parentProcessID]
+-[BITPLCrashProcessInfo isTraced]
+-[BITPLCrashProcessInfo startTime]
+_OBJC_IVAR_$_BITPLCrashProcessInfo._traced
+_OBJC_IVAR_$_BITPLCrashProcessInfo._processName
+_OBJC_IVAR_$_BITPLCrashProcessInfo._processID
+_OBJC_IVAR_$_BITPLCrashProcessInfo._parentProcessID
+_OBJC_IVAR_$_BITPLCrashProcessInfo._startTime
++[BITPLCrashHostInfo currentHostInfo]
+-[BITPLCrashHostInfo init]
+-[BITPLCrashHostInfo darwinVersion]
+_OBJC_IVAR_$_BITPLCrashHostInfo._darwinVersion
++[BITPLCrashMachExceptionPort exceptionPortsForTask:mask:error:]
++[BITPLCrashMachExceptionPort exceptionPortsForThread:mask:error:]
+-[BITPLCrashMachExceptionPort initWithServerPort:mask:behavior:flavor:]
+-[BITPLCrashMachExceptionPort dealloc]
+-[BITPLCrashMachExceptionPort registerForTask:previousPortSet:error:]
+-[BITPLCrashMachExceptionPort registerForThread:previousPortSet:error:]
+-[BITPLCrashMachExceptionPort server_port]
+-[BITPLCrashMachExceptionPort mask]
+-[BITPLCrashMachExceptionPort behavior]
+-[BITPLCrashMachExceptionPort flavor]
+_OBJC_IVAR_$_BITPLCrashMachExceptionPort._port
+_OBJC_IVAR_$_BITPLCrashMachExceptionPort._mask
+_OBJC_IVAR_$_BITPLCrashMachExceptionPort._behavior
+_OBJC_IVAR_$_BITPLCrashMachExceptionPort._flavor
+-[BITPLCrashMachExceptionPortSet initWithSet:]
+-[BITPLCrashMachExceptionPortSet initWithAsyncSafeRepresentation:]
+-[BITPLCrashMachExceptionPortSet dealloc]
+-[BITPLCrashMachExceptionPortSet countByEnumeratingWithState:objects:count:]
+-[BITPLCrashMachExceptionPortSet asyncSafeRepresentation]
+-[BITPLCrashMachExceptionPortSet set]
+_OBJC_IVAR_$_BITPLCrashMachExceptionPortSet._state_set
+_OBJC_IVAR_$_BITPLCrashMachExceptionPortSet._asyncSafeRepresentation
+l_OBJC_PROTOCOL_$_NSFastEnumeration
+l_OBJC_LABEL_PROTOCOL_$_NSFastEnumeration
++[BITPLCrashReporterConfig defaultConfiguration]
+-[BITPLCrashReporterConfig init]
+-[BITPLCrashReporterConfig initWithSignalHandlerType:symbolicationStrategy:]
+-[BITPLCrashReporterConfig initWithSignalHandlerType:symbolicationStrategy:shouldRegisterUncaughtExceptionHandler:]
+-[BITPLCrashReporterConfig signalHandlerType]
+-[BITPLCrashReporterConfig symbolicationStrategy]
+-[BITPLCrashReporterConfig shouldRegisterUncaughtExceptionHandler]
+_OBJC_IVAR_$_BITPLCrashReporterConfig._signalHandlerType
+_OBJC_IVAR_$_BITPLCrashReporterConfig._symbolicationStrategy
+_OBJC_IVAR_$_BITPLCrashReporterConfig._shouldRegisterUncaughtExceptionHandler
+-[BITPLCrashReportMachExceptionInfo initWithType:codes:]
+-[BITPLCrashReportMachExceptionInfo dealloc]
+-[BITPLCrashReportMachExceptionInfo type]
+-[BITPLCrashReportMachExceptionInfo codes]
+_OBJC_IVAR_$_BITPLCrashReportMachExceptionInfo._type
+_OBJC_IVAR_$_BITPLCrashReportMachExceptionInfo._codes
+__ZL15__ARCLite__loadv
+__ZL30add_image_hook_autoreleasepoolPK11mach_headerl
+__ZL34__arclite_objc_autoreleasePoolPushv
+__ZL33__arclite_objc_autoreleasePoolPopPv
+__ZL19patch_lazy_pointersPK11mach_headerP7patch_tm
+__ZL42__arclite_NSArray_objectAtIndexedSubscriptP7NSArrayP13objc_selectorj
+__ZL53__arclite_NSMutableArray_setObject_atIndexedSubscriptP14NSMutableArrayP13objc_selectorP11objc_objectj
+__ZL46__arclite_NSDictionary_objectForKeyedSubscriptP12NSDictionaryP13objc_selectorP11objc_object
+__ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_selectorj
+__ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL18add_image_hook_ARCPK11mach_headerl
+__ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
+__ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
+__ZL21__arclite_object_copyP11objc_objectm
+__ZL21__arclite_objc_retainP11objc_object
+__ZL26__arclite_objc_retainBlockP11objc_object
+__ZL22__arclite_objc_releaseP11objc_object
+__ZL26__arclite_objc_autoreleaseP11objc_object
+__ZL32__arclite_objc_retainAutoreleaseP11objc_object
+__ZL37__arclite_objc_autoreleaseReturnValueP11objc_object
+__ZL43__arclite_objc_retainAutoreleaseReturnValueP11objc_object
+__ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
+__ZL26__arclite_objc_storeStrongPP11objc_objectS0_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+__ZL23NSAutoreleasePool_class
+__ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+__ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+l_OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+Apple LLVM version 9.1.0 (clang-902.0.35)
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7s -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.o -mlinker-version=351.8 -march=armv7s
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67
+fixStringForCoreData
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk/usr/include/_ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_objc_storeStrong
+__arclite_objc_release
+__arclite_objc_retain
+__arclite_objc_retainAutoreleasedReturnValue
+__arclite_objc_retainAutoreleaseReturnValue
+__arclite_objc_autoreleaseReturnValue
+__arclite_objc_retainAutorelease
+__arclite_objc_autorelease
+__arclite_objc_retainBlock
+__arclite_object_copy
+fixupCopiedReferences
+_class_getInstanceStart
+alignedInstanceStart
+__arclite_class_usesAutomaticRetainRelease
+classOrSuperClassesUseARR
+__arclite_object_setIvar
+isScannedOffset
+_ivar_getClass
+__arclite_object_setInstanceVariable
+add_image_hook_ARC
+patch_t<void (id *, id)>
+patch_t<id (id)>
+patch_t<void (id)>
+patch_t<id (id, unsigned long)>
+patch_t<void (id, objc_ivar *, id)>
+patch_t<objc_ivar *(id, const char *, void *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
+__arclite_NSOrderedSet_objectAtIndexedSubscript
+__arclite_NSDictionary_objectForKeyedSubscript
+__arclite_NSMutableArray_setObject_atIndexedSubscript
+__arclite_NSArray_objectAtIndexedSubscript
+patch_lazy_pointers
+__arclite_objc_autoreleasePoolPop
+__arclite_objc_autoreleasePoolPush
+add_image_hook_autoreleasepool
+patch_t<void (void *)>
+patch_t<void *()>
+__ARCLite__load
+install_swiftV1
+replaceMethod
+install_ARC
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter
+install_subscripting
+addMethod
+indexedGetter
+install_autoreleasepool

@@ -1,4 +1,5 @@
-github "Alamofire/Alamofire" "4.7.1"
-github "SwiftyJSON/SwiftyJSON" "4.0.0"
+github "Alamofire/Alamofire" "4.7.2"
+github "SwiftyJSON/SwiftyJSON" "4.1.0"
 github "WenchaoD/FSPagerView" "0.7.1"
+github "bitstadium/HockeySDK-iOS" "5.1.2"
 github "xmartlabs/Eureka" "4.1.1"

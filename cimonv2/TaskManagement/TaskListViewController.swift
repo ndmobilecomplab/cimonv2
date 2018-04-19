@@ -45,6 +45,7 @@ class TaskListViewController: FormViewController, ChildTaskViewControllerDelegat
                     row.placeholder = "Type your answer"
                     row.tag = rowTag
                 }
+                
             }else if type.lowercased() == "textarea"{
                 let sectionTag = "\(i)_\(type)"
                 let rowTag = sectionTag.appending("_row")

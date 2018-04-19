@@ -13,14 +13,26 @@ import SwiftyJSON
 class VerifyTokenViewController: UIViewController {
 
     @IBOutlet weak var tokenTextField: UITextField!
-    @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var verifyButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         errorLabel.text = ""
+        
+        backButton.layer.borderColor = UIColor.white.cgColor
+        backButton.layer.cornerRadius = 5
+        backButton.layer.borderWidth = 2
+        backButton.isHidden = true
+
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "ndbackground")
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
+
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewDidLayoutSubviews() {
@@ -102,10 +114,14 @@ class VerifyTokenViewController: UIViewController {
                     if responseStruct.code == 0{
                         Utils.saveDataToUserDefaults(data: true, key: "signedup")
                         Utils.generateSystemNotification(message: "Welcome to Koios. Join different studies to participate.")
-                        self.performSegue(withIdentifier: "AppHomeSegue", sender: nil)
+                        
+                        
+                        let nextViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tempprofilevc") as! UINavigationController
+                        self.present(nextViewController, animated: true, completion: nil)
                     } else{
                         // TODO: show error label- token mismatch
                         self.errorLabel.text = "Invalid Token"
+                        self.backButton.isHidden = false
                     }
                 case .failure(let error):
                     print(error)

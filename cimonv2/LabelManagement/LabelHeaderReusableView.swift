@@ -26,6 +26,7 @@ class LabelHeaderReusableView: UICollectionReusableView, CollectionItemSelectDel
         stopButton.layer.borderWidth = 3
         stopButton.layer.cornerRadius = 15
         stopButton.addTarget(self, action: #selector(stopLabel), for: .touchUpInside)
+        stopButton.translatesAutoresizingMaskIntoConstraints = false
         stopButton.isHidden = true
         
         
@@ -41,6 +42,7 @@ class LabelHeaderReusableView: UICollectionReusableView, CollectionItemSelectDel
         timerLabel.isHidden = false
         stopWatch?.isHidden = false
         stopButton.isHidden = false
+        //stopButton.titleLabel?.text = "Tap here to STOP"
         stopWatch?.reset()
         stopWatch?.start()
         isRunning = true
@@ -53,9 +55,10 @@ class LabelHeaderReusableView: UICollectionReusableView, CollectionItemSelectDel
         stopWatch?.reset()
         timerLabel.isHidden = true
         stopButton.isHidden = true
+        //stopButton.titleLabel?.text = "Tap to START"
         isRunning = false
         currentLabel = ""
-        instructionLabel.text = "Tap to START"
+        instructionLabel.text = "Tap to Start"
     }
     
     func handleItemTapAction(label: String) {

@@ -47,6 +47,12 @@ class Utils: NSObject {
         return ""
     }
     
+    
+    //MARK: default values
+    static var defaultOrganization:String{
+        return "University of Notre Dame"
+    }
+    
     // Mark: Web services
     /**
     */

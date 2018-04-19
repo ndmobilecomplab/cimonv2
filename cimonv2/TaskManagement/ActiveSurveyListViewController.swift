@@ -28,9 +28,9 @@ class ActiveSurveyListViewController: UITableViewController, NSFetchedResultsCon
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        tabBarController?.tabBar.isHidden = false
+        tabBarController?.tabBar.isHidden = true
         self.extendedLayoutIncludesOpaqueBars = false
-        
+
         Syncer.sharedInstance.syncStudies()
         DispatchQueue.main.async {
             self.tableView.reloadData()
