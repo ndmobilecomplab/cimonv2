@@ -49,7 +49,7 @@ class OpenStudyDetailsViewController: UITableViewController {
                 print("response after enrollment : \(responseStruct.code), \(responseStruct.message)")
                 if responseStruct.code == 0{
                     Syncer.sharedInstance.insertStudy(studyStruct: self.studyDetails)
-                    let userInfo = [ "index" : self.indexPathInList, "studyName" : self.studyDetails.name ] as [String : Any]
+                    let userInfo = [ "index" : self.indexPathInList, "studyName" : self.studyDetails.name, "studyId" : self.studyDetails.studyId ] as [String : Any]
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "enrolledtostudy"), object: nil, userInfo: userInfo)
                     self.navigationController?.popViewController(animated: true)
                 } else{

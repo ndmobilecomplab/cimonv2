@@ -25,6 +25,9 @@ class AppTabController: UITabBarController, UITabBarControllerDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateNotificationBadge(_:)), name: NSNotification.Name(rawValue: "updatenotification"), object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(self.enrollToStudy(_:)), name: NSNotification.Name(rawValue: "enrolledtostudy"), object: nil)
+
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -38,6 +41,14 @@ class AppTabController: UITabBarController, UITabBarControllerDelegate {
     @objc func applicationWillEnterForeground(_ notification: NSNotification) {
         print("app comes into foreground...")
     }
+
+    @objc func enrollToStudy(_ notification: NSNotification) {
+        guard let studyId = notification.userInfo?["studyId"] as? Int32 else { return }
+        guard let studyName = notification.userInfo?["studyName"] as? String else { return }
+
+        Syncer.sharedInstance.syncSurveysOfStudy(studyId: studyId, studyName: studyName)
+    }
+
     
     func synData(){
         Syncer.sharedInstance.syncStudies()

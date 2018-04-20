@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Alamofire
 import UserNotifications
+import HockeySDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //Utils.saveDataToUserDefaults(data: false, key: "signedup")
+        
+        //hockey sdk
+        BITHockeyManager.shared().configure(withIdentifier: "a1274adb19194b31b831c283e406973d")
+        BITHockeyManager.shared().crashManager.crashManagerStatus = BITCrashManagerStatus.autoSend
+        BITHockeyManager.shared().start()
 
         //Initialize window
         self.window = UIWindow(frame: UIScreen.main.bounds)
