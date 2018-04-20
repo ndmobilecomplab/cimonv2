@@ -10,33 +10,71 @@ import UIKit
 
 class HomeIconViewCell: UITableViewCell {
 
-    var iconImageView:HomeIconImageView!
-    var iconLabel:HomeIconLabel!
+    var iconImageView:UIImageView!
+    //var iconImageView:HomeIconImageView!
+    //var iconLabel:HomeIconLabel!
+    //var iconSubLabel:HomeIconSubLabel!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.backgroundColor = UIColor.clear
         
-        iconImageView = HomeIconImageView()
-        iconImageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        iconImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height))
+            //HomeIconImageView()
+        //iconImageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         iconImageView.contentMode = .scaleAspectFit
-        iconImageView.backgroundColor = UIColor.clear
-        iconImageView.translatesAutoresizingMaskIntoConstraints = false
+        //iconImageView.translatesAutoresizingMaskIntoConstraints = false
         
+        let horizontalStackView = UIStackView(arrangedSubviews: [iconImageView])
+        horizontalStackView.axis = .horizontal
+        horizontalStackView.distribution = .fillProportionally
+        horizontalStackView.alignment = .fill
+        horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.addSubview(horizontalStackView)
+        let viewsDictionary = ["stackView":horizontalStackView]
+        let stackView_H = NSLayoutConstraint.constraints(
+            withVisualFormat: "H:|-25-[stackView]-0-|",  //horizontal constraint 20 points from left and right side
+            options: NSLayoutFormatOptions(rawValue: 0),
+            metrics: nil,
+            views: viewsDictionary)
+        let stackView_V = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:|-0-[stackView]-0-|", //vertical constraint 30 points from top and bottom
+            options: NSLayoutFormatOptions(rawValue:0),
+            metrics: nil,
+            views: viewsDictionary)
+        self.addConstraints(stackView_V)
+        self.addConstraints(stackView_H)
+
+        
+        /*
         iconLabel = HomeIconLabel()
         iconLabel.text = ""
         iconLabel.textAlignment = .center
         iconLabel.font = UIFont(name: "Raleway-Thin", size: 30)
         iconLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        iconSubLabel = HomeIconSubLabel()
+        iconSubLabel.text = "Pending (0)"
+        iconSubLabel.numberOfLines = 0
+        iconSubLabel.textAlignment = .center
+        iconSubLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        let verticalStackView = UIStackView(arrangedSubviews: [iconImageView, iconLabel])
-        verticalStackView.axis = .horizontal
+        let verticalStackView = UIStackView(arrangedSubviews: [iconLabel, iconSubLabel])
+        verticalStackView.axis = .vertical
         verticalStackView.distribution = .fillProportionally
         verticalStackView.alignment = .fill
         verticalStackView.translatesAutoresizingMaskIntoConstraints = false
 
-        self.addSubview(verticalStackView)
-        let viewsDictionary = ["stackView":verticalStackView]
+
+        let horizontalStackView = UIStackView(arrangedSubviews: [iconImageView, verticalStackView])
+        horizontalStackView.axis = .horizontal
+        horizontalStackView.distribution = .fillProportionally
+        horizontalStackView.alignment = .fill
+        horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
+
+        self.addSubview(horizontalStackView)
+        let viewsDictionary = ["stackView":horizontalStackView]
         let stackView_H = NSLayoutConstraint.constraints(
             withVisualFormat: "H:|-20-[stackView]-20-|",  //horizontal constraint 20 points from left and right side
             options: NSLayoutFormatOptions(rawValue: 0),
@@ -49,6 +87,7 @@ class HomeIconViewCell: UITableViewCell {
             views: viewsDictionary)
         self.addConstraints(stackView_V)
         self.addConstraints(stackView_H)
+         */
 
     }
     
@@ -67,13 +106,18 @@ class HomeIconViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        super.layoutIfNeeded()
+    }
 
 }
 
 
 class HomeIconImageView: UIImageView {
     
-    var width = 50
+    var width = 45
     /*
      required init?(coder aDecoder: NSCoder) {
      super.init(coder: aDecoder)
@@ -86,9 +130,18 @@ class HomeIconImageView: UIImageView {
 
 class HomeIconLabel: UILabel {
     
-    var width  = 50
+    var width  = 55
+    var height = 20
     override var intrinsicContentSize: CGSize{
-        return CGSize(width: width, height: 0)
+        return CGSize(width: width, height: height)
+    }
+}
+
+class HomeIconSubLabel: UILabel {
+    var width  = 55
+    var height = 5
+    override var intrinsicContentSize: CGSize{
+        return CGSize(width: width, height: height)
     }
 }
 

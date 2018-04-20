@@ -45,35 +45,46 @@ class HomeViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 4
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        if section == 3 {
+            return 0
+        }
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (self.tableView.bounds.height - (self.navigationController?.navigationBar.frame.height)! - (self.tabBarController?.tabBar.frame.height)!) / 3
+        return ((self.tableView.bounds.height - (self.navigationController?.navigationBar.frame.height)! - (self.tabBarController?.tabBar.frame.height)!) - 120) / 3
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! HomeIconViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! HomeIconViewCell//
 
         // Configure the cell...
-        if indexPath.row == 0 {
-            cell.iconLabel.text = "Label"
+        if indexPath.section == 0 {
+            //cell.iconLabel.text = "Label"
             let iconImage = UIImage(named: "label") as UIImage?
+            //cell.selectionImageView.image = iconImage
             cell.iconImageView.image = iconImage
 
-        }else if indexPath.row == 1{
-            cell.iconLabel.text = "Survey"
+        }else if indexPath.section == 1{
+            //cell.iconLabel.text = "Survey"
             let iconImage = UIImage(named: "survey") as UIImage?
+            //cell.selectionImageView.image = iconImage
             cell.iconImageView.image = iconImage
-        }else if indexPath.row == 2{
-            cell.iconLabel.text = "Task"
+        }else if indexPath.section == 2{
+            //cell.iconLabel.text = "Task"
             let iconImage = UIImage(named: "tasks") as UIImage?
+            //cell.selectionImageView.image = iconImage
             cell.iconImageView.image = iconImage
         }
 
@@ -82,10 +93,10 @@ class HomeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0{
+        if indexPath.section == 0{
             navigationController?.pushViewController(contextViewController, animated: true)
-        }else if indexPath.row == 1{
-            if let viewController = UIStoryboard(name: "Task", bundle: nil).instantiateViewController(withIdentifier: "activetaskgroupvc") as? ActiveSurveyListViewController {
+        }else if indexPath.section == 1{
+            if let viewController = UIStoryboard(name: "Survey", bundle: nil).instantiateViewController(withIdentifier: "activesurveysvc") as? ActiveSurveysViewController {
                 
                 if let navigator = navigationController {
                     print("program comes did row select")
@@ -94,6 +105,15 @@ class HomeViewController: UITableViewController {
                 }
             }
 
+        }else if indexPath.section == 2{
+            if let viewController = UIStoryboard(name: "Task", bundle: nil).instantiateViewController(withIdentifier: "activetaskgroupvc") as? ActiveTasksGroupViewController {
+                
+                if let navigator = navigationController {
+                    print("program comes did row select")
+                    //navigator.hidesBottomBarWhenPushed = true
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
         }
 
     }

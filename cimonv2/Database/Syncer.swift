@@ -436,4 +436,17 @@ class Syncer:NSObject{
         self.saveContext()
     }
     
+    func getUnreadNotificationCount()->Int{
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "AppNotification")
+        fetchRequest.predicate = NSPredicate(format: "viewCount = 0")
+        do{
+            let count = try self.context.count(for:fetchRequest)
+            return count
+        } catch let error as NSError{
+            print("error:\(error)")
+            return 0
+        }
+
+    }
+    
 }

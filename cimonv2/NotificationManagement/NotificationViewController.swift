@@ -28,14 +28,15 @@ class NotificationViewController: UITableViewController, NSFetchedResultsControl
         //self.tableView.allowsMultipleSelectionDuringEditing = true
         tableView.tableFooterView = UIView()
 
-        //DispatchQueue.global(qos: .background).async {
+        DispatchQueue.global(qos: .background).async {
             //for i in 0..<5{
                 //Utils.generateSystemNotification(message: "This is generated from system")
             //}
             
             //Syncer.sharedInstance.insertDummyNotifications()
             //Syncer.sharedInstance.printAppNotifications(notificationList: Syncer.sharedInstance.getDummyNotifications())
-        //}
+        }
+        
         
         initializeFetchedResultsController()
 
@@ -201,7 +202,7 @@ class NotificationViewController: UITableViewController, NSFetchedResultsControl
         if (object as! AppNotification).viewCount > 0{
             cell.titleLabel.font = UIFont.systemFont(ofSize: cell.titleLabel.font.pointSize, weight: .regular)
             cell.messageLabel.font = UIFont.systemFont(ofSize: cell.messageLabel.font.pointSize, weight: .light)
-
+            cell.backgroundColor = UIColor.groupTableViewBackground
         }
         return cell
     }
@@ -237,11 +238,14 @@ class NotificationViewController: UITableViewController, NSFetchedResultsControl
         let deleteAction = UIContextualAction.init(style: UIContextualAction.Style.destructive, title: "Delete", handler: { (action, view, completion) in
             //TODO: Delete
             //guard let object = self.fetchedResultsController?.object(at: IndexPath(row: indexPath.row, section: 0)) else {
-            guard let object = self.fetchedResultsController?.object(at: indexPath) else {
+            guard let object = self.fetchedResultsController?.object(at: indexPath) as! AppNotification? else {
                 fatalError("Attempt to configure cell without a managed object")
             }
 
-            Syncer.sharedInstance.deleteNotification(appNotification: object as! AppNotification)
+            if object.viewCount == 0{
+                Utils.decreaseNotificationBadge()
+            }
+            Syncer.sharedInstance.deleteNotification(appNotification: object)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

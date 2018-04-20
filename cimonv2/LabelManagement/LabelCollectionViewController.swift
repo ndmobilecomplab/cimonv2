@@ -34,9 +34,9 @@ class LabelCollectionViewController: UICollectionViewController {
         self.collectionView?.allowsMultipleSelection = true;
         self.collectionView?.allowsSelection = true; //this is set by default
 
-        //let backgroundImage = UIImage(named: "labellingbackground")!
-        //let backgroundView = UIImageView(image: backgroundImage)
-        //self.collectionView?.backgroundView = backgroundView
+        let backgroundImage = UIImage(named: "labelbackground")!
+        let backgroundView = UIImageView(image: backgroundImage)
+        self.collectionView?.backgroundView = backgroundView
 
     }
     
@@ -139,7 +139,7 @@ extension LabelCollectionViewController {
             return headerView
         default:
             //4
-            assert(false, "Unexpected element kind")
+            fatalError("Unexpected element kind")
         }
     }
     

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppBadges" representedClassName="AppBadges" syncable="YES" codeGenerationType="class">
+        <attribute name="badgeCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="badgeName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="AppNotification" representedClassName="AppNotification" syncable="YES" codeGenerationType="class">
         <attribute name="deleteOnView" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="expiry" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -92,5 +96,6 @@
         <element name="Survey" positionX="-173" positionY="-90" width="128" height="283"/>
         <element name="SurveyResponse" positionX="-11" positionY="-81" width="128" height="165"/>
         <element name="Task" positionX="-306" positionY="147" width="128" height="240"/>
+        <element name="AppBadges" positionX="-225" positionY="63" width="128" height="75"/>
     </elements>
 </model>

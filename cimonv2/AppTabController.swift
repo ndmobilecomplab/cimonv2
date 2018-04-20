@@ -10,13 +10,11 @@ import UIKit
 
 class AppTabController: UITabBarController, UITabBarControllerDelegate {
 
+    fileprivate let notificationTabIndex = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        //self.selectedIndex = 1
-        //setTabBarVisible(visible: false, animated: false)
-        
         self.tabBar.unselectedItemTintColor = UIColor.white
         
         //DispatchQueue.global().async {
@@ -25,10 +23,16 @@ class AppTabController: UITabBarController, UITabBarControllerDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(applicationWillEnterForeground(_:)), name: Notification.Name.UIApplicationWillEnterForeground, object: nil)
         
-        // Register to receive notification in your class
-        NotificationCenter.default.addObserver(self, selector: #selector(self.switchToTask), name: NSNotification.Name(rawValue: "taskicontappednotification"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.switchToContext), name: NSNotification.Name(rawValue: "contexticontappednotification"), object: nil)
-
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateNotificationBadge(_:)), name: NSNotification.Name(rawValue: "updatenotification"), object: nil)
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        let notificationBadge = Syncer.sharedInstance.getUnreadNotificationCount()
+        print("get unread count \(notificationBadge)")
+        if notificationBadge > 0{
+            self.setNotificationBadge(value: notificationBadge)
+        }
     }
 
     @objc func applicationWillEnterForeground(_ notification: NSNotification) {
@@ -39,20 +43,40 @@ class AppTabController: UITabBarController, UITabBarControllerDelegate {
         Syncer.sharedInstance.syncStudies()
     }
     
-    @objc func switchToTask() {
-        print("switch index to task")
-        self.selectedIndex = 1
-    }
-    
-    @objc func switchToContext(){
-        self.selectedIndex = 2
-    }
-    
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func setNotificationBadge(value:Int){
+        DispatchQueue.main.async {
+            self.tabBar.items?[self.notificationTabIndex].badgeValue = "\(value)"
+        }
+    }
+    
+    @objc func updateNotificationBadge(_ notification: NSNotification){
+        print("receive notif in tabbar")
+        var offset = 0
+        if let offsetInfo = notification.userInfo?["offset"] as? Int{
+            offset = offsetInfo
+        }
+        print("offset value..")
+        if let previous = Int((self.tabBar.items?[notificationTabIndex].badgeValue)!){
+            let nextValue = previous + offset
+            if nextValue <= 0{
+                DispatchQueue.main.async {
+                    self.tabBar.items?[self.notificationTabIndex].badgeValue = nil
+                }
+            }else{
+                DispatchQueue.main.async {
+                    self.tabBar.items?[self.notificationTabIndex].badgeValue = String(nextValue)
+                }
+            }
+        }
+    }
+    
+
 
     /*
     // MARK: - Navigation
@@ -66,3 +90,8 @@ class AppTabController: UITabBarController, UITabBarControllerDelegate {
     
 
 }
+
+
+//APP Badges
+//unreadNotification
+//

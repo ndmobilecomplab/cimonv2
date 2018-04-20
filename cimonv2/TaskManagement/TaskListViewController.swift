@@ -31,7 +31,7 @@ class TaskListViewController: FormViewController, ChildTaskViewControllerDelegat
             var quesString = "Q. "
             let type:String = taskList[i].type!
             let task = taskList[i]
-            if type.lowercased() == "text"{
+            /*if type.lowercased() == "text"{
                 let sectionTag = "\(i)_\(type)"
                 let rowTag = sectionTag.appending("_row")
                 form +++ Section(){ section in
@@ -117,7 +117,7 @@ class TaskListViewController: FormViewController, ChildTaskViewControllerDelegat
                 }
                 
                 
-            }else if type.contains(s: "MT001"){
+            }else*/ if type.contains(s: "MT001"){
                 print("task type: \(taskList[i].type)")
                 var instString = "Tap to Start"
                 if(task.isRequired>0){

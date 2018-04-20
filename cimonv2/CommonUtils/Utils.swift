@@ -78,11 +78,13 @@ class Utils: NSObject {
         let time = Date().timeIntervalSince1970
         let notifStruct:AppNotificationStruct = AppNotificationStruct(notificationId: Int64(time), originatedSource: getAppDisplayName(), originatedTime: String(time), title: getAppDisplayName(), message: message, loadingTime: String(time), loadingTimeZone: String(time), deleteOnView: 1, expiry: 12 * 60 * 60, viewCount: 0)
         Syncer.sharedInstance.insertNotification(notifStruct: notifStruct)
+        increaseNotificationBadge()
     }
     static func generateSystemNotification(message:String, playSound:Bool){
         let time = Date().timeIntervalSince1970
         let notifStruct:AppNotificationStruct = AppNotificationStruct(notificationId: Int64(time), originatedSource: getAppDisplayName(), originatedTime: String(time), title: getAppDisplayName(), message: message, loadingTime: String(time), loadingTimeZone: String(time), deleteOnView: 1, expiry: 12 * 60 * 60, viewCount: 0)
         Syncer.sharedInstance.insertNotification(notifStruct: notifStruct)
+        increaseNotificationBadge()
         if playSound{
             // create a sound ID, in this case its the tweet sound.
             let systemSoundID: SystemSoundID = 1016
@@ -90,6 +92,19 @@ class Utils: NSObject {
             // to play sound
             AudioServicesPlaySystemSound (systemSoundID)
         }
+    }
+    
+    static func increaseNotificationBadge(){
+        let userInfo = [ "offset" : 1]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "updatenotification"), object: nil, userInfo: userInfo)
+        print("going to call increase notification")
+
+    }
+    
+    static func decreaseNotificationBadge(){
+        let userInfo = [ "offset" : -1]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "updatenotification"), object: nil, userInfo: userInfo)
+
     }
 
 }

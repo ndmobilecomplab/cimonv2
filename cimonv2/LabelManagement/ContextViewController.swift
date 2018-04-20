@@ -10,9 +10,9 @@ import UIKit
 //import PagingMenuController
 
 struct PagingMenuOptions: PagingMenuControllerCustomizable {
-    private let viewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "testlabelcollectionvc") as! LabelCollectionViewController
-    private let viewController1 = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "testlabelcollectionvc") as! LabelCollectionViewController
-    private let viewController2 = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "testlabelcollectionvc") as! LabelCollectionViewController
+    private let activityViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "testlabelcollectionvc") as! LabelCollectionViewController
+    private let contextViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "testlabelcollectionvc") as! LabelCollectionViewController
+    private let moodViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "testlabelcollectionvc") as! LabelCollectionViewController
     
     
     
@@ -21,8 +21,9 @@ struct PagingMenuOptions: PagingMenuControllerCustomizable {
     }
     
     fileprivate var pagingControllers: [UIViewController] {
-        viewController.initData(labels: [LabelStruct(imageName: "task", labelText: "Angry"), LabelStruct(imageName: "", labelText: "Sad"), LabelStruct(imageName: "", labelText: "Happy"), LabelStruct(imageName: "", labelText: "Excited"), LabelStruct(imageName: "", labelText: "Annoyed"), LabelStruct(imageName: "", labelText: "Anxious")])
-        viewController1.initData(labels: [LabelStruct(imageName: "sitting", labelText: "Sitting"),
+        moodViewController.initData(labels: [LabelStruct(imageName: "happy", labelText: "Happy"), LabelStruct(imageName: "sad", labelText: "Sad"), LabelStruct(imageName: "angry", labelText: "Angry"), LabelStruct(imageName: "annoyed", labelText: "Annoyed"), LabelStruct(imageName: "shocked", labelText: "Shocked"), LabelStruct(imageName: "stressed", labelText: "Stressed"), LabelStruct(imageName: "excited", labelText: "Excited"), LabelStruct(imageName: "satisfied", labelText: "Satisfied"), LabelStruct(imageName: "", labelText: "Other")])
+        
+        activityViewController.initData(labels: [LabelStruct(imageName: "sitting", labelText: "Sitting"),
                                           LabelStruct(imageName: "standing", labelText: "Standing"),
                                           LabelStruct(imageName: "walking", labelText: "Walking"),
                                           LabelStruct(imageName: "lying", labelText: "Lying"),
@@ -30,8 +31,10 @@ struct PagingMenuOptions: PagingMenuControllerCustomizable {
                                           LabelStruct(imageName: "biking", labelText: "Biking"),
                                           LabelStruct(imageName: "stairsdown", labelText: "Stairs Down"),
                                           LabelStruct(imageName: "stairsup", labelText: "Stairs Up"),  LabelStruct(imageName: "", labelText: "Other")])
-        viewController2.initData(labels: [LabelStruct(imageName: "", labelText: "Home"), LabelStruct(imageName: "", labelText: "Work"), LabelStruct(imageName: "", labelText: "School"), LabelStruct(imageName: "", labelText: "Store"), LabelStruct(imageName: "", labelText: "Commuting"), LabelStruct(imageName: "", labelText: "Restaurant")])
-        return [viewController, viewController1, viewController2]
+        
+        contextViewController.initData(labels: [LabelStruct(imageName: "labelhome", labelText: "Home"), LabelStruct(imageName: "work", labelText: "Work"), LabelStruct(imageName: "school", labelText: "School"), LabelStruct(imageName: "store", labelText: "Store"), LabelStruct(imageName: "dining", labelText: "Dining"), LabelStruct(imageName: "gym", labelText: "Gym"), LabelStruct(imageName: "commute", labelText: "Commute"), LabelStruct(imageName: "library", labelText: "Library"), LabelStruct(imageName: "", labelText: "Other")])
+        
+        return [activityViewController, contextViewController, moodViewController]
     }
     
     fileprivate struct MenuOptions: MenuViewCustomizable {
@@ -52,17 +55,17 @@ struct PagingMenuOptions: PagingMenuControllerCustomizable {
     
     fileprivate struct MenuItem1: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Mood"))
+            return .text(title: MenuItemText(text: "Activity"))
         }
     }
     fileprivate struct MenuItem2: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Activity"))
+            return .text(title: MenuItemText(text: "Context"))
         }
     }
     fileprivate struct MenuItem3: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Context"))
+            return .text(title: MenuItemText(text: "Mood"))
         }
     }
     

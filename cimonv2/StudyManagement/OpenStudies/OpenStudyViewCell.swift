@@ -36,9 +36,6 @@ class OpenStudyViewCell: UICollectionViewCell {
         //organizationLabel.layer.addBorder(edge: .bottom, color: .red, thickness: 1)
     
         
-        //let lineView = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: 100))
-        //lineView.layer.borderWidth = 5
-        //lineView.layer.borderColor = UIColor.red.cgColor
         
         nameLabel = OpenStudyNameLabel()
         nameLabel.font = UIFont.systemFont(ofSize: 15)
@@ -65,6 +62,8 @@ class OpenStudyViewCell: UICollectionViewCell {
 
         self.addSubview(verticalStackView)
         
+        
+        
         let viewsDictionary = ["stackView":verticalStackView]
         let stackView_H = NSLayoutConstraint.constraints(
             withVisualFormat: "H:|-5-[stackView]-5-|",  //horizontal constraint 20 points from left and right side
@@ -78,8 +77,9 @@ class OpenStudyViewCell: UICollectionViewCell {
             views: viewsDictionary)
         self.addConstraints(stackView_V)
         self.addConstraints(stackView_H)
-        
+
     }
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

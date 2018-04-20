@@ -26,7 +26,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         emailTextField.delegate = self
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "ndbackground")
+        backgroundImage.image = UIImage(named: "welcomebackground")
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
 
@@ -106,6 +106,10 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         let emailTest = NSPredicate(format:"SELF MATCHES[c] %@", emailRegEx)
         return emailTest.evaluate(with: email)
     }
+    
+    /*override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }*/
 }
 
 

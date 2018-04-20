@@ -22,13 +22,13 @@ class VerifyTokenViewController: UIViewController {
         // Do any additional setup after loading the view.
         errorLabel.text = ""
         
-        backButton.layer.borderColor = UIColor.white.cgColor
+        backButton.layer.borderColor = UIColor(red: 0.051, green: 0.1216, blue: 0.2118, alpha: 1.0).cgColor /* #0d1f36 */
         backButton.layer.cornerRadius = 5
         backButton.layer.borderWidth = 2
         backButton.isHidden = true
 
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "ndbackground")
+        backgroundImage.image = UIImage(named: "welcomebackground")
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
 
@@ -54,6 +54,11 @@ class VerifyTokenViewController: UIViewController {
         tokenTextField.layer.masksToBounds = true
         
     }
+    
+    /*override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }*/
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

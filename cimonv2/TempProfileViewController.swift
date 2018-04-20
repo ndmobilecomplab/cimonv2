@@ -114,7 +114,7 @@ class TempProfileViewController: FormViewController {
             <<< PushRow<String>(){row in
                 row.title = "Education"
                 row.selectorTitle = "Select Highest Level"
-                row.options = ["High School", "College", "Bachelor's Degree", "Graduate School", "Doctorate"]
+                row.options = ["High School", "Some College", "Bachelor's Degree", "Graduate School", "Doctorate"]
                 if let education = Utils.getDataFromUserDefaults(key: "education") as! String?{
                     if !education.isEmpty{
                         if row.options!.contains(education){
@@ -140,7 +140,10 @@ class TempProfileViewController: FormViewController {
     }
     
     
-    
+    /*override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }*/
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

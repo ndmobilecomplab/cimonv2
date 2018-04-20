@@ -123,7 +123,8 @@ extension OpenStudiesViewController {
         cell.nameLabel.text = publicStudiesData[indexPath.row].name
 
         // add a border
-        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderColor = UIColor(red: 0.8824, green: 0.7059, blue: 0.1647, alpha: 1.0).cgColor /* #gold */
+
         cell.layer.borderWidth = 2
         cell.layer.cornerRadius = 15 // optional
         
@@ -170,9 +171,10 @@ extension OpenStudiesViewController {
             return headerView
         default:
             //4
-            assert(false, "Unexpected element kind")
+            fatalError("Unexpected element kind")
         }
     }
+    
 }
 
 

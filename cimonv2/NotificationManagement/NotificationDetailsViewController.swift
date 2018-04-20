@@ -77,8 +77,12 @@ class NotificationDetailsViewController: UIViewController {
         */
  
         if selectedNotification.deleteOnView == 1{
+            Utils.decreaseNotificationBadge()
             Syncer.sharedInstance.deleteNotification(appNotification: self.selectedNotification)
         }else{
+            if selectedNotification.viewCount == 0{
+                Utils.decreaseNotificationBadge()
+            }
             Syncer.sharedInstance.updateViewCount(appNotification: selectedNotification)
         }
 
